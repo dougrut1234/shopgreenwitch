@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title id="faq"> FAQ Display </title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+
+<style type="text/css">
+
+
+ .FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 25px; margin-left: 80px; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px; font: bold; 
+      }
+ .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 10px;
+ 	margin-left: 90px; font-size: 16px; font-family: 'Open Sans Condensed', sans-serif;}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #c2bd8f;
+}
+
+.bottom_tabs {
+    font-family: 'avenir next';
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    margin-left: 700px;
+}
+
+
+b:hover {
+    border-bottom: .5px solid black; 
+}
+
+#logo {
+    width: 400px;
+    height: auto;
+    margin-left: 480px;
+}
+
+#logo_footer {
+    width: 250px;
+    height: auto;
+    margin-left: 100px;
+}
+
+#title {
+    width: 250px;
+    height: auto;
+    margin-bottom: -30px;
+    margin-left: -250px;
+}
+
+#move {
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif; 
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 100px;
+    position: relative;
+    font-size: 42px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    /*color: #69f2a8;*/
+}
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 1px;
+    content: '\a0';
+    background-color: black;
+}
+h2:before {
+    margin-left: -48%;
+    text-align: right;
+}
+.color {
+    background-color: #ccc;
+}
+
+hr {
+    margin-top: 100px;
+    height: 1px;
+}
+
+.bottom_tabs:hover {
+    cursor: pointer;
+    color: #c2bd8f;
+}
+
+
+* {
+  font-family: 'avenir next';
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+
+.container {
+    max-width:400px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    margin-top: -50px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
+
+#contact {
+    padding:25px;
+    margin:50px 0;
+}
+
+#contact h3 {
+  font-family: 'avenir next';
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+  text-align:center;
+}
+
+#contact h4 {
+  font-family:'avenir next';
+    margin:5px 0 15px;
+    display:block;
+    font-size:13px;
+  text-align:center;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea {
+    width:100%;
+    border:1px solid #CCC;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="zip"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+#contact textarea {
+    height:100px;
+    max-width:100%;
+  resize:none;
+}
+
+#submit-div {
+  width:100%;
+}
+
+#contact button[type="submit"] {
+    cursor:pointer;
+    width:25%;
+  padding-left:25%;
+  padding-right:25%;
+    border:none;
+    background:#67bdb3;
+    color:#fff;
+    margin:auto;
+    padding:10px;
+    font-size:15px;
+  display:block;
+}
+
+#contact button[type="submit"]:hover {
+    background:#09C;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+</style>
+
+
+<script type="text/javascript">
+function toggle(Info) {
+  var CState = document.getElementById(Info);
+  CState.style.display = (CState.style.display != 'block')
+                       ? 'block' : 'none';
+}
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $(".FAQ1").click(function(){
+        $(".FAA1").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ2").click(function(){
+        $(".FAA2").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ3").click(function(){
+        $(".FAA3").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ4").click(function(){
+        $(".FAA4").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ5").click(function(){
+        $(".FAA5").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ6").click(function(){
+        $(".FAA6").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ7").click(function(){
+        $(".FAA7").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ8").click(function(){
+        $(".FAA8").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ9").click(function(){
+        $(".FAA9").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ10").click(function(){
+        $(".FAA10").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ11").click(function(){
+        $(".FAA11").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ12").click(function(){
+        $(".FAA12").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ13").click(function(){
+        $(".FAA13").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ14").click(function(){
+        $(".FAA14").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ15").click(function(){
+        $(".FAA15").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ16").click(function(){
+        $(".FAA16").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ17").click(function(){
+        $(".FAA17").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ18").click(function(){
+        $(".FAA18").slideToggle("medium");
+    });
+});
+
+$(document).ready(function(){
+    $(".FAQ19").click(function(){
+        $(".FAA19").slideToggle("medium");
+    });
+});
+
+</script>
+
+</head>
+<body>
+
+<img id="logo" src="green_witch_logo.jpg">
+<h2>Frequently Asked Questions</h2>
+
+<DIV class="FAQ1">
+ <b>1) What is CBD?</b>
+ <div id="faq1" class="FAA1">Cannabidiol a.k.a CBD is a non-psychoactive component of the hemp plant.   
+Because CBD delivers the benefits of medical marijuana without the buzz, it is increasingly being used to treat or supplement treatment of a variety of conditions. CBD is actually very similar to a naturally-occurring compound in our bodies located in the Endocannabinoid system. (which literally means “cannabinoid from within”). The endocannabinoids which are produced here can be located throughout our central nervous system and are responsible for controlling many processes such as sleep, digestion, mood, immune function, motor function, memory, and pain. When CBD is ingested it stimulates the production of endocannabinoids in our body.</div>
+</DIV>
+
+<DIV class="FAQ2">
+ <b>2) What makes Green Witch&#153; CBD different from other CBD products?</b>
+ <div id="faq2" class="FAA2">We use a unique strain of hemp that is specially bred from the most medicinally high cannabidiol strains of medical cannabis. The genetics of this strain evolved over a 7-year period during which the highest CBD and lowest THC plants were identified and crossbred. Because this strain naturally produces less than 0.3% THC on a dry weight basis, it is registered with the Colorado Department of Agriculture as industrial hemp. While the hemp we use is registered as industrial hemp, however, it is not actually genetic industrial hemp. Rather, it is derived from a unique medicinal hemp variety, which provides all the health benefits of medical cannabis without the psychoactive effects of THC.</div>
+</DIV>
+
+<DIV class="FAQ3">
+ <b>3) Is CBD legal?</b>
+ <div id="faq3" class="FAA3">CBD is currently legal in all but six U.S. states—Idaho, South Dakota, Nebraska, Kansas, Indiana, and West Virginia, which still consider every part of the cannabis plant, including CBD, to be illegal. </div>
+</DIV>
+
+<DIV class="FAQ4"> 
+ <b>4) Is CBD addictive?</b>
+ <div id="faq4" class="FAA4">No, CBD oil is not addictive.</div>
+</DIV>
+
+<DIV class="FAQ5">
+ <b>5) Could I still pass a drug test if I took CBD?</b>
+ <div id="faq5" class="FAA5">Depending on your body’s chemistry, high usage of CBD may result in testing positive during a drug test.</div>
+</DIV>
+
+<DIV class="FAQ6">
+ <b>6) Can you expect to feel drowsiness after taking CBD?</b>
+ <div id="faq6" class="FAA6">Yes, drowsiness is one of the well known side-effects to CBD which is what makes it such a good sleep-aid! Understandably, ingesting CBD is not recommended before driving or operating any equipment.</div>
+</DIV>
+
+<DIV class="FAQ7">
+ <b>7) Is CBD safe to use while I am pregnant? </b>
+ <div id="faq7" class="FAA7">CBD is not recommended for pregnant women. </div>
+</DIV>
+
+<DIV class="FAQ8">
+ <b>8) How does CBD interact with other medications?</b>
+ <div id="faq8" class="FAA8">When it comes to CBD, most potential interactions that have been identified are relatively mild. In fact, some drugs seem to work favorably in tandem with CBD. As a precaution, please consult with your physician if intending to take CBD with any medication.</div>
+</DIV>
+
+<DIV class="FAQ9">
+ <b>9) Should I take CBD with food?</b>
+ <div id="faq9" class="FAA9">Yes, this will help CBD absorption.</div>
+</DIV>
+
+<DIV class="FAQ10">
+ <b>10) When do I feel the CBD effects and how long do CBD effects last?</b>
+ <div id="faq10" class="FAA10">Depending on your body’s chemistry, onset effects begin 30-90 minutes after ingestion and can last for four hours or more.</div>
+</DIV>
+
+<DIV class="FAQ11">
+ <b>11) We are recommending 1 unit as a serving size but what about people with conditions which require higher dosages?</b>
+ <div id="faq11" class="FAA11">Finding the effective dosage for CBD oil takes time, effort, and the understanding that this is no “one-size-fits-all” answer. As always, consulting a physician or a holistic specialist will be your best starting point.</div>
+</DIV>
+
+<!-- <DIV class="FAQ12">
+ <b>12) Should I take CBD with food?</b>
+ <div id="faq12" class="FAA12">Yes, it’s recommended to take CBD with food. &nbsp; <a href="https://hempmedspx.com/take-cbd-oil-food-empty-stomach/">[12]</a> </div>
+</DIV>
+
+<DIV class="FAQ13">
+ <b>13) When do I feel the CBD effects and how long do CBD effects last?</b>
+ <div id="faq13" class="FAA13">The onset effects begin 30-90 minutes after ingestion and can last for four hours or more. &nbsp; <a href="https://www.alternet.org/drugs/cbd-users-manual-everything-you-need-know-marijuana-medicinal-compound">[13]</a></div>
+</DIV>
+
+<DIV class="FAQ14">
+ <b>14) Does CBD help you lose weight?</b>
+ <div id="faq14" class="FAA14">Recent studies have shown the following: Stimulate genes and proteins that enhance the breakdown and oxidation of fat, increase the number and activity of mitochondria (which increases the body’s ability to burn calories, decrease the expression of proteins involved in lipogenesis (fat cell generation). &nbsp; <a href="https://www.leafly.com/news/health/cbd-weight-loss-metabolism">[14]</a></div>
+</DIV>
+
+<DIV class="FAQ15">
+ <b>15) Would CBD be safe for my children?</b>
+ <div id="faq15" class="FAA15">While more research still needs to be done, findings so far do indicate that one cannabinoid — cannabidiol (CBD) – is safe for children. &nbsp; <a href="https://echoconnection.org/cannabinoids-safe-kids/">[15]</a> </div>
+</DIV>
+
+<DIV class="FAQ16">
+ <b>16) Can I use CBD to treat pets?</b>
+ <div id="faq16" class="FAA16">Yes. CBD can be used to treat pains in pets. The most popular types of CBD products are CBD hemp extracts, tinctures, topical creams, and edibles. &nbsp; <a href="https://ministryofhemp.com/blog/cbd-products-pet/">[16]</a></div>
+</DIV>
+
+<DIV class="FAQ17">
+ <b>17) We are recommending 1 unit as a serving size but what about people with conditions which require higher dosages?</b>
+ <div id="faq17" class="FAA17">Start with a few drops daily, or a smaller milligram capsule. Wait for a week, and see how you feel. In the CBD community, there is agreement that too much, or “overdoing it” can result in no changes at all. Finding the effective dosage for CBD oil takes time, effort, and the understanding that this is no “one-size-fits-all” ordeal. &nbsp; <a href="https://herb.co/2017/06/26/cbd-oil-effective-dose/">[17]</a></div>
+</DIV>
+
+<DIV class="FAQ18">
+ <b>18) That being said, do I need a medical marijuana card to buy CBD?</b>
+ <div id="faq18" class="FAA18">No you will not need a card; however, to purchase cannabis plant-based CBD oil (rich in THC or/and CBD) you will need a medical marijuana card. &nbsp; <a href="https://www.medicalmarijuanainc.com/cbd-hemp-oil-frequently-asked-questions/">[18]</a></div>
+</DIV>
+
+<DIV class="FAQ19">
+ <b>19) Are you able to ship outside of the USA? </b>
+ <div id="faq19" class="FAA19">No.</div>
+</DIV>
+ -->
+<hr>
+
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:28px "avenir next", sans-serif; font-weight: bold; margin-top: 85px; margin-left: 30px; float: left;}
+    #button:hover {
+        color: green;
+    }
+    label {
+        font-size: 28px;
+        font-family: "avenir next", sans-serif;
+        font-weight: bold;
+    }
+
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://shopgreenwitch.us17.list-manage.com/subscribe/post?u=7389b87141ed1f69e7e763169&amp;id=c0e6bad048" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <label style="font-size: 24px; margin-top: 4px;" for="mce-EMAIL">Subscribe for our latest product updates!</label>
+    <input style="font-size: 18px; text-align: center; width: 250px; margin-top: -44px; float: left; margin-left: 500px;" type="email" cols="100" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+
+    
+    <div id="button" class="clear"><input style="font-size: 20px; cursor: pointer; width: 100px; margin-left: 765px; margin-top: -44px; float: left;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<div id="move">
+    <p class="bottom_tabs"><a href="home.html">Home</a></p>
+    <p class="bottom_tabs"><a href="products.html">Products</a></p>
+    <p class="bottom_tabs"><a href="FAQ.html">FAQ</a></p>
+    <p class="bottom_tabs"><a href="contact.html">Contact Us</a></p>
+<div>
+
+</body>
+</html>
