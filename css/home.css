@@ -167,8 +167,16 @@ ul li {
   text-align: center;
 }
 
+.body-container {
+  width: 100%;
+}
+
 #coming_soon {
-  margin-top: 20px;
+  max-width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 0;
+  padding-top: 1%;
 }
 
 .tab {
@@ -212,10 +220,10 @@ ul li {
 }
 
 #button {
-  font-size: 20px; 
-  cursor: pointer; 
-  width: 100px; 
-  margin-left: 765px; 
+  font-size: 20px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 765px;
   margin-top: -44px; float: left;
 }
 
@@ -317,5 +325,3 @@ ul li {
     color: #67bdb3;
   }
 }
-
-
