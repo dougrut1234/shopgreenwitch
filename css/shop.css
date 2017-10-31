@@ -39,11 +39,6 @@ hr {
     height: 1px;
 }
 
-#countdown {
-	margin-left: 14%;
-	margin-top: -5%;
-}
-
 p {
 	font-family: 'avenir next';
 	text-align: center;
@@ -70,16 +65,27 @@ hr {
   z-index: 1;
 }
 
-
+.body-container {
+  width: 100%;
+}
 
 #demo {
   text-align: center;
   font-family: 'avenir next';
-  font-size: 60px;
+  font-size:60px;
   color: #67bdb3;
-  margin-left: 100px;
-  margin-top: -150px;
-  margin-bottom: 100px;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: -12%;
+  vertical-align: center;
+}
+
+#countdown {
+	max-width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: -8%;
 }
 
 #image{
