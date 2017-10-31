@@ -111,10 +111,7 @@ a {
     color: black;
 }
 
-a:hover {
-    cursor: pointer;
-    color: #c2bd8f;
-}
+
 
 u {
     text-decoration: none;
@@ -238,3 +235,48 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
+
+#move {
+    float: left;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.bottom_tabs {
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 40px;
+}
+
+.bottom_tabs:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.bottom_tabs:hover:after {
+  width: 100%;
+  background: #67bdb3;
+}
+
+#line {
+  margin-top: 100px;
+  width: 100%;
+  background: black;
+  float: left;
+}
+
+#line_2 {
+  margin-top: 60px;
+  width: 100%;
+  background: black;
+  float: left;
+}
+
