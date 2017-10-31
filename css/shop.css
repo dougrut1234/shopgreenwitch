@@ -1,0 +1,54 @@
+#logo {
+    width: 25%;
+    height: auto;
+    margin-left: 37.5%;
+    margin-right:37.5%;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif; 
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 100px;
+    position: relative;
+    font-size: 42px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    /*color: #69f2a8;*/
+}
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 1px;
+    content: '\a0';
+    background-color: black;
+}
+h2:before {
+    margin-left: -48%;
+    text-align: right;
+}
+.color {
+    background-color: #ccc;
+}
+
+hr {
+    margin-top: 100px;
+    height: 1px;
+}
+
+#countdown {
+	margin-left: 14%;
+	margin-top: -5%;
+}
+
+p {
+	font-family: 'avenir next';
+	text-align: center;
+	font-size: 36px;
+	font-color: black;
+	margin-top: 100px;
+	margin-top: -75px;
+}
