@@ -1,9 +1,19 @@
-#logo {
-    width: 25%;
-    height: auto;
-    margin-left: 37.5%;
-    margin-right:37.5%;
+/*logo*/
+
+.gwlogo {
+  padding-top: 2.5%;
+  padding-bottom: 1.5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
+#gw-logo {
+  display: block;
+  margin: 0 auto;
+  width:60%;
+  max-width: 300px;
+}
+
 
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -73,7 +83,8 @@ hr {
   text-align: center;
   font-family: 'avenir next';
   font-size:60px;
-  color: #67bdb3;
+  font-weight: bolder;
+  color: #000000;
   max-width: 50%;
   margin-left: 25%;
   margin-right: 25%;

@@ -19,12 +19,29 @@ b:hover {
     border-bottom: .5px solid black;
 }
 
-#logo {
+/*logo*/
+
+.gwlogo {
+  padding-top: 2.5%;
+  padding-bottom: 1.5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#gw-logo {
+  display: block;
+  margin: 0 auto;
+  width:60%;
+  max-width: 300px;
+}
+
+
+/*#logo {
     width: 25%;
     height: auto;
     margin-left: 37.5%;
     margin-right:37.5%;
-}
+}*/
 
 #logo_footer {
     width: 250px;
@@ -210,10 +227,10 @@ hr {
 /*logo*/
 
 #witch-hat{
-    float:left;
-    width: 10%;
-    display: inline-block;
-    padding-left: 2%;
+  float:left;
+  width: 18%;
+  display: inline-block;
+  padding-left: 10%;
 }
 
 

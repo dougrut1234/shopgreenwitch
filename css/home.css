@@ -72,13 +72,19 @@ hr {
 
 /*logo*/
 
-#witch-hat{
-    float:left;
-    width: 10%;
-    display: inline-block;
-    padding-left: 2%;
+.gwlogo {
+  padding-top: 2.5%;
+  padding-bottom: 1.5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
+#gw-logo {
+  display: block;
+  margin: 0 auto;
+  width:60%;
+  max-width: 300px;
+}
 
 
 #line {
