@@ -131,7 +131,6 @@ hr {
 }
 
 
-
 hr {
   height: .20rem;
   width: 25%;
@@ -167,11 +166,17 @@ hr {
   float: left;
 }
 
-#move {
-  margin-top: 50px;
-  margin-right: 30px;
-  padding-left: -50px;
+/*footer*/
+
+.bottom-links-container {
+width: 100%;
 }
+
+#move {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 
 .bottom_tabs {
     float: left;
@@ -189,12 +194,6 @@ hr {
     color: #c2bd8f;
 }
 
-#move {
-    float: left;
-    margin-left: 300px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
 
 a {
     text-decoration: none;
