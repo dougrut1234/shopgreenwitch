@@ -288,11 +288,13 @@ ul li {
 .four:hover ~ hr {
   margin-left: 75%;
 }
+
 .bottom_tabs{
   display: inline-block;
   position: relative;
   padding-bottom: 3px;
 }
+
 .bottom_tabs:after {
   content: '';
   display: block;
@@ -302,10 +304,12 @@ ul li {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
+
 .bottom_tabs:hover:after {
   width: 100%;
   background: #67bdb3;
 }
+
 #button {
   font-size: 20px;
   cursor: pointer;
@@ -315,6 +319,7 @@ ul li {
   float: left;
   z-index: 1;
 }
+
 #box {
   border: 1px solid black;
   text-align: center;
@@ -324,6 +329,7 @@ ul li {
   height: 50px;
   z-index: -1;
 }
+
 #subscribe {
   margin-top: 60px;
   font-size: 20px;
@@ -331,9 +337,11 @@ ul li {
   margin-right: 460px;
   text-align: center;
 }
+
 #shift_button {
   margin-right: 10px;
 }
+
 #mc_embed_signup {
   margin-top: 200px;
   background-color: #c2bd8f;
@@ -348,6 +356,7 @@ ul li {
   z-index: -1;
   -webkit-box-shadow: 0 0 10px #fff;
         box-shadow: 0 0 10px #fff;}
+
 .icon1 {
   width: 40px;
   height: auto;
@@ -358,20 +367,24 @@ ul li {
   height: auto
   margin-top: 100px;
 }
+
 .icon3 {
   width: 33px;
   height: auto;
   margin-left: 4px;
   margin-top: 100;
 }
+
 .icon1:hover {
   text-decoration: underline;
 }
+
 #move_icon {
   float: left;
   margin-top: -100px;
   margin-left: 320px;
 }
+ 
 #subscribe_info {
   font-family: 'avenir next';
   font-size: 18px;
