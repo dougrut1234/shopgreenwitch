@@ -1,6 +1,9 @@
+/*navigation */
+
 ul li {
   display: inline;
 }
+
 hr {
   height: .20rem;
   width: 25%;
@@ -11,6 +14,9 @@ hr {
   margin-top: -50px;
   z-index: 1;
 }
+
+/*body */
+
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     margin-left: -10px;
@@ -23,6 +29,7 @@ h2 {
     text-align: center;
     /*color: #69f2a8;*/
 }
+
 h2:before, h2:after {
     position: absolute;
     top: 51%;
@@ -32,22 +39,28 @@ h2:before, h2:after {
     content: '\a0';
     background-color: black;
 }
+
 h2:before {
     margin-left: -48%;
     text-align: right;
 }
+
 .color {
     background-color: #ccc;
 }
+
 hr {
     margin-top: 175px;
     height: 1px;
 }
+
 #contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
+
 #contact {
     padding-top:25px;
     margin:50px 0;
 }
+
 #contact h3 {
   font-family: 'avenir next';
   display: block;
@@ -57,6 +70,7 @@ hr {
   text-align:center;
   margin-top: -20%;
 }
+
 #contact h4 {
   font-family:'avenir next';
   margin:5px 0 15px;
@@ -64,6 +78,7 @@ hr {
   font-size:13px;
   text-align:center;
 }
+
 fieldset {
     border: medium none !important;
     margin: 0 0 10px;
@@ -71,26 +86,31 @@ fieldset {
     padding: 0;
     width: 100%;
 }
+
 #contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea {
     width:100%;
     border:1px solid #CCC;
     margin:0 0 5px;
     padding:10px;
 }
+
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="zip"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
     -webkit-transition:border-color 0.3s ease-in-out;
     -moz-transition:border-color 0.3s ease-in-out;
     transition:border-color 0.3s ease-in-out;
     border:1px solid #AAA;
 }
+
 #contact textarea {
     height:100px;
     max-width:100%;
     resize:none;
 }
+
 #submit-div {
     width:100%;
 }
+
 #contact button[type="submit"] {
     cursor:pointer;
     width:25%;
@@ -104,13 +124,16 @@ fieldset {
     font-size:15px;
     display:block;
 }
+
 #contact button[type="submit"]:hover {
     background:#09C;
     -webkit-transition:background 0.3s ease-in-out;
     -moz-transition:background 0.3s ease-in-out;
     transition:background-color 0.3s ease-in-out;
 }
+
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
 #contact input:focus, #contact textarea:focus {
     outline:0;
     border:1px solid #999;
@@ -131,13 +154,17 @@ fieldset {
   float:left; /* important */
   position:relative; /* important(so we can absolutely position the description div */
 }
-*navigation*/
+
+/*navigation*/
+
+
 .main-nav ul  {
     width:80%;
     margin-left: 10%;
     margin-right:10%;
     padding-right: 20%;
 }
+
 .main-nav ul li{
     display:inline;
     text-align: center;
@@ -146,10 +173,12 @@ fieldset {
     /*font-family: "avenir next", sans-serif;
     font-weight: bold;*/
 }
+
 .main-nav {
     padding-top: 3%;
     margin-left: 40px;
 }
+
 hr {
   height: .20rem;
   width: 25%;
@@ -158,19 +187,25 @@ hr {
   border: none;
   transition: .3s ease-in-out;
 }
+
 /*logo*/
+
 .gwlogo {
   padding-top: 2.5%;
   padding-bottom: 1.5%;
   margin-left: 20%;
   margin-right: 20%;
 }
+
 #gw-logo {
   display: block;
   margin: 0 auto;
   width:60%;
   max-width: 300px;
 }
+
+/*footer*/
+
 .bottom_tabs {
     float: left;
     font-size: 20px;
@@ -180,10 +215,12 @@ hr {
    /* border-right: 1px solid;
     border-right: background: #67bdb3; padding-right: 15px; margin-top: 10px; height: 30px;*/
 }
+
 .bottom_tabs:hover {
     cursor: pointer;
     color: #c2bd8f;
 }
+
 #move {
     float: right;
     margin-right: 130px;
@@ -191,16 +228,20 @@ hr {
     margin-bottom: 50px;
     background-color: #c2bd8f;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     cursor: pointer;
 }
+
 u {
     text-decoration: none;
 }
+
 * {
   font-family: 'avenir next';
     margin:0;
@@ -215,6 +256,7 @@ u {
     text-rendering:optimizeLegibility;
   box-sizing: border-box;
 }
+
 .container {
   margin-top: 20%;
   margin-left: 60%;
@@ -228,13 +270,7 @@ ul li {
 .body-container {
   width: 100%;
 }
-#coming_soon {
-  max-width: 80%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 0;
-  padding-top: 1%;
-}
+
 .tab {
   display: inline-block;
   width: 25%;
