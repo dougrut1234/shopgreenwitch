@@ -1,6 +1,6 @@
-ul li {
-  display: inline;
-}
+
+/*body */
+
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     margin-left: -10px;
@@ -22,10 +22,12 @@ h2:before, h2:after {
     content: '\a0';
     background-color: black;
 }
+
 h2:before {
     margin-left: -48%;
     text-align: right;
 }
+
 hr {
   height: .20rem;
   width: 25%;
@@ -36,6 +38,7 @@ hr {
   margin-top: -50px;
   z-index: 1;
 }
+
 #demo {
   text-align: center;
   font-family: 'avenir next';
@@ -48,6 +51,7 @@ hr {
   margin-top: -12%;
   vertical-align: center;
 }
+
 #countdown {
   max-width: 90%;
   margin-left:5%;
@@ -59,7 +63,36 @@ hr {
   float:left; /* important */
   position:relative; /* important(so we can absolutely position the description div */
 }
-*navigation*/
+
+#coming_soon {
+  max-width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 0;
+  padding-top: 1%;
+}
+
+/*logo*/
+
+.gwlogo {
+  padding-top: 2.5%;
+  padding-bottom: 1.5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#gw-logo {
+  display: block;
+  margin: 0 auto;
+  width:60%;
+  max-width: 300px;
+}
+.body-container {
+  width: 100%;
+}
+
+/*navigation*/
+
 .main-nav ul  {
     width:80%;
     margin-left: 10%;
@@ -78,6 +111,7 @@ hr {
     padding-top: 3%;
     margin-left: 40px;
 }
+
 hr {
   height: .20rem;
   width: 25%;
@@ -86,19 +120,14 @@ hr {
   border: none;
   transition: .3s ease-in-out;
 }
-/*logo*/
-.gwlogo {
-  padding-top: 2.5%;
-  padding-bottom: 1.5%;
-  margin-left: 20%;
-  margin-right: 20%;
+ul li {
+  display: inline;
 }
-#gw-logo {
-  display: block;
-  margin: 0 auto;
-  width:60%;
-  max-width: 300px;
-}
+
+
+
+/*footer*/
+
 .bottom_tabs {
     float: left;
     font-size: 20px;
@@ -153,16 +182,7 @@ ul li {
   display: inline;
   text-align: center;
 }
-.body-container {
-  width: 100%;
-}
-#coming_soon {
-  max-width: 80%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 0;
-  padding-top: 1%;
-}
+
 .tab {
   display: inline-block;
   width: 25%;
@@ -231,7 +251,7 @@ ul li {
   background-color: #c1b79e;
   opacity: .8;
   height: 5%;
-  margin-top: 8%;
+  margin-top: 8  %;
   margin-left: 50px;
   margin-right: 0px;
             margin-left: -20px;
