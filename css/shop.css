@@ -1,7 +1,7 @@
-ul li {
-  display: inline;
-}
 
+/*body */
+
+>>>>>>> 4591012acac33f756f5bb4d80cd6cb41569e6d44
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     margin-left: -10px;
@@ -23,6 +23,7 @@ h2:before, h2:after {
     content: '\a0';
     background-color: black;
 }
+
 h2:before {
     margin-left: -48%;
     text-align: right;
@@ -54,12 +55,11 @@ hr {
 }
 
 #countdown {
-  max-width: 80%;
-  margin-left:10%;
-  margin-right:10%;
+  max-width: 90%;
+  margin-left:5%;
+  margin-right:5%;
   margin-top: -8%;
 }
-
 
 
 #image{
@@ -67,43 +67,13 @@ hr {
   position:relative; /* important(so we can absolutely position the description div */
 }
 
-
-*navigation*/
-
-
-.main-nav ul  {
-    width:80%;
-    margin-left: 10%;
-    margin-right:10%;
-    padding-right: 20%;
-
+#coming_soon {
+  max-width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 0;
+  padding-top: 1%;
 }
-
-.main-nav ul li{
-    display:inline;
-    text-align: center;
-    padding-right: 10%;
-    white-space: nowrap;
-    /*font-family: "avenir next", sans-serif;
-    font-weight: bold;*/
-}
-
-.main-nav {
-    padding-top: 3%;
-    margin-left: 40px;
-}
-
-
-
-hr {
-  height: .20rem;
-  width: 25%;
-  margin: 0;
-  background: #67bdb3;
-  border: none;
-  transition: .3s ease-in-out;
-}
-
 
 /*logo*/
 
@@ -120,10 +90,46 @@ hr {
   width:60%;
   max-width: 300px;
 }
+.body-container {
+  width: 100%;
+}
+
+/*navigation*/
+
+.main-nav ul  {
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding-right: 20%;
+}
+.main-nav ul li{
+    display:inline;
+    text-align: center;
+    padding-right: 10%;
+    white-space: nowrap;
+    /*font-family: "avenir next", sans-serif;
+    font-weight: bold;*/
+}
+.main-nav {
+    padding-top: 3%;
+    margin-left: 40px;
+}
+
+hr {
+  height: .20rem;
+  width: 25%;
+  margin: 0;
+  background: #67bdb3;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+ul li {
+  display: inline;
+}
 
 
-
-
+/*footer*/
 
 .bottom_tabs {
     float: left;
@@ -134,12 +140,10 @@ hr {
    /* border-right: 1px solid;
     border-right: background: #67bdb3; padding-right: 15px; margin-top: 10px; height: 30px;*/
 }
-
 .bottom_tabs:hover {
     cursor: pointer;
     color: #c2bd8f;
 }
-
 #move {
     float: right;
     margin-right: 130px;
@@ -147,20 +151,16 @@ hr {
     margin-bottom: 50px;
     background-color: #c2bd8f;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
-
 a:hover {
     cursor: pointer;
 }
-
 u {
     text-decoration: none;
 }
-
 * {
   font-family: 'avenir next';
     margin:0;
@@ -175,29 +175,15 @@ u {
     text-rendering:optimizeLegibility;
   box-sizing: border-box;
 }
-
 .container {
   margin-top: 20%;
   margin-left: 60%;
   width: 50%;
   margin: 0 auto;
 }
-
 ul li {
   display: inline;
   text-align: center;
-}
-
-.body-container {
-  width: 100%;
-}
-
-#coming_soon {
-  max-width: 80%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 0;
-  padding-top: 1%;
 }
 
 .tab {
@@ -208,19 +194,15 @@ ul li {
   text-decoration: none;
   color: #333;
 }
-
 .two:hover ~ hr {
   margin-left: 25%;
 }
-
 .three:hover ~ hr {
   margin-left: 50%;
 }
-
 .four:hover ~ hr {
   margin-left: 75%;
 }
-
 .bottom_tabs{
   display: inline-block;
   position: relative;
@@ -239,7 +221,6 @@ ul li {
   width: 100%;
   background: #67bdb3;
 }
-
 #button {
   font-size: 20px;
   cursor: pointer;
@@ -366,60 +347,74 @@ ul li {
     color: #67bdb3;
   }
 
+=======
+  margin-top: 5px;
+  float: left;
+  z-index: 1;
 }
-
-
-@media (max-width: 550px) {
-  .tab {
-    font-size: 12px;
+#box {
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 72px;
+  width: 200px;
+  height: 50px;
+  z-index: -1;
+>>>>>>> 4591012acac33f756f5bb4d80cd6cb41569e6d44
+}
+#subscribe {
+  margin-top: 60px;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 460px;
+  text-align: center;
+}
+#shift_button {
+  margin-right: 10px;
+}
+#mc_embed_signup {
+  margin-top: 200px;
+  background-color: #c1b79e;
+  opacity: .8;
+  height: 5%;
+  margin-top: 8  %;
+  margin-left: 50px;
+  margin-right: 0px;
+            margin-left: -20px;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 20%;
+  padding-left: 20px;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;}
+  .icon1 {
+  width: 40px;
+  height: auto;
+  margin-top: 100px;
   }
-
-  .tab:hover {
-    color: #67bdb3;
-
-  }
-
-  hr {
-    display: none;
-  }
-
-  #witch-hat {
-    display: none;
-  }
-
-
-  img {
-    width: 80%;
-    height: auto;
-    margin-left: 60px;
-  }
-
-  #hello {
-    display: none;
-  }
-
-  #box {
-    margin-left: 190px;
-
-  }
-
-  #button {
-    margin-top: 20px;
-    margin-left: 200px;
-  }
-
-  #move {
-    margin-left: 40px;
-  }
-
-  .bottom_tabs {
-    font-size: 12px;
-    margin-left: 30px;
-  }
-
-  .bottom_tabs:hover {
-    font-size: 12px;
-    color: #67bdb3;
-  }
+.icon2 {
+  width: 38px;
+  height: auto
+  margin-top: 100px;
+}
+.icon3 {
+  width: 33px;
+  height: auto;
+  margin-left: 4px;
+  margin-top: 95px;
+}
+.icon1:hover {
+  text-decoration: underline;
+}
+#move_icon {
+  float: left;
+  margin-top: -100px;
+  margin-left: 320px;
+}
+#subscribe_info {
+  font-family: 'avenir next';
+  font-size: 18px;
+  margin-left: 5px;
 }
 */

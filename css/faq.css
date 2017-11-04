@@ -1,3 +1,6 @@
+
+/*questions*/
+
 .FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 25px; margin-left: 80px; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px; font: bold;
       }
  .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 10px;
@@ -13,10 +16,10 @@ a:hover {
     color: #c2bd8f;
 }
 
-
 b:hover {
     border-bottom: .5px solid black;
 }
+
 
 /*logo*/
 
@@ -35,12 +38,26 @@ b:hover {
 }
 
 
+/*navigation*/
+
 
 ul li {
   display: inline;
 }
 
+hr {
+  height: .20rem;
+  width: 25%;
+  margin: 0;
+  background: #67bdb3;
+  border: none;
+  transition: .3s ease-in-out;
+  margin-top: -50px;
+  z-index: 1;
+}
 
+
+/*body*/
 
 hr {
   height: .20rem;
@@ -65,6 +82,7 @@ h2 {
     text-align: center;
     /*color: #69f2a8;*/
 }
+
 h2:before, h2:after {
     position: absolute;
     top: 51%;
@@ -74,10 +92,12 @@ h2:before, h2:after {
     content: '\a0';
     background-color: black;
 }
+
 h2:before {
     margin-left: -48%;
     text-align: right;
 }
+
 .color {
     background-color: #ccc;
 }
@@ -87,112 +107,10 @@ hr {
     height: 1px;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
-
-#contact {
-    padding-top:25px;
-    margin:50px 0;
-}
-
-#contact h3 {
-  font-family: 'avenir next';
-  display: block;
-  font-size: 36px;
-  font-weight: bold;
-  color:#67bdb3;
-  text-align:center;
-  margin-top: -20%;
-}
-
-#contact h4 {
-  font-family:'avenir next';
-  margin:5px 0 15px;
-  display:block;
-  font-size:13px;
-  text-align:center;
-}
-
-fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea {
-    width:100%;
-    border:1px solid #CCC;
-    margin:0 0 5px;
-    padding:10px;
-}
-
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="zip"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-    -webkit-transition:border-color 0.3s ease-in-out;
-    -moz-transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
-}
-
-#contact textarea {
-    height:100px;
-    max-width:100%;
-    resize:none;
-}
-
-#submit-div {
-    width:100%;
-}
-
-#contact button[type="submit"] {
-    cursor:pointer;
-    width:25%;
-    padding-left:25%;
-    padding-right:25%;
-    border:none;
-    background:#67bdb3;
-    color:#fff;
-    margin:auto;
-    padding:10px;
-    font-size:15px;
-    display:block;
-}
-
-#contact button[type="submit"]:hover {
-    background:#09C;
-    -webkit-transition:background 0.3s ease-in-out;
-    -moz-transition:background 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact input:focus, #contact textarea:focus {
-    outline:0;
-    border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
-
-
-
 #image{
   float:left; /* important */
   position:relative; /* important(so we can absolutely position the description div */
 }
-
-
-*navigation*/
 
 
 .main-nav ul  {
@@ -200,9 +118,7 @@ fieldset {
     margin-left: 10%;
     margin-right:10%;
     padding-right: 20%;
-
 }
-
 .main-nav ul li{
     display:inline;
     text-align: center;
@@ -217,8 +133,6 @@ fieldset {
     margin-left: 40px;
 }
 
-
-
 hr {
   height: .20rem;
   width: 25%;
@@ -227,7 +141,6 @@ hr {
   border: none;
   transition: .3s ease-in-out;
 }
-
 
 /*logo*/
 
@@ -238,6 +151,7 @@ hr {
   margin-right: 20%;
 }
 
+
 #gw-logo {
   display: block;
   margin: 0 auto;
@@ -245,9 +159,7 @@ hr {
   max-width: 300px;
 }
 
-
-
-
+/*footer*/
 
 .bottom_tabs {
     float: left;
@@ -259,10 +171,12 @@ hr {
     border-right: background: #67bdb3; padding-right: 15px; margin-top: 10px; height: 30px;*/
 }
 
+
 .bottom_tabs:hover {
     cursor: pointer;
     color: #c2bd8f;
 }
+
 
 #move {
     float: right;
@@ -316,14 +230,6 @@ ul li {
   width: 100%;
 }
 
-#coming_soon {
-  max-width: 80%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 0;
-  padding-top: 1%;
-}
-
 .tab {
   display: inline-block;
   width: 25%;
@@ -332,19 +238,15 @@ ul li {
   text-decoration: none;
   color: #333;
 }
-
 .two:hover ~ hr {
   margin-left: 25%;
 }
-
 .three:hover ~ hr {
   margin-left: 50%;
 }
-
 .four:hover ~ hr {
   margin-left: 75%;
 }
-
 .bottom_tabs{
   display: inline-block;
   position: relative;
@@ -359,12 +261,11 @@ ul li {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
+
 .bottom_tabs:hover:after {
   width: 100%;
   background: #67bdb3;
 }
-
-
 
 #button {
   font-size: 20px;
@@ -493,7 +394,6 @@ ul li {
 
 }/**/
 
-
 /*@media (max-width: 550px) {
   .tab {
     font-size: 12px;
@@ -525,26 +425,59 @@ ul li {
 
   #box {
     margin-left: 190px;
+=======
+#shift_button {
+  margin-right: 10px;
+}
 
-  }
+#mc_embed_signup {
+  margin-top: 200px;
+  background-color: #c2bd8f;
+  opacity: .8;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 500px;
+  padding-left: 20px;
+  margin-left: -20px;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;}
 
-  #button {
-    margin-top: 20px;
-    margin-left: 200px;
-  }
+.icon1 {
+  width: 40px;
+  height: auto;
+  margin-top: 100px;
+}
+>>>>>>> 4591012acac33f756f5bb4d80cd6cb41569e6d44
 
-  #move {
-    margin-left: 40px;
-  }
+.icon2 {
+  width: 38px;
+  height: auto
+  margin-top: 100px;
+}
 
-  .bottom_tabs {
-    font-size: 12px;
-    margin-left: 30px;
-  }
+.icon3 {
+  width: 33px;
+  height: auto;
+  margin-left: 4px;
+  margin-top: 100;
+}
 
-  .bottom_tabs:hover {
-    font-size: 12px;
-    color: #67bdb3;
-  }
+.icon1:hover {
+  text-decoration: underline;
+}
+
+#move_icon {
+  float: left;
+  margin-top: -100px;
+  margin-left: 320px;
+}
+
+#subscribe_info {
+  font-family: 'avenir next';
+  font-size: 18px;
+  margin-left: 5px;
 }
 */
