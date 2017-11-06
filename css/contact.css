@@ -1,5 +1,9 @@
 /*navigation */
 
+body {
+  width: 1200px;
+}
+
 ul li {
   display: inline;
 }
@@ -56,10 +60,11 @@ hr {
 #contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
 
 #contact {
-  margin-left: 50px;
-  margin-right: 50px;
-    padding-top:25px;
-    margin:50px 0;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top:25px;
+  margin:50px 0;
 }
 
 #contact h3 {
@@ -211,6 +216,13 @@ hr {
   margin: 0 auto;
 }
 
+.container2 {
+  margin-top: 210px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
 ul li {
   display: inline;
   text-align: center;
@@ -264,7 +276,6 @@ ul li {
   max-height: 900px;
 }
 
-
 .bottom_tabs {
     float: left;
     font-size: 20px;
@@ -282,10 +293,11 @@ ul li {
 
 
 #move {
+    clear: left;
     float: right;
-    margin-right: 130px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-right: 340px;
+    margin-top: 150px;
+    margin-bottom: -40px;
     background-color: #c1b79e;
 }
 
@@ -342,7 +354,8 @@ u {
   font-size: 20px;
   cursor: pointer;
   width: 100px;
-  margin-left: 112px;
+  /*MARGIN-LEFT is different*/
+  margin-left: 240px; 
   margin-top: 5px; 
   float: left;
   z-index: 1;
@@ -352,7 +365,8 @@ u {
   border: 1px solid black;
   text-align: center;
   margin-top: 10px;
-  margin-left: 72px;
+  /*MARGIN-LEFT is different*/
+  margin-left: 200px;
   width: 200px;
   height: 50px;
   z-index: -1;
@@ -361,14 +375,18 @@ u {
 #subscribe {
   margin-top: 60px;
   font-size: 20px;
-  margin-left: 40px;
-  margin-right: 460px;
+  margin-right: 600px;
   text-align: center;
 
 }
 
 #shift_button {
   margin-right: 10px;
+}
+
+#shift_box_button {
+  float:;
+  margin-left: 300px;
 }
 
 #mc_embed_signup {
@@ -380,9 +398,9 @@ u {
   margin-left: 50px;
   margin-right: 0px;
   margin-left: -20px;
-  margin-bottom: 0;
+  margin-bottom: -10px;
   padding-top: 5px;
-  padding-bottom: 20%;
+  padding-bottom: 15%;
   padding-left: 20px;
   z-index: -1;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -412,9 +430,9 @@ u {
 }
 
 #move_icon {
-  float: left;
-  margin-top: -100px;
-  margin-left: 320px;
+  margin-top: -50px;
+  /*MARGIN-LEFT is different*/
+  margin-left: 240px;
 }
 
 #subscribe_info {
@@ -422,4 +440,17 @@ u {
   font-size: 18px;
   margin-left: 5px;
 
+}
+
+#move {
+    clear: left;
+    float: right;
+    margin-right: 340px;
+    margin-top: 150px;
+    margin-bottom: -40px;
+    background-color: #c1b79e;
+}
+
+#contain_this {
+  width: 1200px;
 }

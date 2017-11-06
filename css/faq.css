@@ -1,6 +1,10 @@
 
 /*questions*/
 
+body {
+  width: 1200px;
+}
+
 .FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 25px; margin-left: 80px; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px; font: bold;
       }
  .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 10px;
@@ -166,6 +170,10 @@ ul li {
 
 /*body */
 
+#move_faq {
+  margin-top: -50px;
+}
+
 .body-container {
   width: 100%;
 }
@@ -197,10 +205,11 @@ ul li {
 
 
 #move {
+    clear: left;
     float: right;
-    margin-right: 130px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-right: 340px;
+    margin-top: 150px;
+    margin-bottom: -40px;
     background-color: #c1b79e;
 }
 
@@ -257,7 +266,8 @@ u {
   font-size: 20px;
   cursor: pointer;
   width: 100px;
-  margin-left: 112px;
+  /*MARGIN-LEFT is different*/
+  margin-left: 240px; 
   margin-top: 5px; 
   float: left;
   z-index: 1;
@@ -267,7 +277,8 @@ u {
   border: 1px solid black;
   text-align: center;
   margin-top: 10px;
-  margin-left: 72px;
+  /*MARGIN-LEFT is different*/
+  margin-left: 200px;
   width: 200px;
   height: 50px;
   z-index: -1;
@@ -276,14 +287,18 @@ u {
 #subscribe {
   margin-top: 60px;
   font-size: 20px;
-  margin-left: 40px;
-  margin-right: 460px;
+  margin-right: 600px;
   text-align: center;
 
 }
 
 #shift_button {
   margin-right: 10px;
+}
+
+#shift_box_button {
+  float:;
+  margin-left: 300px;
 }
 
 #mc_embed_signup {
@@ -295,9 +310,9 @@ u {
   margin-left: 50px;
   margin-right: 0px;
   margin-left: -20px;
-  margin-bottom: 0;
+  margin-bottom: -10px;
   padding-top: 5px;
-  padding-bottom: 20%;
+  padding-bottom: 15%;
   padding-left: 20px;
   z-index: -1;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -327,9 +342,9 @@ u {
 }
 
 #move_icon {
-  float: left;
-  margin-top: -100px;
-  margin-left: 320px;
+  margin-top: -50px;
+  /*MARGIN-LEFT is different*/
+  margin-left: 240px;
 }
 
 #subscribe_info {
@@ -338,134 +353,16 @@ u {
   margin-left: 5px;
 
 }
-/*@media (max-width:800px) {
-  .tab {
-    font-size: 16px;
-  }
 
-  img {
-    width: 80%;
-    height: auto;
-    margin-left: 80px;
-  }
-
-  #hello {
-    font-size: 16px;
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  #box {
-    margin-left: 30px;
+#move {
     clear: left;
-  }
-
-  #button {
-    margin-top: 20px;
-    margin-left: 200px;
-  }
-
-  #move {
-    margin-left: 20px;
-    font-size: 16px;
-  }
-
-  .bottom_tabs {
-    font-size: 16px;
-    margin-left: 50px;
-  }
-
-  .bottom_tabs:hover {
-    font-size: 16px;
-    color: #67bdb3;
-  }
-
-}/**/
-
-/*@media (max-width: 550px) {
-  .tab {
-    font-size: 12px;
-  }
-
-  .tab:hover {
-    color: #67bdb3;
-
-  }
-
-  hr {
-    display: none;
-  }
-
-  #witch-hat {
-    display: none;
-  }
-
-
-  img {
-    width: 80%;
-    height: auto;
-    margin-left: 60px;
-  }
-
-  #hello {
-    display: none;
-  }
-
-  #box {
-    margin-left: 190px;
-=======
-#shift_button {
-  margin-right: 10px;
+    float: right;
+    margin-right: 340px;
+    margin-top: 150px;
+    margin-bottom: -40px;
+    background-color: #c1b79e;
 }
 
-#mc_embed_signup {
-  margin-top: 200px;
-  background-color: #c2bd8f;
-  opacity: .8;
-  height: 300px;
-  margin-left: 50px;
-  margin-right: 0px;
-  padding-top: 5px;
-  padding-bottom: 500px;
-  padding-left: 20px;
-  margin-left: -20px;
-  z-index: -1;
-  -webkit-box-shadow: 0 0 10px #fff;
-        box-shadow: 0 0 10px #fff;}
-
-.icon1 {
-  width: 40px;
-  height: auto;
-  margin-top: 100px;
+#contain_this {
+  width: 1200px;
 }
->>>>>>> 4591012acac33f756f5bb4d80cd6cb41569e6d44
-
-.icon2 {
-  width: 38px;
-  height: auto
-  margin-top: 100px;
-}
-
-.icon3 {
-  width: 33px;
-  height: auto;
-  margin-left: 4px;
-  margin-top: 100;
-}
-
-.icon1:hover {
-  text-decoration: underline;
-}
-
-#move_icon {
-  float: left;
-  margin-top: -100px;
-  margin-left: 320px;
-}
-
-#subscribe_info {
-  font-family: 'avenir next';
-  font-size: 18px;
-  margin-left: 5px;
-}
-*/
