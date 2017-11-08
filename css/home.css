@@ -22,15 +22,15 @@ hr {
 #instagram {
   float: right;
   clear: left;
-  margin-top: -100px;
-  margin-right: 70px;
+  margin-top: -125px;
+  margin-right: 120px;
 }
 
 #inspiration {
   font-size: 20px;
   float: left;
-  margin-top: -115px;
-  margin-left: 360px;
+  margin-top: -125px;
+  margin-left: 408px;
 }
 
 #image{
@@ -144,16 +144,6 @@ ul li {
 }
 
 
-#move {
-    clear: left;
-    clear: right;
-    float: right;
-    margin-right: 340px;
-    margin-top: 150px;
-    margin-bottom: -40px;
-    background-color: #c1b79e;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -201,7 +191,7 @@ u {
 
 .bottom_tabs:hover:after {
   width: 100%;
-  background: #67bdb3;
+  background: #ddd9c5;
 }
 #button {
   font-size: 20px;
@@ -217,8 +207,7 @@ u {
   border: 1px solid black;
   text-align: center;
   margin-top: 10px;
-  margin-left: -102px;
-  width: 200px;
+  width: 30px;
   height: 50px;
   z-index: -1;
 }
@@ -231,8 +220,16 @@ u {
 
 }
 
+#mc_embed_signup input.email {
+  width: 30%;
+}
+
 #shift_button {
   margin-right: 10px;
+}
+
+#shift_box {
+  margin-left: -173px;
 }
 
 #shift_box_button {
@@ -242,7 +239,7 @@ u {
 
 #mc_embed_signup {
   margin-top: 200px;
-  background-color: #c1b79e;
+  background-color: #ddd9c5;
   opacity: .8;
   height: 5%;
   margin-top: 3%;
@@ -258,31 +255,41 @@ u {
         box-shadow: 0 0 10px #fff;}
 
 .icon1 {
-  width: 40px;
+  width: 41px;
   height: auto;
-  margin-top: 100px;
+  margin-top: 101px;
 }
 
 .icon2 {
-  width: 38px;
+  width: 39px;
   height: auto
-  margin-top: 100px;
+  margin-top: 101px;
 }
 
 .icon3 {
   width: 33px;
   height: auto;
   margin-left: 4px;
-  margin-top: 100;
+  margin-top: -100px;
 }
 
-.icon1:hover {
-  text-decoration: underline;
+.icon4 {
+  width: 33px;
+  height: auto;
+  margin-left: 6px;
+  margin-top: -100px;
 }
+
 
 #move_icon {
   margin-top: -50px;
-  margin-left: 235px;
+  margin-left: 242px;
+  margin-bottom: 30px;
+}
+
+#move_icon2 {
+  margin-top: -53px;
+  margin-left: 332px;
   margin-bottom: 30px;
 }
 
@@ -294,9 +301,10 @@ u {
 }
 
 #move {
-    margin-top: -150px;
-    margin-bottom: 100px;
-    background-color: #c1b79e;
+    float: right;
+    margin-right: 315px;
+    margin-top: 110px;
+    background-color: #ddd9c5;
 }
 
 #contain_this {

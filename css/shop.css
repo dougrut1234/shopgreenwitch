@@ -1,4 +1,4 @@
-/*navigation */
+/*/*/*/*navigation */
 
 body {
   width: 1200px;
@@ -51,6 +51,53 @@ h2:before {
 .color {
     background-color: #ccc;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Quando);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+}
+
+
+h3 {
+  margin-top: -70px;
+  margin-bottom: 90px;
+  margin-left: 180px;
+}
+
+.shop_tabs {
+  margin-left: 210px;
+}
+
+h3 > a, h3 > a {
+  font-family: 'avenir next';
+  text-decoration: none;
+  color: #67bdb3;
+  z-index: 1;
+  margin-top: -200px;
+}
+
+h3 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #ddd9c5;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+h3 > a:hover:before,
+h3 > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 
 hr {
     margin-top: 175px;
@@ -143,12 +190,12 @@ ul li {
   position: absolute;
   float: right;
   font-family: 'avenir next';
-  font-size:72px;
+  font-size: 70px;
   font-weight: bolder;
   color: #000000;
-  margin-left: 320px;
+  margin-left: 318px;
   margin-right: -50px;
-  margin-top: -150px;
+  margin-top: 20px;
   z-index: 100;
 }
 
@@ -167,12 +214,77 @@ ul li {
   max-width: 300px;
 }
 
+#witch_hat {
+  width: 250px;
+  height: auto;
+  margin-left: 470px;
+  margin-top: -50px;
+  -webkit-animation-name: spinner; 
+  -webkit-animation-timing-function: linear; 
+  -webkit-animation-iteration-count: infinite; 
+  -webkit-animation-duration: 1s; 
+  animation-name: spinner; 
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
+  animation-duration: 1s; 
+  -webkit-transform-style: preserve-3d; 
+  -moz-transform-style: preserve-3d; 
+  -ms-transform-style: preserve-3d; 
+  transform-style: preserve-3d;
+}
+
+@-webkit-keyframes spinner { 
+  from 
+  { 
+    -webkit-transform: rotateY(0deg); 
+  } 
+  to { 
+    -webkit-transform: rotateY(-360deg); 
+  } 
+} 
+/* all other browsers */ 
+@keyframes spinner { 
+   from { 
+    -moz-transform: rotateY(0deg); 
+    -ms-transform: rotateY(0deg); 
+    transform: rotateY(0deg); 
+   } 
+   to 
+   { 
+    -moz-transform: rotateY(-360deg); 
+    -ms-transform: rotateY(-360deg); 
+    transform: rotateY(-360deg); 
+
+   } 
+}
 /*body */
 
 .body-container {
   width: 100%;
   margin-left: 80px;
   margin-top: -70px;
+}
+
+#float_products {
+  float: left;
+}
+
+#comingsoon {
+  font-size: 84px;
+  font-family: 'avenir next';
+  text-align: center;
+}
+
+#product-component-219de3cc945 {
+  float: left;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+#product-component-4c72ce12106 {
+  float: left;
+  margin-top: 8px;
+  margin-left: 100px;
 }
 
 #countdown {
@@ -194,6 +306,8 @@ ul li {
     color: #c2bd8f;
 }
 
+
+#float_products 
 
 #move {
     clear: left;
@@ -231,7 +345,6 @@ u {
     text-rendering:optimizeLegibility;
   box-sizing: border-box;
 }
-
 
 .bottom_tabs{
   display: inline-block;
@@ -293,11 +406,12 @@ u {
 }
 
 #mc_embed_signup {
+  clear: left;
   margin-top: 200px;
-  background-color: #c1b79e;
+  background-color: #ddd9c5;
   opacity: .8;
   height: 5%;
-  margin-top: 3%;
+  margin-top: 16%;
   margin-left: 50px;
   margin-right: 0px;
   margin-left: -20px;
@@ -351,9 +465,54 @@ u {
     margin-right: 340px;
     margin-top: 150px;
     margin-bottom: -40px;
-    background-color: #c1b79e;
+    background-color: #ddd9c5;
 }
 
 #contain_this {
   width: 1200px;
+}
+
+#move_clock {
+  margin-top: 35px;
+  margin-left: 310px;
+  margin-bottom: -145px;
+}
+
+
+h1{
+  font-family: 'avenir next';
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 50px 0px 20px;
+}
+
+#clockdiv{
+  font-family: sans-serif;
+  color: black;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div{
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #ddd9c5;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #67bdb3;
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 20px;
+}
 }
