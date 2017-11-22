@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopgreenwitch</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	
+<div id="bar">
+ <p class="item-1">Our CBD Gummies Are Amazing!</p>
+
+<p class="item-2">Free Shipping On Purchases Over $100!</p>
+
+<p class="item-3">Check Out Discounts For College Students!</p>
+</div>
+
+
+<div id="logo_background">
+<%= image_tag("green_witch.jpg", :class => "logo") %>
+<div id="move_nav_bar">	
+	<p class="meet_the_coven_nav">Meet The Coven</p>
+   <a href="shop.html"><p class="nav">Shop</p></a>
+   <a href="faq.html"><p class="nav">FAQ</p></a>
+   <a href="contact.html"><p class="nav">Contact</p></a>
+</div>
+</div>
+
+
+    <%= yield %>
+  </body>
+</html>
