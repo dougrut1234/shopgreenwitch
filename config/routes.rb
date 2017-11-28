@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'promotions/index'
+
   get 'shop/index'
 
   get 'contact/index'

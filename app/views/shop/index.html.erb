@@ -1,2 +1,332 @@
-<h1>Shop#index</h1>
-<p>Find me in app/views/shop/index.html.erb</p>
+<p id="shop_title">SHOP</p>
+
+
+<div id ="float_products">
+<div id='product-component-e04b81b138e' style="float: left;"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'dumbo-labs.myshopify.com',
+      apiKey: '7bbfb0c9aad260f77bef4c1e51319294',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [273666539549],
+        node: document.getElementById('product-component-e04b81b138e'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "VIEW PRODUCT"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#67bdb3",
+        "padding-left": "36px",
+        "padding-right": "36px",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        "border-radius": "4px",
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      },
+      "variantTitle": {
+        "font-size": "16px"
+      },
+      "description": {
+        "font-size": "16px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#67bdb3",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        "border-radius": "4px",
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#67bdb3",
+        "padding-left": "36px",
+        "padding-right": "36px",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        "border-radius": "4px",
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#67bdb3",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<div id='product-component-da1a7228bf5' style="float: left; margin-top: 2.5%;"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'dumbo-labs.myshopify.com',
+      apiKey: '7bbfb0c9aad260f77bef4c1e51319294',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [8896148933],
+        node: document.getElementById('product-component-da1a7228bf5'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "VIEW PRODUCT"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#67bdb3",
+        "padding-left": "36px",
+        "padding-right": "36px",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        "border-radius": "4px",
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      },
+      "variantTitle": {
+        "font-size": "16px"
+      },
+      "description": {
+        "font-size": "16px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#67bdb3",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        "border-radius": "4px",
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#67bdb3",
+        "padding-left": "36px",
+        "padding-right": "36px",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        "border-radius": "4px",
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#67bdb3",
+        ":hover": {
+          "background-color": "#5daaa1"
+        },
+        ":focus": {
+          "background-color": "#5daaa1"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</div>
+

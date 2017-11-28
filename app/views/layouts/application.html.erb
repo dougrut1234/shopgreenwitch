@@ -20,12 +20,13 @@
 
 
 <div id="logo_background">
-<%= image_tag("green_witch.jpg", :class => "logo") %>
+<p><a id="account" href="https://dumbo-labs.myshopify.com/account/login?checkout_url=https%3A%2F%2Fcheckout.shopify.com%2F22982071%2Fcheckouts%2F6a7b19e47616d4c3a07bc6e6a1add724%3F_fd%3D0%26access_token%3D7bbfb0c9aad260f77bef4c1e51319294%26sid%3D7470454fc29bea15e8ee5fd893fd3e99" style="float: right; margin-right: 3%; text-decoration: none; font-family: 'avenir next';">My Account</a></p>
+<%=  link_to (image_tag("green_witch.jpg", :class => "logo")), home_index_url %>
 <div id="move_nav_bar">	
 	<p class="meet_the_coven_nav">Meet The Coven</p>
-   <a href="shop.html"><p class="nav">Shop</p></a>
-   <a href="faq.html"><p class="nav">FAQ</p></a>
-   <a href="contact.html"><p class="nav">Contact</p></a>
+   <%= link_to "Shop", shop_index_url, :class => "nav" %>
+   <%= link_to "FAQ", faq_index_url, :class => "nav" %>
+   <%= link_to "Contact", contact_index_url, :class => "nav" %>
 </div>
 </div>
 
