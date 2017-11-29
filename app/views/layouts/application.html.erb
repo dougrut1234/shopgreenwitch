@@ -11,19 +11,92 @@
   <body>
 	
 <div id="bar">
- <p class="item-1">Our CBD Gummies Are Amazing!</p>
-
-<p class="item-2">Free Shipping On Purchases Over $100!</p>
-
-<p class="item-3">Check Out Discounts For College Students!</p>
+<div class="slider" id="main-slider"><!-- outermost container element -->
+  <div class="slider-wrapper"><!-- innermost wrapper element -->
+    <p alt="First" class="slide">Our CBD Gummies Are Amazing!</p><!-- slides -->
+    <p alt="Second" class="slide">Free Shipping On Purchases Over $100!</p>
+    <p alt="Third" class="slide">Check Out Discounts For College Students!</p>
+  </div>
+</div>  
 </div>
 
+<script>
+
+(function() {
+  
+  function Slideshow( element ) {
+    this.el = document.querySelector( element );
+    this.init();
+  }
+  
+  Slideshow.prototype = {
+    init: function() {
+      this.wrapper = this.el.querySelector( ".slider-wrapper" );
+      this.slides = this.el.querySelectorAll( ".slide" );
+      this.previous = this.el.querySelector( ".slider-previous" );
+      this.next = this.el.querySelector( ".slider-next" );
+      this.index = 0;
+      this.total = this.slides.length;
+      this.timer = null;
+      
+      this.action();
+      this.stopStart(); 
+    },
+    _slideTo: function( slide ) {
+      var currentSlide = this.slides[slide];
+      currentSlide.style.opacity = 1;
+      
+      for( var i = 0; i < this.slides.length; i++ ) {
+        var slide = this.slides[i];
+        if( slide !== currentSlide ) {
+          slide.style.opacity = 0;
+        }
+      }
+    },
+    action: function() {
+      var self = this;
+      self.timer = setInterval(function() {
+        self.index++;
+        if( self.index == self.slides.length ) {
+          self.index = 0;
+        }
+        self._slideTo( self.index );
+        
+      }, 9000);
+    },
+    stopStart: function() {
+      var self = this;
+      self.el.addEventListener( "mouseover", function() {
+        clearInterval( self.timer );
+        self.timer = null;
+        
+      }, false);
+      self.el.addEventListener( "mouseout", function() {
+        self.action();
+        
+      }, false);
+    }
+    
+    
+  };
+  
+  document.addEventListener( "DOMContentLoaded", function() {
+    
+    var slider = new Slideshow( "#main-slider" );
+    
+  });
+  
+  
+})();
+
+
+</script>
 
 <div id="logo_background">
-<p><a id="account" href="https://dumbo-labs.myshopify.com/account/login?checkout_url=https%3A%2F%2Fcheckout.shopify.com%2F22982071%2Fcheckouts%2F6a7b19e47616d4c3a07bc6e6a1add724%3F_fd%3D0%26access_token%3D7bbfb0c9aad260f77bef4c1e51319294%26sid%3D7470454fc29bea15e8ee5fd893fd3e99" style="float: right; margin-right: 3%; text-decoration: none; font-family: 'avenir next';">My Account</a></p>
+<p><a id="account" href="https://dumbo-labs.myshopify.com/account/login?checkout_url=https%3A%2F%2Fcheckout.shopify.com%2F22982071%2Fcheckouts%2F6a7b19e47616d4c3a07bc6e6a1add724%3F_fd%3D0%26access_token%3D7bbfb0c9aad260f77bef4c1e51319294%26sid%3D7470454fc29bea15e8ee5fd893fd3e99" style="float: right; margin-right: 3%; font-family: 'avenir next';">My Account</a></p>
 <%=  link_to (image_tag("green_witch.jpg", :class => "logo")), home_index_url %>
 <div id="move_nav_bar">	
-	<p class="meet_the_coven_nav">Meet The Coven</p>
+   <%= link_to "Meet The Coven", home_index_url(:anchor => "logo"), :class => "meet_the_coven_nav" %>
    <%= link_to "Shop", shop_index_url, :class => "nav" %>
    <%= link_to "FAQ", faq_index_url, :class => "nav" %>
    <%= link_to "Contact", contact_index_url, :class => "nav" %>

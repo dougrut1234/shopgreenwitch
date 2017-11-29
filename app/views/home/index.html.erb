@@ -15,7 +15,7 @@
 
 
 
-
+<div id="move_pictures">
 <div class="w3-content w3-display-container" style="max-width:800px; padding-top: 5%; margin-left: 15%;">
   <%= image_tag("blue.png", :class => "mySlides") %>
   <%= image_tag("pink.png", :class => "mySlides") %>
@@ -25,6 +25,7 @@
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
   </div>
+</div>
 </div>
 
 <script>
@@ -56,11 +57,146 @@ function showDivs(n) {
 }
 </script>
 
-<div id="container2">
+<script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
 
-    <div id="monster">
-    <div class="hideme1">Fresh Ingredients</div>
-    <div class="hideme2">Ethically Sourced</div>
-    <div class="hideme3">Globally Aware</div>
+
+<div id="move_logo">
+<p id="description1">Fresh Ingredients</p>
+<%= image_tag("green_witch_logo.png", :id => "logo") %>
+  <p id="description2">Ethically Sourced</p>
+  <p id="description3">Globally Aware</p>
+</div>
+
+
+<p id="meet_the_coven">MEET THE COVEN</p>
+
+<div id="move_bio">
+<p id="bio">Our Coven was formed through a shared belief in the power of herbs, spices, and minerals to promote all types of wellness. While we ‘craft out of DUMBO (Down Under the Manhattan Bridge Overpass) we are boundless when sourcing products that are organically grown, non-GMO, and pure.</p>
+
+
+<%= image_tag("leaf1.png", :id => "leaf1") %>
+<%= image_tag("leaf2.png", :id => "leaf2") %>
+<%= image_tag("leaf3.png", :id => "leaf3") %>
+<%= image_tag("leaf4.png", :id => "leaf4") %>
+
+
+<%= image_tag("brooklyn.jpg", :id => "brooklyn") %>
+</div>
+
+<p id="inspiration">INSPIRATION @SHOPGREENWITCH</p>
+
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<iframe id="move_instagram" src="https://snapwidget.com/embed/467519" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+
+
+<h1 id="cottage">COTTAGE OPENS IN</h1>
+<div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+
+
+<script>
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.now();
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+  function updateClock(){
+    var t = getTimeRemaining(endtime);
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  }
+  updateClock();
+  var timeinterval = setInterval(updateClock,1000);
+}
+var deadline = new Date(Date.now() + 15*24*60*60*1000);
+var deadline = 'December 1 2017 00:00:50 UTC+0200';
+initializeClock('clockdiv', deadline);
+</script>
+
+
+
+
+
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; margin-left: -2%; }
+</style>
+<div id="move_footer">
+<div id="mc_embed_signup" style="margin-top: -40%;">
+<form action="https://shopgreenwitch.us17.list-manage.com/subscribe/post?u=7389b87141ed1f69e7e763169&amp;id=c0e6bad048" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div style="margin-top: 50%;" id="mc_embed_signup_scroll">
+  <h2 style="font-family: 'avenir next'; font-weight: 500; border-top: 2px solid #ddd9c5; padding-top: 3%;">Subscribe to Our Mailing List</h2>
+<div style="float:left;" class="indicates-required"><span class="asterisk">*</span> indicates required</div><br><br>
+<div class="mc-field-group">
+  <label style="font-family: 'avenir next'; margin-top: -1%;" for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label><br>
+  <input style="width: 20%; margin-top: -2%;"  type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>  -->   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px; margin-top: -2%;" aria-hidden="true"><input type="text" name="b_7389b87141ed1f69e7e763169_c0e6bad048" tabindex="-1" value=""></div><br>
+    <div class="clear"><input style="margin-top: -3%; background-color: #67bdb3;"" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </div>
 </div>
+
+<%= link_to "Click Here For Promotions!", promotions_index_url, :class => "butt2" %>
+
+<div id="move_icons">
+<%= image_tag("spotify.png", :class => "icon") %>
+<%= image_tag("twitter.png", :class => "icon") %>
+<%= image_tag("instagram.png", :class => "icon") %>
+<%= image_tag("facebook.png", :class => "icon") %>
+</div>
+
+<p id="bottom">&#169; Green Witch. All Rights Reserved | <a id="terms" style="color:black;" href="terms.html">Terms & Conditions</a>&nbsp;|&nbsp;<a style="color:black;" href="private.html">Privacy & Security</a></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+        $('.meet_the_coven_nav').on('click', function() {
+            $("html, body").animate({ scrollTop: $('#meet_the_coven').position().top }, 1000);
+        });
+    });
+
+
+
