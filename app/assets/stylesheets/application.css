@@ -388,6 +388,7 @@ to{
   text-align: center;
   margin-top: 20%;
   margin-bottom: -50px;
+  z-index: 10000;
 }
 
 #clockdiv{
