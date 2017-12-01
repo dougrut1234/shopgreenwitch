@@ -208,7 +208,7 @@ to{
    text-align: center;
    z-index: 1000;
    font-family: 'avenir next'; 
-   font-size: 28px;"
+   font-size: 28px;
    text-decoration: none;
 }
 
@@ -230,7 +230,7 @@ to{
    cursor:pointer;
    text-align: center;
    z-index: 1000;
-   font-family: 'avenir next'; 
+   font-family: 'avenir next', sans-serif; 
    font-size: 28px;
    text-decoration: none;
 }
@@ -250,7 +250,7 @@ to{
 
 .description {
   margin-top: 5%;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   font-size: 24px;
   text-align: center;
 }
@@ -260,14 +260,14 @@ to{
 }
 
 #description1 {
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   font-size: 36px;
   text-align: center;
 }
 
 #description2 {
   float: right;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   font-size: 36px;
   margin-top: 10%;
   margin-right: 2%;
@@ -276,7 +276,7 @@ to{
 
 #description3 {
   float: left;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   font-size: 36px;
   margin-top: -18%;
   margin-left: 4.5%;
@@ -291,7 +291,7 @@ to{
 
 #bio {
   margin-top: 10%;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #3d3935;
@@ -364,7 +364,7 @@ to{
 
 #meet_the_coven {
   font-size: 42px;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   text-align: center;
   margin-left: 2.5%;
   margin-top: 10%;
@@ -374,7 +374,7 @@ to{
   margin-top: 55px;
   margin-bottom: 45px;
   font-size: 36px;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   text-align: center;
   color: #3d3935;
 }
@@ -396,7 +396,7 @@ to{
   margin-top: 6%;
   margin-left: 27.5%;
   text-align: center;
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   display: inline-block;
   font-weight: bold;
   text-align: center;
@@ -434,7 +434,7 @@ to{
 }
 
 #contact h3 {
-  font-family: 'avenir next';
+  font-family: 'avenir next', sans-serif;
   display: block;
   font-size: 36px;
   font-weight: bold;
@@ -444,7 +444,7 @@ to{
 }
 
 #contact h4 {
-  font-family:'avenir next';
+  font-family:'avenir next', sans-serif;
   margin:5px 0 15px;
   display:block;
   font-size:13px;
@@ -536,10 +536,10 @@ fieldset {
 /*FAQ PAGE*/
 
 
-.FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 5%; margin-left: 10%; margin-right: 10%; font-weight: 100; font-family: 'avenir next' sans-serif; font-size: 24px;
+.FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 5%; margin-left: 10%; margin-right: 10%; font-weight: 100; font-family: 'avenir next', sans-serif; font-size: 24px;
       }
  .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 10px;
-  margin-left: 5%; margin-right: 10%; font-size: 20px; font-family: 'avenir next';}
+  margin-left: 5%; margin-right: 10%; font-size: 20px; font-family: 'avenir next', sans-serif;}
 
 #move_faq {
   clear: left;

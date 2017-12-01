@@ -17,4 +17,7 @@ module Shopgreenwitch
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
   end
+
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
+
 end
