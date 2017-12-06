@@ -10,3 +10,5 @@ $(document).ready(function() {
             $("html, body").animate({ scrollTop: $('#logo').position().top }, 1000);
         });
     });
+
+

@@ -6,11 +6,20 @@ git_source(:github) do |repo_name|
 end
 
 
-ruby '~> 2.3.4'
+# ruby '~> 2.3.4'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
+
+
+
+gem 'bluecloth', '~> 2.2'
+
+
+gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
+
+
 # Use sqlite3 as the database for Active Record
 group :production do 
   gem 'pg'
@@ -37,7 +46,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap_jt', '~> 0.1.0'
 
-gem 'gibbon'
+gem 'dotenv-rails', :groups => [:development]
+
+# gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

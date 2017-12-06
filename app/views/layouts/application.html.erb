@@ -98,6 +98,13 @@
 <div id="move_nav_bar">	
    <%= link_to "Meet The Coven", home_index_url(:anchor => "logo"), :class => "meet_the_coven_nav" %>
    <%= link_to "Shop", shop_index_url, :class => "nav" %>
+   <div class="dropdown">
+   <%= link_to "Why CBD?", contact_index_url, :class => "dropbtn" %>
+      <div class="dropdown-content">
+        <%= link_to "Hemp Dictionary", contact_index_url, :class => "dropbtn2" %>
+        <%= link_to "Spellbook (Recipes!)", contact_index_url, :class => "dropbtn2" %>
+        </div>
+    </div>
    <%= link_to "FAQ", faq_index_url, :class => "nav" %>
    <%= link_to "Contact", contact_index_url, :class => "nav" %>
 </div>
