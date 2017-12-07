@@ -7,7 +7,7 @@
 
 $(document).ready(function() {
         $('.meet_the_coven_nav').on('click', function() {
-            $("html, body").animate({ scrollTop: $('#logo').position().top }, 1000);
+            $("html, body").animate({ scrollTop: $('#brooklyn').position().top }, 1000);
         });
     });
 

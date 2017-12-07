@@ -1,17 +1,13 @@
 class HomeController < ApplicationController
   def index
-@list_id = ENV["c0e6bad048"]
- gibbon = Gibbon::Request.new
+# @list_id = ENV["LIST_ID"]
+#  gb = Gibbon::API.new("API_ID")
 
-gibbon.lists(@list_id).members.create(
-  body: {
-    email_address: params[:email],
-    status: "subscribed"
-  }
-)
 
-respond_to do |format|
-  format.json{render :json => {:message => "You have been Successfully added to the list! :)"}}
-    end
+# gb.lists.index({
+#       :id => @list_id,
+#       :email => {:email => params[:email][:address]},
+#       :double_optin => false
+#       })
   end
 end

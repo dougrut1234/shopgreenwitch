@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-.mySlides {display:none}
+.mySlides {display:none;}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 </style>
@@ -57,27 +57,10 @@ function showDivs(n) {
 <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
 
 
-<div id="move_logo">
-<p id="description1">Fresh Ingredients</p>
-<%= image_tag("green_witch_logo.png", :id => "logo") %>
-  <p id="description2">Ethically Sourced</p>
-  <p id="description3">Globally Aware</p>
-</div>
+<%= image_tag("adjectives", :id => "logo") %>
 
 
-<p id="meet_the_coven">MEET THE COVEN</p>
-
-<div id="move_bio">
-<p id="bio">Our Coven was formed through a shared belief in the power of herbs, spices, and minerals to promote all types of wellness. While we ‘craft out of DUMBO (Down Under the Manhattan Bridge Overpass) we are boundless when sourcing products that are organically grown, non-GMO, and pure.</p>
-
-
-<%= image_tag("leaf1.png", :id => "leaf1") %>
-<%= image_tag("leaf2.png", :id => "leaf2") %>
-<%= image_tag("leaf3.png", :id => "leaf3") %>
-<%= image_tag("leaf4.png", :id => "leaf4") %>
-
-
-<%= image_tag("brooklyn.jpg", :id => "brooklyn") %>
+<%= image_tag("about_us_main.png", :id => "brooklyn") %>
 </div>
 
 <p id="inspiration">INSPIRATION @SHOPGREENWITCH</p>
@@ -86,7 +69,7 @@ function showDivs(n) {
 <iframe id="move_instagram" src="https://snapwidget.com/embed/467519" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
 
 
-<h1 id="cottage">COTTAGE OPENS IN</h1>
+<!-- <h1 id="cottage">COTTAGE OPENS IN</h1>
 <div id="clockdiv">
   <div>
     <span class="days"></span>
@@ -145,12 +128,14 @@ var deadline = new Date(Date.now() + 15*24*60*60*1000);
 var deadline = 'December 1 2017 00:00:50 UTC+0200';
 initializeClock('clockdiv', deadline);
 </script>
+ -->
 
 
+<p id="bottom">&#169; Green Witch. All Rights Reserved | <%= link_to "Terms & Conditions", shop_index_url, :id => "terms" %>&nbsp;|&nbsp;<a style="color:black;" href="private.html">Privacy & Security</a>&nbsp;|&nbsp;<%= link_to "Contact", contact_index_url, :id => "terms" %>
 
-<h3>Add a New Member</h3>
-<p>Please enter your email address to subscribe to our newsletter.</p>
-<%= form_tag('/welcome/subscribe', method: "post", id: "welcome", remote: "true") do -%>
-   <%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
-   <%= submit_tag("Subscribe") %>
-<% end %>
+<div class="move_icons">
+<%= image_tag("spotify.png", :class => "icon") %>
+<%= image_tag("twitter.png", :class => "icon") %>
+<%= image_tag("instagram.png", :class => "icon") %>
+<%= image_tag("facebook.png", :class => "icon") %>
+</div>
