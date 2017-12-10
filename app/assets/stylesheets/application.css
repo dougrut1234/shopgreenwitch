@@ -683,8 +683,10 @@ h1 span {
 
 #float_products {
   float: left;
+  margin-top: 5%;
   margin-left: 10%;
-  margin-bottom: -25%;
+  margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 /*PROMOTIONS*/
@@ -858,9 +860,9 @@ input[type=checkbox]:checked ~ #menu{
     }
 
     .line { width: 25px;
-    height: 3px;
+    height: 4px;
     background-color: black;
-    margin: 6px 0;
+    margin: 2px 0;
     cursor: pointer;
 }
 
@@ -893,9 +895,9 @@ input[type=checkbox]:checked ~ #menu{
     }
 
     .line { width: 25px;
-    height: 3px;
+    height: 4px;
     background-color: black;
-    margin: 6px 0;
+    margin: 2px 0;
     cursor: pointer;
 }
 
@@ -1020,6 +1022,17 @@ fieldset {
   padding-bottom: 7%;
 }
 
+#bottom1 {
+  clear: right;
+  margin-top: 250px;
+  padding-top: 250px;
+  text-align: center;
+}
+
+#product-component-e04b81b138e, #product-component-da1a7228bf5 {
+  margin-top: 15%;
+  margin-left: 15%;
+}
 
 }
 /*Responsive Styles*/
