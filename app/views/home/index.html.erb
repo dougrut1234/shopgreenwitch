@@ -15,8 +15,8 @@
 
 
 
-<div id="move_pictures">
-<div class="w3-content w3-display-container" style="max-width:800px; padding-top: 5%; margin-left: 15%;">
+<!-- <div id="move_pictures">
+<div class="w3-content w3-display-container" style="max-width:800px; padding-top: 0%; margin-left: 15%;">
   <%= image_tag("blue.png", :class => "mySlides") %>
   <%= image_tag("pink.png", :class => "mySlides") %>
   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
@@ -26,7 +26,7 @@
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
   </div>
 </div>
-</div>
+</div> -->
 
 <script>
 var slideIndex = 1;
@@ -59,7 +59,7 @@ function showDivs(n) {
 
 <%= image_tag("adjectives", :id => "logo") %>
 
-
+<div id="meet_the_coven"></div>
 <%= image_tag("about_us_main.png", :id => "brooklyn") %>
 </div>
 
@@ -130,7 +130,6 @@ initializeClock('clockdiv', deadline);
 </script>
  -->
 
-
 <p id="bottom">&#169; Green Witch. All Rights Reserved | <%= link_to "Terms & Conditions", shop_index_url, :id => "terms" %>&nbsp;|&nbsp;<a style="color:black;" href="private.html">Privacy & Security</a>&nbsp;|&nbsp;<%= link_to "Contact", contact_index_url, :id => "terms" %>
 
 <div class="move_icons">
@@ -139,3 +138,5 @@ initializeClock('clockdiv', deadline);
 <%= image_tag("instagram.png", :class => "icon") %>
 <%= image_tag("facebook.png", :class => "icon") %>
 </div>
+
+

@@ -1,5 +1,4 @@
- 
+# require 'gibbon'
 
- Gibbon::Request.api_key = ENV["MAILCHIMP API KEY"]
- Gibbon::Request.timeout = 15
- Gibbon::Request.throws_exceptions = false
+# gibbon = Gibbon::Request.new(api_key: "d54244544a1615765b16ff364fce44ce-us17")
+# gibbon.timeout = 10

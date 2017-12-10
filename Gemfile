@@ -12,12 +12,14 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 
+gem "devise"
+
 
 
 gem 'bluecloth', '~> 2.2'
 
 
-gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
+gem 'gibbon', github: "amro/gibbon"
 
 
 # Use sqlite3 as the database for Active Record
