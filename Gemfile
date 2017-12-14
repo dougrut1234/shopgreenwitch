@@ -6,6 +6,12 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'gmaps4rails'
+
+gem 'nifty-generators'
+
+gem 'geocoder'
+
 # ruby '~> 2.3.4'
 
 
@@ -79,3 +85,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+gem 'mocha', group: :test

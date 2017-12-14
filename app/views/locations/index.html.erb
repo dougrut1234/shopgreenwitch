@@ -13,132 +13,23 @@
 </style>
 <body>
 
+<p id="locations_title">LOOKING FOR SOME FINE CBD</p>
+<p id="location_paragraph">You are in the right place and we are here to bring it to you. Check the locator below to find a store around you that carries Green Witch products. Trust us, that store will become your favorite—if it’s not already!</p><br><br>
+<input style="margin-left: 12.5%; width: 400px; height: 50px;" id="address" type="textbox" placeholder="Enter Location or Zip Code">
+    <input id="submit" type="button" value="Find A Store Nearby">
 
 
-<!-- <div id="move_pictures">
-<div class="w3-content w3-display-container" style="max-width:800px; padding-top: 0%; margin-left: 15%;">
-  <%= image_tag("blue.png", :class => "mySlides") %>
-  <%= image_tag("pink.png", :class => "mySlides") %>
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div style = "margin-top: -30%; margin-left: 4%; color: black;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div style = "margin-top: -30%; margin-right: 5%; color: black;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-  </div>
-</div>
-</div> -->
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
-<script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
-
-<%= image_tag("dummy1.jpg", :class => "pic") %>
-
-<%= image_tag("adjectives", :id => "logo") %>
-
-<div id="meet_the_coven"></div>
-<%= image_tag("about_us_main.png", :id => "brooklyn") %>
-</div>
-
-<p id="inspiration">INSPIRATION @SHOPGREENWITCH</p>
-
-<script src="https://snapwidget.com/js/snapwidget.js"></script>
-<iframe id="move_instagram" src="https://snapwidget.com/embed/467519" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-
-
-<!-- <h1 id="cottage">COTTAGE OPENS IN</h1>
-<div id="clockdiv">
-  <div>
-    <span class="days"></span>
-    <div class="smalltext">Days</div>
-  </div>
-  <div>
-    <span class="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
-  </div>
-</div>
-
-
-<script>
-function getTimeRemaining(endtime){
-  var t = Date.parse(endtime) - Date.now();
-  var seconds = Math.floor( (t/1000) % 60 );
-  var minutes = Math.floor( (t/1000/60) % 60 );
-  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-  var days = Math.floor( t/(1000*60*60*24) );
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-function initializeClock(id, endtime){
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-  function updateClock(){
-    var t = getTimeRemaining(endtime);
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-    if(t.total<=0){
-      clearInterval(timeinterval);
-    }
-  }
-  updateClock();
-  var timeinterval = setInterval(updateClock,1000);
-}
-var deadline = new Date(Date.now() + 15*24*60*60*1000);
-var deadline = 'December 1 2017 00:00:50 UTC+0200';
-initializeClock('clockdiv', deadline);
-</script>
- -->
-
- 
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 50%;
+      	float: right;
+        height: 55%;
+        width: 55%;
+        margin-right: 5%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -173,18 +64,18 @@ initializeClock('clockdiv', deadline);
         var javapes3 = {lat: 40.5833407, lng: -74.0950821};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
+          zoom: 11,
           center: {lat: 40.5812747, lng: -74.1110481}
         });
 
 var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">J&A VAPES</h1>'+
+      '<h1 class="store_name">J&A VAPES</h1>'+
       '<div id="bodyContent">'+
       '<p><b>2110 Richmond Rd. SI NY 10306</b></p>'+
-      '<p><b>T: 718-668-2737</b></p>' +
-      '<b style="margin-left: 18;"><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/2110+Richmond+Rd,+Staten+Island,+NY+10306/@40.5813073,-74.1136338,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24eb1e892054d:0x9012640ea1dc66e7!8m2!3d40.5813032!4d-74.1114451" %><b>'
+      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
+      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/2110+Richmond+Rd,+Staten+Island,+NY+10306/@40.5813073,-74.1136338,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24eb1e892054d:0x9012640ea1dc66e7!8m2!3d40.5813032!4d-74.1114451", :id => "close_enough"  %><b>'
       '</div>'+
       '</div>';
 
@@ -195,11 +86,11 @@ var contentString = '<div id="content">'+
    var contentString2 = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">J&A VAPES</h1>'+
+      '<h1 class="store_name">J&A VAPES</h1>'+
       '<div id="bodyContent">'+
       '<p><b>1652 Richmond Ave. SI NY 10314</b></p>'+
-      '<p><b>T: 917-397-8979</b></p>' +
-      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/1652+Richmond+Ave,+Staten+Island,+NY+10314/@40.6084268,-74.1660825,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24c5beb77f8a5:0xc2753919176a24da!8m2!3d40.6084227!4d-74.1638938" %><b>'
+      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
+      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/1652+Richmond+Ave,+Staten+Island,+NY+10314/@40.6084268,-74.1660825,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24c5beb77f8a5:0xc2753919176a24da!8m2!3d40.6084227!4d-74.1638938", :id => "close_enough" %><b>'
       '</div>'+
       '</div>';
 
@@ -210,10 +101,10 @@ var contentString = '<div id="content">'+
    var contentString3 = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">J&A VAPES</h1>'+
+      '<h1 class="store_name">J&A VAPES</h1>'+
       '<div id="bodyContent">'+
       '<p><b>1880 Hylan Blvd SI NY 10305</b></p>'+
-      '<p><b>T: 718-351-0700</b></p>' +
+      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' + 
       '<b style="margin-left: 18;"><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/880+Hylan+Blvd,+Staten+Island,+NY+10305/@40.5989052,-74.0743321,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24f1cb431bab5:0x32d71924629a6399!8m2!3d40.5989011!4d-74.0721434", :id => "close_enough" %><b>' +
       '</div>'+
       '</div>';
@@ -259,6 +150,24 @@ marker3.addListener('click', function() {
   });
 
 
+$(document).ready(function(){
+    $("#locate_store").click(function(){
+        infowindow.open(map, marker);
+    });
+});
+
+$(document).ready(function(){
+    $("#locate_store2").click(function(){
+        infowindow2.open(map, marker2);
+    });
+});
+
+$(document).ready(function(){
+    $("#locate_store3").click(function(){
+        infowindow3.open(map, marker3);
+    });
+});
+
         var geocoder = new google.maps.Geocoder();
 
         document.getElementById('submit').addEventListener('click', function() {
@@ -283,18 +192,42 @@ marker3.addListener('click', function() {
 }
 
 
+
     </script>
-    <script async defer
+     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8DpcjZR5HcDpG4Igne9gt0QTqFVyzBMk&callback=initMap">
     </script>
-<input id="address" type="textbox" value="Enter Location or Zip Code">
-    <input id="submit" type="button" value="Find A Store Nearby">
-  </body>
-</html>
-
+  
+ 
+ 
   </body>
 
+<div id="scroll">
+	<p id="state_locations">New York</p>
+	<p class="store">J&A VAPES</p>
+	<p class="store">2110 Richmond Rd SI, NY 10306</p>
+	<p class="store">718-668-2737</p>
+	<p id="locate_store">Locate This Place!</p>
+<br>
+	<p class="store">J&A VAPES</p>
+	<p class="store">2110 Richmond Rd SI, NY 10306</p>
+	<p class="store">718-668-2737</p>
+	<p id="locate_store2">Locate This Place!</p>
+<br>
+	<p class="store">J&A VAPES</p>
+	<p class="store">2110 Richmond Rd SI, NY 10306</p>
+	<p class="store">718-668-2737</p>
+	<p id="locate_store3">Locate This Place!</p>
+<br>
+</div>
 
+
+
+<br>
+<br>
+<br>
+<p id="locations_title">COME BACK LATER TO FIND A STORE NEAR YOU!</p>
+  
 
 <p id="bottom">&#169; Green Witch. All Rights Reserved | <%= link_to "Terms & Conditions", shop_index_url, :id => "terms" %>&nbsp;|&nbsp;<a style="color:black;" href="private.html">Privacy & Security</a>&nbsp;|&nbsp;<%= link_to "Contact", contact_index_url, :id => "terms" %>
 
@@ -304,5 +237,4 @@ marker3.addListener('click', function() {
 <%= image_tag("instagram.png", :class => "icon") %>
 <%= image_tag("facebook.png", :class => "icon") %>
 </div>
-
 
