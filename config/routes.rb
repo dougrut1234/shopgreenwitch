@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post "/subscribe_email" => "subscribe_emails#subscribe"
+
   get 'locations/index'
 
   get 'promotions/index'
@@ -21,4 +23,4 @@ Rails.application.routes.draw do
   get "/" => "home#index"
 end
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
