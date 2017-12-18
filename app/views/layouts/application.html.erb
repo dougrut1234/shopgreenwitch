@@ -97,33 +97,35 @@
 <div class="line"></div>
 <div class="line"></div></div></label>
     <input type="checkbox" id="show-menu" role="button">
-        <ul style="margin-left: 0px; margin-top: -94px;" id="menu">
-        <li><a <%= link_to "Coven", home_index_url(:anchor => "meet_the_coven") %></a></li>
-        <li>
-            <a <%= link_to "Get Educated", contact_index_url %></a>
-            <ul class="hidden">
-             <li><a <%= link_to "FAQ", faq_index_url %></a></li>
-                <li><a <%= link_to "Hemp Dictionary", hemp_dictionary_index_url %></a></li>
-                <li><a <%= link_to "Recipes", recipes_index_url %></a></li>
-                <li><a <%= link_to "Resources", recipes_index_url %></a></li>
-            </ul>
-        </li>
-       <li>
-            <a <%= link_to "Shop", shop_index_url %></a>
-            <ul class="hidden2">
-               <li><a <%= link_to "Where to Buy", locations_index_url %></a></li>
-            </ul>
-        </li>
-    
-
+      <ul style="margin-left: 0px; margin-top: -94px;" id="menu">
+      <li><a <%= link_to "Coven", home_index_url(:anchor => "meet_the_coven") %></a></li>
+      <li>
+        <a <%= link_to "Get Educated", contact_index_url %></a>
+        <ul class="hidden">
+          <li><a <%= link_to "FAQ", faq_index_url %></a></li>
+          <li><a <%= link_to "Hemp Dictionary", hemp_dictionary_index_url %></a></li>
+          <li><a <%= link_to "Recipes", recipes_index_url %></a></li>
+          <li><a <%= link_to "Resources", recipes_index_url %></a></li>
+        </ul>
+      </li>
+      <li>
+        <a <%= link_to "Shop", shop_index_url %></a>
+        <ul class="hidden2">
+          <li><a <%= link_to "Where to Buy", locations_index_url %></a></li>
+        </ul>
+      </li>
     </div>
-
-</div>
 </div>
 
+</div>
+  <%= yield %>
+</body>
 
+<footer>
+  <%= form_tag '/subscribe_email', method: :post do %>
+    <%= email_field_tag 'email' %>
+    <%= submit_tag "Subscribe" %>
+  <% end %>
+</footer>
 
-
-    <%= yield %>
-  </body>
 </html>
