@@ -26,7 +26,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   width: 100%;
   position: relative;
-  margin-left: -15px;
+  margin-left: -13px;
   margin-top: -20%;
 }
 
@@ -44,9 +44,9 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
@@ -60,6 +60,16 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
+
+@media screen and (max-width : 414px){
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin-left: -7px;
+  margin-top: -20%;
+}
+}
 
 </style>
 </head>
@@ -101,7 +111,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 </script>
 

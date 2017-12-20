@@ -15,7 +15,7 @@
 
 <p id="locations_title">LOOKING FOR SOME FINE CBD?</p>
 <p id="location_paragraph">You are in the right place and we are here to bring it to you. Check the locator below to find a store around you that carries Green Witch products. Trust us, that store will become your favorite—if it’s not already!</p><br><br>
-<input style="margin-left: 12.5%; width: 400px; height: 50px;" id="address" type="textbox" placeholder="Enter Location or Zip Code">
+<input id="input_location" style="margin-left: 0%; width: 400px; height: 50px;" id="address" type="textbox" placeholder="Enter Location or Zip Code">
     <input id="submit" type="button" value="Find A Store Nearby">
 
 
@@ -50,6 +50,17 @@
         line-height: 30px;
         padding-left: 10px;
       }
+
+    @media screen and (max-width : 414px){
+
+      #map {
+        float: right;
+        height: 50%;
+        width: 75%;
+        margin-right: 10%;
+      }
+
+    }
     </style>
   </head>
   <body>

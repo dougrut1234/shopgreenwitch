@@ -1027,6 +1027,7 @@ input {
 }
 
 #enter_subscribe {
+  float: left;
   font-size: 20px;
   font-family: 'avenir next', sans-serif;
   color: #67bdb3;
@@ -1050,7 +1051,8 @@ input {
 }
 
 #move_subscribe {
-  margin-top: 10%;
+  clear: all;
+  margin-top: 30%;
   margin-left: 30%;
   margin-right: 15%;
 }
@@ -1061,7 +1063,6 @@ input {
   font-size: 32px;
   text-align: center;
   padding: 20px;
-  background-color: #ddd9c5;
   padding: 10px;
 }
 
@@ -1146,6 +1147,12 @@ html, body {
   display: inline;
 }
 
+#map {
+        float: right;
+        height: 300px;
+        width: 300px;
+        margin-right: 5%;
+      }
 
 
 @media screen and (max-width : 414px){
@@ -1189,6 +1196,7 @@ html, body {
   padding-right: 100px;
   margin:30px 0;
   margin-top: 20%;
+  margin-bottom: 30%;
 }
 
 #contact h3 {
@@ -1241,6 +1249,8 @@ fieldset {
     width:100%;
 }
 
+
+
 #contact button[type="submit"] {
     cursor:pointer;
     width:35%;
@@ -1285,8 +1295,8 @@ fieldset {
   padding-top: 10%;
   margin-left: -11%;
   margin-right: -11%;
-  padding-bottom: -10%;
-  margin-bottom: -40%;
+  padding-bottom: 20%;
+  margin-bottom: 0%;
 }
 
 .move_icons {
@@ -1329,6 +1339,31 @@ fieldset {
 
 #subscribe_button:hover{
   opacity: .75;
+}
+
+#submit {
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+#input_location {
+  margin-left: -10%;
+}
+
+#map {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-right: 50%;
+  margin-bottom: 20%;
+}
+
+#scroll {
+  margin-top: 20%;
+}
+
+#floating-panel {
+  margin-right: 20%;
 }
 
 }
