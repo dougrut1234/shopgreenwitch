@@ -1,26 +1,28 @@
 Rails.application.routes.draw do
   post "/subscribe_email" => "subscribe_emails#subscribe"
 
-  get 'locations/index'
 
-  get 'promotions/index'
+  get "/locations" => "locations#index", as: "locations"
 
-  get 'shop/index'
+  get "/promotions" => "promotions#index", as: "promotions"
 
-  get 'contact/index'
+  get "/shop" => "shop#index", as: "shop"
+  
+  get "/contact" => "contact#index", as: "contact"
 
-  get 'faq/index'
+  get "/faq" => "faq#index", as: "faq"
 
-  get 'home/index'
 
-  get 'hemp_dictionary/index'
+  get "/" => "home#index", as: "home"
 
-  get 'recipes/index'
+  get "/hemp_dictionary" => "hemp_dictionary#index", as: "hemp_dictionary"
 
-  root 'home#index'
-  post 'home/index' => 'home#index'
+   get "/recipes" => "recipes#index", as: "recipes"
+  
 
-  get "/" => "home#index"
+
+ 
 end
+
 
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
