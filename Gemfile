@@ -20,7 +20,7 @@ gem 'rails', '~> 5.1.2'
 
 gem "devise"
 
-
+gem 'figaro'
 
 gem 'bluecloth', '~> 2.2'
 
