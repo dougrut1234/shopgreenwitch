@@ -1479,8 +1479,7 @@ fieldset {
 
 ul li a:hover + .hidden2, .hidden2:hover {
     display: block;
-    width: 100%
+    width: 100%;
 }
-
 }
 
