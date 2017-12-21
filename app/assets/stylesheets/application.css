@@ -1153,7 +1153,7 @@ html, body {
         width: 300px;
         margin-right: 5%;
       }
-
+}
 
 @media screen and (max-width : 414px){
     /*Make dropdown links appear inline*/
