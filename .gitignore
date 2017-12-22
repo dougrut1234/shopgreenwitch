@@ -24,4 +24,5 @@
 .byebug_history
 
 # Ignore application configuration
-/config/secrets.yml
+
+config/environment_variables.yml
