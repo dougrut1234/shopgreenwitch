@@ -83,16 +83,19 @@
 
 </script>
 
-<div style="margin-top: 0%;" id="logo_background">
+
+<div style="margin-top: 0%;" id="logo_background";>
 <div class="slider" id="main-slider"><!-- outermost container element -->
-  <div class="slider-wrapper"><!-- innermost wrapper element -->
-    <p alt="First" class="slide"><b>100% USA GROWN ORGANIC HEMP!</b></p><!-- slides -->
-    <p alt="Second" class="slide"><b>FREE SHIPPING On Purchases Over $100!</b></p>
-    <p alt="Third" class="slide"><b>Check Out Discounts For College Students!</b></p>
+  <div class="slider-wrapper">
+  <%= image_tag("center_logo_again.png", :id => "center_logo") %>
+  <p><a id="account" href="https://dumbo-labs.myshopify.com/account/login?checkout_url=https%3A%2F%2Fcheckout.shopify.com%2F22982071%2Fcheckouts%2F6a7b19e47616d4c3a07bc6e6a1add724%3F_fd%3D0%26access_token%3D7bbfb0c9aad260f77bef4c1e51319294%26sid%3D7470454fc29bea15e8ee5fd893fd3e99" style="float: right; margin-right: 3%; font-family: 'avenir next';">My Account</a></p>
+  <!-- innermost wrapper element -->
+  <!--   <p alt="First" class="slide"><b>100% USA GROWN ORGANIC HEMP!</b></p>slides
+    <p alt="Second" class="slide"><b>FREE SHIPPING On Purchases Over $100!</b></p> -->
   </div>
 </div>  
-<p><a id="account" href="https://dumbo-labs.myshopify.com/account/login?checkout_url=https%3A%2F%2Fcheckout.shopify.com%2F22982071%2Fcheckouts%2F6a7b19e47616d4c3a07bc6e6a1add724%3F_fd%3D0%26access_token%3D7bbfb0c9aad260f77bef4c1e51319294%26sid%3D7470454fc29bea15e8ee5fd893fd3e99" style="float: right; margin-right: 3%; margin-top: 2%; font-family: 'avenir next';">My Account</a></p>
 <%=  link_to (image_tag("title_again", :class => "logo")), home_url %>
+<%= image_tag("label.jpg", :id => "label") %>
 <label style="cursor: pointer; margin-left: 0%; height: 40px; margin-top: 25px; background-height: 5px; padding-left: 10px;" for="show-menu" class="show-menu"><div style="margin-top: -120px;" class="contain_line"><div class="line"></div>
 <div class="line"></div>
 <div class="line"></div></div></label></label>
@@ -110,6 +113,7 @@
       <li>
         <a <%= link_to "Shop", shop_url %></a>
         <ul class="hidden2">
+        <li><a <%= link_to "Our Products", shop_url %></a></li>
           <li><a <%= link_to "Where to Buy", locations_url %></a></li>
         </ul>
       </li>
