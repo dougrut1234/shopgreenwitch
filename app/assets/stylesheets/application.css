@@ -30,8 +30,9 @@ a {
 
 #label {
   float: right;
-  width: 325px;
-  margin-top: -8%;
+  width: 240px;
+  margin-right: 1%;
+  margin-top: -10%;
 }
 
 
@@ -125,6 +126,54 @@ to{
 }
 .item-2{
   animation-name: anim-2;
+}
+
+#move_square {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 98%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#square {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+#move_square2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 98%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: none;
+}
+
+#square2 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
 }
 
 @keyframes anim-1 {
@@ -452,7 +501,7 @@ to{
 }
 
 #inspiration {
-  margin-top: 55px;
+  margin-top: -10%;
   margin-bottom: 45px;
   font-size: 36px;
   font-family: 'avenir next', sans-serif;
