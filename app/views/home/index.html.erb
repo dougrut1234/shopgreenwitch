@@ -142,27 +142,42 @@ function showSlides() {
 }
 </script>
 
-<script>
-document.getElementById("square").addEventListener("mouseover", mouseOver);
-document.getElementById("square").addEventListener("mouseout", mouseOut);
+    <script>
 
-function mouseOver() {
-    document.getElementById("square2").style.display = "block";
-}
+      function myFunction1() {
+          document.getElementById("square1").innerHTML = "Lorem Ipsem";
+      }
 
-function mouseOut() {
-    document.getElementById("square2").style.display = "none";
-}
-</script>
+      function myFunction2() {
+          document.getElementById("square1").innerHTML = "PHILOSOPHY";
+      }
+
+      function myFunction3() {
+          document.getElementById("square2").innerHTML = "Lorem Ipsem";
+      }
+
+      function myFunction4() {
+          document.getElementById("square2").innerHTML = "PROCESS";
+      }
+
+       function myFunction5() {
+          document.getElementById("square3").innerHTML = "Lorem Ipsem";
+      }
+
+      function myFunction6() {
+          document.getElementById("square3").innerHTML = "TESTIMONIALS";
+      }
+
+    </script>
 
 
 <div id="move_square">
-  <p id="square">PHILOSOPHY</p>
-  <p id="square">PROCESS</p>
-  <p id="square">TESTIMONIALS</p>
-  <p id="square2">STUFF</p>
-  <p id="square2">STUFF</p>
-  <p id="square2">STUFF</p>
+  <p id="square1" onmouseover="myFunction1()" onmouseleave="myFunction2()">PHILOSOPHY</p>
+  <p id="square2" onmouseover="myFunction3()" onmouseleave="myFunction4()">PROCESS</p>
+  <p id="square3" onmouseover="myFunction5()" onmouseleave="myFunction6()">TESTIMONIALS</p>
+  <p id="square_hover1">STUFF</p>
+  <p id="square_hover2">STUFF</p>
+  <p id="square_hover3">STUFF</p>
 </div>
  
 

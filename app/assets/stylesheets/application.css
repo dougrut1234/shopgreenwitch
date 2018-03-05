@@ -136,7 +136,7 @@ to{
   margin-right: 2%;
 }
 
-#square {
+#square1 {
   float: left;
   background-color: #2b2929;
     width: 285px;
@@ -161,6 +161,68 @@ to{
 }
 
 #square2 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+#square3 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+#square_hover1 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
+}
+
+#square_hover2 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
+}
+
+#square_hover3 {
   float: left;
   background-color: #2b2929;
     width: 285px;
