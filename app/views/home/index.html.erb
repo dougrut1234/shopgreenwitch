@@ -172,14 +172,16 @@ function showSlides() {
 
 
 <div id="move_square">
-  <p id="square1" onmouseover="myFunction1()" onmouseleave="myFunction2()">PHILOSOPHY</p>
-  <p id="square2" onmouseover="myFunction3()" onmouseleave="myFunction4()">PROCESS</p>
-  <p id="square3" onmouseover="myFunction5()" onmouseleave="myFunction6()">TESTIMONIALS</p>
+ <li><a <%= link_to "PHILOSOPHY", philosophy_url, :id => "square1" %></a></li>
+ <li><a <%= link_to "PROCESS", process_url, :id => "square2" %></a></li>
+ <li><a <%= link_to "TESTIMONIALS", philosophy_url, :id => "square3" %></a></li>
   <p id="square_hover1">STUFF</p>
   <p id="square_hover2">STUFF</p>
   <p id="square_hover3">STUFF</p>
 </div>
  
+
+
 
 
 <p id="inspiration" style="margin-top: 30%;">INSPIRATION @SHOPGREENWITCH</p>

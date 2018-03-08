@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'testimonials/index'
+
+  get 'process/index'
+
+  get 'philosophy/index'
+
   post "/subscribe_email" => "subscribe_emails#subscribe"
 
 
@@ -18,6 +24,14 @@ Rails.application.routes.draw do
   get "/hemp_dictionary" => "hemp_dictionary#index", as: "hemp_dictionary"
 
    get "/recipes" => "recipes#index", as: "recipes"
+
+   get "/philosophy" => "philosophy#index", as: "philosophy"
+  
+   get "/process" => "process#index", as: "process"
+  
+   get "/testimonials" => "testimonials#index", as: "testimonials"
+  
+
   
 
 

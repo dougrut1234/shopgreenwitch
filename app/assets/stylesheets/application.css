@@ -829,6 +829,16 @@ h1 span {
   color: #67bdb3;
 }
 
+#philosophy_title {
+  text-align: center;
+  padding-top: 0%;
+  margin-bottom: 30%;
+  font-weight: 500;
+  font-family: "avenir next", sans-serif;
+  font-size: 48px;
+  color: #67bdb3;
+}
+
 #faq_title {
   text-align: center;
   font-weight: 500;
