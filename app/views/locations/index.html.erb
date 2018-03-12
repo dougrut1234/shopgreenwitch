@@ -69,38 +69,39 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        var javapes1 = {lat: 40.5812747, lng: -74.1110481}; 
-        var javapes2 = {lat: 40.6085815, lng: -74.1639153};
-        var javapes3 = {lat: 40.5833407, lng: -74.0950821};
+        // var javapes1 = {lat: 40.5812747, lng: -74.1110481}; 
+        var javapes2 = {lat: 40.581120, lng: -74.111708};
+        var javapes3 = {lat: 40.583290, lng: -74.095093};
+        var javapes4 = {lat: 40.585290, lng: -74.093810};
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
           center: {lat: 40.5812747, lng: -74.1110481}
         });
 
-var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 class="store_name">J&A VAPES</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>2110 Richmond Rd. SI NY 10306</b></p>'+
-      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
-      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/2110+Richmond+Rd,+Staten+Island,+NY+10306/@40.5813073,-74.1136338,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24eb1e892054d:0x9012640ea1dc66e7!8m2!3d40.5813032!4d-74.1114451", :id => "close_enough"  %><b>'
-      '</div>'+
-      '</div>';
+// var contentString = '<div id="content">'+
+//       '<div id="siteNotice">'+
+//       '</div>'+
+//       '<h1 class="store_name">J&A VAPES</h1>'+
+//       '<div id="bodyContent">'+
+//       '<p><b>2110 Richmond Rd. SI NY 10306</b></p>'+
+//       '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
+//       '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/2110+Richmond+Rd,+Staten+Island,+NY+10306/@40.5813073,-74.1136338,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24eb1e892054d:0x9012640ea1dc66e7!8m2!3d40.5813032!4d-74.1114451", :id => "close_enough"  %><b>'
+//       '</div>'+
+//       '</div>';
 
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
+//   var infowindow = new google.maps.InfoWindow({
+//     content: contentString
+//   });
 
    var contentString2 = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
       '<h1 class="store_name">J&A VAPES</h1>'+
       '<div id="bodyContent">'+
-      '<p><b>1652 Richmond Ave. SI NY 10314</b></p>'+
+      '<p><b>2110 Richmond Ave. SI NY 10314</b></p>'+
       '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
-      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/1652+Richmond+Ave,+Staten+Island,+NY+10314/@40.6084268,-74.1660825,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24c5beb77f8a5:0xc2753919176a24da!8m2!3d40.6084227!4d-74.1638938", :id => "close_enough" %><b>'
+      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/dir/J%26A+Vapes,+Richmond+Road,+Staten+Island,+NY//@40.5811801,-74.1468293,13z/data=!4m8!4m7!1m5!1m1!1s0x89c24eb1e892054d:0x221b5ba78c3f82fc!2m2!1d-74.111724!2d40.5811202!1m0", :id => "close_enough" %><b>'
       '</div>'+
       '</div>';
 
@@ -115,7 +116,7 @@ var contentString = '<div id="content">'+
       '<div id="bodyContent">'+
       '<p><b>1880 Hylan Blvd SI NY 10305</b></p>'+
       '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' + 
-      '<b style="margin-left: 18;"><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/880+Hylan+Blvd,+Staten+Island,+NY+10305/@40.5989052,-74.0743321,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24f1cb431bab5:0x32d71924629a6399!8m2!3d40.5989011!4d-74.0721434", :id => "close_enough" %><b>' +
+      '<b style="margin-left: 18;"><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/dir/60+East+Crescent+Avenue,+Ramsey,+NJ//@41.0493124,-74.1583953,13z/data=!4m8!4m7!1m5!1m1!1s0x89c2e40071d3e9af:0x7d52bef3ea0d34f6!2m2!1d-74.12329!2d41.049253!1m0", :id => "close_enough" %><b>' +
       '</div>'+
       '</div>';
 
@@ -124,13 +125,29 @@ var contentString = '<div id="content">'+
   });
 
 
-  var marker = new google.maps.Marker({
-    position: javapes1,
-    icon: "/assets/logo_icon.png",
-    map: map,
-    title: 'J&A Vapes'
+   var contentString4 = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 class="store_name">TASTEBUDS NATURAL FOODS</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>1807 Hylan Blvd, Staten Island, NY 10305</b></p>'+
+      '<p><%= link_to "www.tastebudssi.com", "www.tastebudssi.com", :id => "website" %><p>' + 
+      '<b style="margin-left: 18;"><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/dir/1807+Hylan+Blvd,+Staten+Island,+NY+10305//@40.5852519,-74.1290481,13z/data=!4m8!4m7!1m5!1m1!1s0x89c24ec5d2e8a16f:0x57da1899aeae9757!2m2!1d-74.0939428!2d40.585192!1m0", :id => "close_enough" %><b>' +
+      '</div>'+
+      '</div>';
 
+  var infowindow4 = new google.maps.InfoWindow({
+    content: contentString4
   });
+
+
+  // var marker = new google.maps.Marker({
+  //   position: javapes1,
+  //   icon: "/assets/logo_icon.png",
+  //   map: map,
+  //   title: 'J&A Vapes'
+
+  // });
 
 
 var marker2 = new google.maps.Marker({
@@ -147,9 +164,16 @@ var marker3 = new google.maps.Marker({
     title: 'J&A Vapes'
   });
 
-marker.addListener('click', function() {
-    infowindow.open(map, marker);
+var marker4 = new google.maps.Marker({
+    position: javapes4,
+    icon: "/assets/logo_icon.png",
+    map: map,
+    title: 'Tastebuds Natural Foods'
   });
+
+// marker.addListener('click', function() {
+//     infowindow.open(map, marker);
+//   });
 
 marker2.addListener('click', function() {
     infowindow2.open(map, marker2);
@@ -159,12 +183,16 @@ marker3.addListener('click', function() {
     infowindow3.open(map, marker3);
   });
 
+marker4.addListener('click', function() {
+    infowindow4.open(map, marker4);
+  });
 
-$(document).ready(function(){
-    $("#locate_store").click(function(){
-        infowindow.open(map, marker);
-    });
-});
+
+// $(document).ready(function(){
+//     $("#locate_store").click(function(){
+//         infowindow.open(map, marker);
+//     });
+// });
 
 $(document).ready(function(){
     $("#locate_store2").click(function(){
@@ -177,6 +205,13 @@ $(document).ready(function(){
         infowindow3.open(map, marker3);
     });
 });
+
+$(document).ready(function(){
+    $("#locate_store4").click(function(){
+        infowindow4.open(map, marker4);
+    });
+});
+
 
         var geocoder = new google.maps.Geocoder();
 
@@ -213,21 +248,26 @@ $(document).ready(function(){
   </body>
 
 <div id="scroll">
-	<p id="state_locations">New York</p>
+<!-- 	<p id="state_locations">New York</p>
 	<p class="store">J&A VAPES</p>
 	<p class="store">2110 Richmond Rd SI, NY 10306</p>
 	<p class="store">718-668-2737</p>
 	<p id="locate_store">Locate This Place!</p>
-<br>
+<br> -->
 	<p class="store">J&A VAPES</p>
 	<p class="store">2110 Richmond Rd SI, NY 10306</p>
 	<p class="store">718-668-2737</p>
 	<p id="locate_store2">Locate This Place!</p>
 <br>
 	<p class="store">J&A VAPES</p>
-	<p class="store">2110 Richmond Rd SI, NY 10306</p>
+	<p class="store">1880 Hylan Blvd, SI, NY 10305</p>
 	<p class="store">718-668-2737</p>
 	<p id="locate_store3">Locate This Place!</p>
+<br>
+  <p class="store">TASTEBUD'S NATURAL FOODS</p>
+  <p class="store">1807 Hylan Blvd, SI, NY 10305</p>
+  <p class="store">718-351-8693</p>
+  <p id="locate_store4">Locate This Place!</p>
 <br>
 </div>
 

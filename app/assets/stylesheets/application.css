@@ -1160,6 +1160,26 @@ input {
   line-height: 15px;
 }
 
+#locate_store4 {
+  font-size: 14px;
+  text-align: center;
+  font-family: 'avenir next', sans-serif;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+#locate_store4:hover {
+  font-size: 14px;
+  text-align: center;
+  font-family: 'avenir next', sans-serif;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  line-height: 15px;
+}
+
 #scroll {
     width: 400px;
     height: 400px;
