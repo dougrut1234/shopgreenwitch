@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'ingredients/index'
+
   get 'testimonials/index'
 
   get 'process/index'
@@ -31,7 +33,8 @@ Rails.application.routes.draw do
   
    get "/testimonials" => "testimonials#index", as: "testimonials"
   
-
+   get "/ingredients" => "ingredients#index", as: "ingredients"
+  
   
 
 
