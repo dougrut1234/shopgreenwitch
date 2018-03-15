@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'privacy_policy/index'
+
+  get 'terms_and_conditions/index'
+
   get 'ingredients/index'
 
   get 'testimonials/index'
@@ -35,6 +39,9 @@ Rails.application.routes.draw do
   
    get "/ingredients" => "ingredients#index", as: "ingredients"
   
+  get "/terms_and_conditions" => "terms_and_conditions#index", as: "terms_and_conditions"
+  
+  get "/privacy_policy" => "privacy_policy#index", as: "privacy_policy"
   
 
 

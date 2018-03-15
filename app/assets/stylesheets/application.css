@@ -3,6 +3,16 @@ a {
   text-decoration: none;
 }
 
+#background {
+  float: left;
+  margin-left: -30%;
+}
+
+#background_2 {
+  float: right;
+  margin-right: -30%;
+}
+
 #ingredients {
   width: 100%;
   height: auto;
@@ -845,6 +855,17 @@ h1 span {
 
 /*PROMOTIONS*/
 
+#contact_title {
+  text-align: center;
+  margin-top: -6%;
+  padding-top: 5%;
+  margin-bottom: -6%;
+  font-weight: 200;
+  font-family: "avenir next", sans-serif;
+  font-size: 36px;
+  color: #67bdb3;
+}
+
 #promotions_title {
   text-align: center;
   margin-top: -1%;
@@ -880,7 +901,7 @@ h1 span {
 
 #faq_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: -0%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
@@ -934,9 +955,28 @@ h1 span {
   margin-bottom: -25%;
 }
 
-#terms:hover {
+/*#terms:hover {
   text-decoration: underline;
+}*/
+
+#terms_and_conditions {
+  font-size: 18px;
+  font-family: "avenir next", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 40px;
+  margin-top: -35%;
 }
+
+#privacy_policy {
+  font-size: 18px;
+  font-family: "avenir next", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 40px;
+  margin-top: -35%;
+}
+
 
 /*HAMBURGER*/
 
