@@ -833,7 +833,7 @@ fieldset {
 .FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 5%; margin-left: 10%; margin-right: 10%; font-weight: 100; font-family: 'avenir next', sans-serif; font-size: 24px;
       }
  .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 10px;
-  margin-left: 5%; margin-right: 10%; font-size: 20px; font-family: 'avenir next', sans-serif;}
+  margin-left: 5%; margin-right: 10%; font-size: 20px; font-family: 'Montserrat', sans-serif;}
 
 #move_faq {
   clear: left;
