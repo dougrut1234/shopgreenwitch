@@ -144,43 +144,76 @@ function showSlides() {
 
     <script>
 
-      function myFunction1() {
-          document.getElementById("square1").innerHTML = "Lorem Ipsem";
-      }
+     $(document).ready(function() {
 
-      function myFunction2() {
-          document.getElementById("square1").innerHTML = "PHILOSOPHY";
-      }
+  $(".something").mouseenter(function() {
+      $(".something_else").show();
+      $(".something").hide();
+      $(this).hide();
+  });
 
-      function myFunction3() {
-          document.getElementById("square2").innerHTML = "Lorem Ipsem";
-      }
+  $(".something_else").mouseleave(function() {
+    $(".something").show();
+    $(".something_else").hide();
+    $(this).hide();
+  });
 
-      function myFunction4() {
-          document.getElementById("square2").innerHTML = "PROCESS";
-      }
+ $(".something_2").mouseenter(function() {
+      $(".something_else_2").show();
+      $(".something_2").hide();
+      $(this).hide();
+  });
 
-       function myFunction5() {
-          document.getElementById("square3").innerHTML = "Lorem Ipsem";
-      }
+  $(".something_else_2").mouseleave(function() {
+    $(".something_2").show();
+    $(".something_else_2").hide();
+    $(this).hide();
+  });
 
-      function myFunction6() {
-          document.getElementById("square3").innerHTML = "TESTIMONIALS";
-      }
+   $(".something_3").mouseenter(function() {
+      $(".something_else_3").show();
+      $(".something_3").hide();
+      $(this).hide();
+  });
 
+  $(".something_else_3").mouseleave(function() {
+    $(".something_3").show();
+    $(".something_else_3").hide();
+    $(this).hide();
+  });
+
+});
     </script>
 
+    <style>
+
+    .something_else {
+      display: none;
+    }
+
+    .something_else_2 {
+      display: none;
+    }
+
+    .something_else_3 {
+      display: none;
+    }
+
+    </style>
 
 <div id="move_square">
- <li><a <%= link_to "PHILOSOPHY", philosophy_url, :id => "square1" %></a></li>
- <li><a <%= link_to "PROCESS", process_url, :id => "square2" %></a></li>
- <li><a <%= link_to "TESTIMONIALS", testimonials_url, :id => "square3" %></a></li>
-  <p id="square_hover1">STUFF</p>
+ <div class="something"><li><a <%= link_to "PHILOSOPHY", philosophy_url, :id => "square1" %></a></li></a></li></div>
+ <div class="something_else"><li><a <%= link_to "It's about more than just a single ingredient or product. We want to englighten and connect you with your own life changing powers.", philosophy_url, :id => "square1_else" %></a></li></a></li></div>
+
+ <div class="something_2"><li><a <%= link_to "PROCESS", philosophy_url, :id => "square2" %></a></li></a></li></div>
+ <div class="something_else_2"><li><a <%= link_to "We only source the highest quality ingredients! NO solvents. NO pesticides. NO heavy metals. NO THC!", philosophy_url, :id => "square2_else" %></a></li></li></div>
+
+ <div class="something_3"><li><a <%= link_to "TESTIMONIALS", philosophy_url, :id => "square3" %></a></li></a></li></div>
+ <div class="something_else_3"><li><a <%= link_to "When you share your stories, it inspires others. And Well, that's the real magic!", philosophy_url, :id => "square3_else" %></a></li></a></li></div>
+
+</div>
   <p id="square_hover2">STUFF</p>
   <p id="square_hover3">STUFF</p>
-</div>
- 
-
 
 
 

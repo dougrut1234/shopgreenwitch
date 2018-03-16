@@ -186,6 +186,24 @@ to{
     cursor: pointer;
 }
 
+#square1_else {
+  float: left;
+  background-color: #2b2929;
+    width: 320px;
+    height: 210px;
+    text-align: center;
+    padding-top: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    line-height: 25px;
+}
+
 #move_square2 {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -210,6 +228,24 @@ to{
     cursor: pointer;
 }
 
+#square2_else {
+  float: left;
+  background-color: #2b2929;
+    width: 320px;
+    height: 210px;
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    line-height: 25px;
+}
+
 #square3 {
   float: left;
   background-color: #2b2929;
@@ -223,6 +259,24 @@ to{
     font-weight: 50;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+}
+
+#square3_else {
+  float: left;
+  background-color: #2b2929;
+    width: 320px;
+    height: 210px;
+    text-align: center;
+    padding-top: 18%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    line-height: 25px;
 }
 
 #square_hover1 {
