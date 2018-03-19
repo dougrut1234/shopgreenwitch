@@ -3,6 +3,14 @@ a {
   text-decoration: none;
 }
 
+.banner {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10%;
+  margin-right: 3%;
+  float: left;
+}
+
 #background {
   float: left;
   margin-left: -30%;
@@ -46,14 +54,6 @@ a {
   font: 'avenir next', sans-serif;
   font-size: 14px;
   display: block;
-}
-
-
-#banner {
-  margin-top: 0%;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;
 }
 
 #center_logo {
