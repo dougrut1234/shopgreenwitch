@@ -62,6 +62,7 @@ a {
   margin-top: 0%;
   width: 35px;
   height: auto;
+  display: none;
 }
 
 #account {
@@ -981,7 +982,7 @@ h1 span {
 }
 
 #faq_title {
-  text-align: center;
+ text-align: center;
   margin-top: -0%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
