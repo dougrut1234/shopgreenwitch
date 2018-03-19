@@ -11,6 +11,12 @@ a {
   float: left;
 }
 
+#banner {
+  margin-top: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 #background {
   float: left;
   margin-left: -30%;
