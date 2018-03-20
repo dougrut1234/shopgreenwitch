@@ -135,7 +135,7 @@
 
 <div id="move_subscribe" style="clear: left; margin-top: 10%;">
 <p id="enter_subscribe">Enter Your Email And Subscribe to Our Coven Secrets!</p>
-  <%= form_tag '/subscribe_email', method: :post do %>
+  <%= form_tag '/subscribe_email', :id => "move_form", method: :post do %>
     <%= email_field_tag 'email' %>
     <%= submit_tag "Subscribe", :id => "subscribe_button" %>
   <% end %>
