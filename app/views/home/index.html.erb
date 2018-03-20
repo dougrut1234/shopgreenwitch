@@ -55,8 +55,6 @@ body {
 }
 
 #move_square {
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 #enter_subscribe {
@@ -78,6 +76,10 @@ body {
   margin-bottom: 40%;
 }
 
+#label {
+  display: none;
+}
+
 }
 
 </style>
@@ -85,56 +87,10 @@ body {
 
 <body>
 
+<div id="move_landing">
 <%= image_tag("blue-back.jpg", :id => "banner") %>
 
-<!-- <p style="font-size: 24px; float: left; font-family: 'avenir next', sans-serif; font-size: 56px; margin-top: 10%; margin-left: 8%; text-align: center;">We Believe In <b style="font-size: 72px; color: #67bdb3;"><br style="font-size: 72px; color: #67bdb3;">Wellness</br></b></p> -->
 
-<!-- <div class="slideshow-container">
-
-<div class="mySlides fade">
- <%= image_tag("new_greenwitch7.jpg", :id => "first_pic") %>
-</div>
-
-<div class="mySlides fade">
- <%= image_tag("new_greenwitch8.jpg", :id => "first_pic") %>
-</div>
-
-<div class="mySlides fade">
- <%= image_tag("new_greenwitch9.png", :id => "first_pic") %>
-</div> -->
-
-
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 7000); // Change image every 2 seconds
-}
-</script>
 
     <script>
 
@@ -206,7 +162,8 @@ function showSlides() {
  <div class="something_else_3"><li><a id="square3_else">When you share your stories, it inspires others. And Well, that's the real magic!</a></li></a></li></div>
 
 </div>
- 
+</div>
+
 
 
 <p id="inspiration" style="margin-top: 30%;">INSPIRATION @SHOPGREENWITCH</p>
@@ -214,72 +171,6 @@ function showSlides() {
 
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
 <iframe id="move_instagram" src="https://snapwidget.com/embed/467519" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-
-<!-- <div id="meet_the_coven"></div>
-<%= image_tag("about_us_main.png", :id => "brooklyn") %>
-</div>
- -->
-
-<!-- <h1 id="cottage">COTTAGE OPENS IN</h1>
-<div id="clockdiv">
-  <div>
-    <span class="days"></span>
-    <div class="smalltext">Days</div>
-  </div>
-  <div>
-    <span class="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
-  </div>
-</div>
-
-
-<script>
-function getTimeRemaining(endtime){
-  var t = Date.parse(endtime) - Date.now();
-  var seconds = Math.floor( (t/1000) % 60 );
-  var minutes = Math.floor( (t/1000/60) % 60 );
-  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-  var days = Math.floor( t/(1000*60*60*24) );
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-function initializeClock(id, endtime){
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-  function updateClock(){
-    var t = getTimeRemaining(endtime);
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-    if(t.total<=0){
-      clearInterval(timeinterval);
-    }
-  }
-  updateClock();
-  var timeinterval = setInterval(updateClock,1000);
-}
-var deadline = new Date(Date.now() + 15*24*60*60*1000);
-var deadline = 'December 1 2017 00:00:50 UTC+0200';
-initializeClock('clockdiv', deadline);
-</script>
- -->
 
 
 
