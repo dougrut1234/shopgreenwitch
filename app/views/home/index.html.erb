@@ -27,26 +27,23 @@ body {
   margin-right: 13%;
 }
 
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin-left: -7px;
-  margin-top: -20%;
-}
 
-#first_pic {
-  width: 100%;
-  margin-bottom: 20%;
-}
+
 
 #inspiration {
   padding-top: 25%;
 }
 
 #banner {
-  width: 120%;
+  width: 100%;
   height: auto;
-  margin-left: -13%;
+  display: none;
+}
+
+#banner2 {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #label {
@@ -54,8 +51,6 @@ body {
   margin-right: 25%;
 }
 
-#move_square {
-}
 
 #enter_subscribe {
   text-align: center;
@@ -89,7 +84,7 @@ body {
 
 
 <%= image_tag("blue-back.jpg", :id => "banner") %>
-
+<%= image_tag("blue-back2.jpg", :id => "banner2") %>
 
 
     <script>
