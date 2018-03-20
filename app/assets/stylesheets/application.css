@@ -203,6 +203,7 @@ to{
 #square1 {
 
   background-color: #2b2929;
+  position: relative;
   margin-left: 20%;
     width: 320px;
     height: 210px;
@@ -246,10 +247,12 @@ to{
 #square2 {
   
   background-color: #2b2929;
+  position: relative;
     width: 320px;
     height: 210px;
     text-align: center;
     padding-top: 20%;
+    margin-left: 10%;
     margin: 20px;
     color: white;
     font-size: 30px;
@@ -279,6 +282,7 @@ to{
 #square3 {
  
   background-color: #2b2929;
+  position: relative;
     width: 320px;
     height: 210px;
     text-align: center;
