@@ -198,17 +198,12 @@ to{
   animation-name: anim-2;
 }
 
-#move_square {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 2%;
-}
+
 
 #square1 {
-  float: left;
+
   background-color: #2b2929;
+  margin-left: 20%;
     width: 320px;
     height: 210px;
     text-align: center;
@@ -222,7 +217,7 @@ to{
 }
 
 #square1_else {
-  float: left;
+ 
   background-color: #2b2929;
     width: 320px;
     height: 210px;
@@ -249,7 +244,7 @@ to{
 }
 
 #square2 {
-  float: left;
+  
   background-color: #2b2929;
     width: 320px;
     height: 210px;
@@ -264,7 +259,7 @@ to{
 }
 
 #square2_else {
-  float: left;
+  
   background-color: #2b2929;
     width: 320px;
     height: 210px;
@@ -282,7 +277,7 @@ to{
 }
 
 #square3 {
-  float: left;
+ 
   background-color: #2b2929;
     width: 320px;
     height: 210px;
@@ -297,7 +292,7 @@ to{
 }
 
 #square3_else {
-  float: left;
+  
   background-color: #2b2929;
     width: 320px;
     height: 210px;
@@ -315,38 +310,6 @@ to{
 }
 
 #square_hover1 {
-  float: left;
-  background-color: #2b2929;
-    width: 285px;
-    height: 170px;
-    text-align: center;
-    padding-top: 5%;
-    margin: 20px;
-    color: white;
-    font-size: 30px;
-    font-weight: 50;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    display: none;
-}
-
-#square_hover2 {
-  float: left;
-  background-color: #2b2929;
-    width: 285px;
-    height: 170px;
-    text-align: center;
-    padding-top: 5%;
-    margin: 20px;
-    color: white;
-    font-size: 30px;
-    font-weight: 50;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    display: none;
-}
-
-#square_hover3 {
   float: left;
   background-color: #2b2929;
     width: 285px;
@@ -946,7 +909,7 @@ h1 span {
 
 #contact_title {
   text-align: center;
-  margin-top: -6%;
+  margin-top: -5%;
   padding-top: 5%;
   margin-bottom: -6%;
   font-weight: 200;
@@ -967,7 +930,7 @@ h1 span {
 
 #philosophy_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: 0%;
   padding-top: 0%;
   margin-bottom: 40%;
   font-weight: 200;
@@ -978,7 +941,7 @@ h1 span {
 
 #philosophy_title1 {
   text-align: center;
-  margin-top: -1%;
+  margin-top: 0%;
   padding-top: 0%;
   margin-bottom: 5%;
   font-weight: 200;
@@ -993,7 +956,7 @@ h1 span {
 
 #ingredients_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: 0%;
   margin-bottom: 5%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
@@ -1024,7 +987,7 @@ h1 span {
 
 #hemp_dictionary_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: 0%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
@@ -1201,7 +1164,7 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 #locations_title {
-  margin-top: -1%;
+  margin-top: 0%;
   font-size: 36px;
   font-family: 'avenir next', sans-serif;
   text-align: center;
