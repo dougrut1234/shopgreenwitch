@@ -11,6 +11,14 @@ a {
   float: left;
 }
 
+.faq_banner {
+  width: 40%;
+  height: auto;
+  margin-bottom: 10%;
+  margin-right: 3%;
+  float: left;
+}
+
 #banner {
   width: 100%;
   height: auto;
@@ -839,13 +847,12 @@ fieldset {
 
 .FAQ, .FAQ1, .FAQ2, .FAQ3, .FAQ4, .FAQ5, .FAQ6, .FAQ7, .FAQ8, .FAQ9, .FAQ10, .FAQ11, .FAQ12, .FAQ13, .FAQ14, .FAQ15, .FAQ16, .FAQ17, .FAQ18, .FAQ19 { cursor:hand; cursor:pointer; margin-top: 5%; margin-left: 10%; margin-right: 10%; font-weight: 100; font-family: 'avenir next', sans-serif; font-size: 24px;
       }
- .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 10px;
-  margin-left: 5%; margin-right: 10%; font-size: 20px; font-family: 'Montserrat', sans-serif;}
+ .FAQ, .FAA1, .FAA2, .FAA3, .FAA4, .FAA5, .FAA6, .FAA7, .FAA8, .FAA9, .FAA10, .FAA11, .FAA12, .FAA13, .FAA14, .FAA15, .FAA16, .FAA17, .FAA18, .FAA19 { display:none; margin-top: 25px;
+  margin-left: 5%; margin-right: 10%; font-size: 20px; font-family: 'Montserrat', sans-serif; clear:left; margin-top: 3%;}
 
 #move_faq {
   clear: left;
-  clear: right;
-  padding-top: 0%;
+  padding-top: -20%;
   margin-bottom: 20%;
 }
 
@@ -989,7 +996,7 @@ h1 span {
 
 #faq_title {
  text-align: center;
-  margin-top: -0%;
+  margin-top: 10%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
   font-size: 36px;

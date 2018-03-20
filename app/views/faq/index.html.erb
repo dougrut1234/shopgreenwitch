@@ -10,6 +10,32 @@
 .mySlides {display:none;}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+
+#our_products {
+  font: 'avenir next', sans-serif; 
+  margin-top: -.5%; 
+  font-size: 32px; 
+  font-style: italic; 
+  text-align: left; 
+  margin-bottom: 1%;
+}
+
+
+#our_products_description {
+  font: 'Montserrat', sans-serif; 
+  font-size: 16px; 
+  text-align: justify; 
+  margin-top: 0%; 
+  margin-right: 5%; 
+  margin-left: 20%; 
+  font-stretch: condensed;
+}
+
+#underline {
+    text-decoration: underline;
+    color: blue;
+}
+
 </style>
 <body>
 
@@ -121,8 +147,12 @@ $(document).ready(function(){
 
 </style>
 
+<%= image_tag("faq_banner.jpg", :class => "banner") %>
+<p id="our_products">FAQ</p>
+<p id="our_products_description">Where wellness is concerned, no question should be left unanswered. Find our answers to the most common questions below. Something still unclear? Feel free to contact us <%= link_to "here", contact_url, :id => "underline" %>. Don't be shy.</p>
+
 <div id="move_faq">
-<h1 id="faq_title"><span>F.A.Q</span></h1><br><br>
+<!-- <h1 id="faq_title"><span>F.A.Q</span></h1><br><br> -->
 <DIV class="FAQ1" style="margin-top: -1%;">
  <h4><b>1) What is CBD?</b></h4>
  <div id="faq1" class="FAA1">Cannabidiol a.k.a CBD is a non-psychoactive component of the hemp plant.
