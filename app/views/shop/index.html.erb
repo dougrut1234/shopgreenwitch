@@ -9,15 +9,119 @@
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+
+
+#our_products {
+  font: 'avenir next', sans-serif; 
+  margin-top: -.5%; 
+  font-size: 32px; 
+  font-style: italic; 
+  text-align: left; 
+  margin-bottom: 1%;
+
+}
+
+#our_products_description {
+  font: 'Montserrat', sans-serif; 
+  font-size: 16px; 
+  text-align: justify; 
+  margin-top: 0%; 
+  margin-right: 5%; 
+  margin-left: 20%; 
+  font-stretch: condensed;
+}
+
+@media screen and (max-width : 414px){
+
+body {
+  width: 100%;
+  margin-right: 13%;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin-left: -7px;
+  margin-top: -20%;
+}
+
+#first_pic {
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+#inspiration {
+  padding-top: 25%;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+#label {
+  width: 50%;
+  margin-right: 25%;
+}
+
+
+
+#enter_subscribe {
+  text-align: center;
+  margin-right: 0%;
+  margin-left: -20%;
+}
+
+#move_subscribe {
+  margin-right: 20%;
+}
+
+#move_form {
+  margin-left: -10%;
+}
+
+#subscribe_button {
+  margin-left: 20%;
+  margin-bottom: 40%;
+}
+
+#products {
+  font-size: 48px;
+
+}
+
+#our_products {
+  font: 'avenir next', sans-serif; 
+  margin-top: -.5%; 
+  font-size: 32px; 
+  font-style: italic; 
+  text-align: center; 
+  margin-bottom: 1%;
+
+}
+
+#our_products_description {
+  font: 'Montserrat', sans-serif; 
+  font-size: 16px; 
+  text-align: justify; 
+  margin-top: 0%; 
+  margin-right: 3%; 
+  margin-left: 3%; 
+  padding-bottom: 20%;
+  font-stretch: condensed;
+}
+
+}
+
 </style>
 <body>
 
 <%= image_tag("banner.jpg", :class => "banner") %>
-<p style= "font: 'avenir next', sans-serif; margin-top: -.5%; font-size: 32px; font-style: italic; text-align: left; margin-bottom: 1%;">OUR PRODUCTS</p>
-<p style="font: 'Montserrat', sans-serif; font-size: 16px; text-align: justify; margin-top: 0%; margin-right: 5%; margin-left: 20%; font-stretch: condensed;">Our <b>phytocannabinoid rich hemp oil</b> delivers all the plant's green <b>goodness</b> - nutrients, vitamins, minerals, and over 40 naturally present synergistic proteins - without the THC. </p>
+<p id="our_products">OUR PRODUCTS</p>
+<p id="our_products_description">Our <b>phytocannabinoid rich hemp oil</b> delivers all the plant's green <b>goodness</b> - nutrients, vitamins, minerals, and over 40 naturally present synergistic proteins - without the THC. </p>
 
 
-<div id='product-component-a3c2ca31a62' style="clear: left; float: left; margin-left: 5%; margin-bottom: 10%;"></div>
+<div id='product-component-a3c2ca31a62' style="clear: left; float: left; margin-left: 10%; margin-bottom: 10%;"></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -536,7 +640,7 @@
 /*]]>*/
 </script>
 
-<div id='product-component-a33b970ad3f' style="float: left; margin-left: 5%; margin-bottom: 20%;"></div>
+<div id='product-component-a33b970ad3f' style="float: left; margin-left: 10%; margin-bottom: 20%;"></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
