@@ -198,7 +198,7 @@ to{
   margin-top: 5%;
   margin-bottom: 5%;
   width: 100%;
-  margin-left: 3%;
+  margin-left: 5%;
   margin-right: 2%;
 }
 
@@ -283,7 +283,6 @@ to{
     width: 320px;
     height: 210px;
     text-align: center;
-    margin-right: 10%;
     padding-top: 20%;
     margin: 20px;
     color: white;
@@ -311,6 +310,53 @@ to{
     line-height: 25px;
 }
 
+#square_hover1 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
+}
+
+#square_hover2 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
+}
+
+#square_hover3 {
+  float: left;
+  background-color: #2b2929;
+    width: 285px;
+    height: 170px;
+    text-align: center;
+    padding-top: 5%;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
+}
 
 
 @keyframes anim-1 {
