@@ -11,68 +11,76 @@
   <body>
 
 
-
-<style>
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
-<body>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+(function() {
+  
+  function Slideshow( element ) {
+    this.el = document.querySelector( element );
+    this.init();
+  }
+  
+  Slideshow.prototype = {
+    init: function() {
+      this.wrapper = this.el.querySelector( ".slider-wrapper" );
+      this.slides = this.el.querySelectorAll( ".slide" );
+      this.previous = this.el.querySelector( ".slider-previous" );
+      this.next = this.el.querySelector( ".slider-next" );
+      this.index = 0;
+      this.total = this.slides.length;
+      this.timer = null;
+      
+      this.action();
+      this.stopStart(); 
+    },
+    _slideTo: function( slide ) {
+      var currentSlide = this.slides[slide];
+      currentSlide.style.opacity = 1;
+      
+      for( var i = 0; i < this.slides.length; i++ ) {
+        var slide = this.slides[i];
+        if( slide !== currentSlide ) {
+          slide.style.opacity = 0;
+        }
+      }
+    },
+    action: function() {
+      var self = this;
+      self.timer = setInterval(function() {
+        self.index++;
+        if( self.index == self.slides.length ) {
+          self.index = 0;
+        }
+        self._slideTo( self.index );
+        
+      }, 9000);
+    },
+    stopStart: function() {
+      var self = this;
+      self.el.addEventListener( "mouseover", function() {
+        clearInterval( self.timer );
+        self.timer = null;
+        
+      }, false);
+      self.el.addEventListener( "mouseout", function() {
+        self.action();
+        
+      }, false);
+    }
+    
+    
+  };
+  
+  document.addEventListener( "DOMContentLoaded", function() {
+    
+    var slider = new Slideshow( "#main-slider" );
+    
+  });
+  
+  
+})();
+
+
 </script>
 
 
@@ -90,7 +98,7 @@ function closeNav() {
 </div>  
 <%=  link_to (image_tag("title_again", :class => "logo")), home_url %>
 <%= image_tag("label.jpg", :id => "label") %>
-
+    <input type="checkbox" id="show-menu" role="button">
       <ul style="margin-left: 0px; margin-top: -94px;" id="menu">
       <li><a <%= link_to "Coven", philosophy_url %></a></li>
       <li>
@@ -112,6 +120,159 @@ function closeNav() {
       </li>
     </div>
 </div>
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #67bdb3;
+    overflow-x: hidden;
+    transition: 0.2s;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.05s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    top: 0;
+     width: 50%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 180px;
+}
+.dropbtn {
+    background-color: #67bdb3;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #67bdb3;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a style="font-size: 20px;" <%= link_to "Coven", philosophy_url %></a>
+   <a style="font-size: 20px;" <%= link_to "Get Educated", faq_url %></a>
+  <a style="font-size: 20px;" <%= link_to "Shop", shop_url%></a>
+  <button style="font-size: 20px;" class="dropdown-btn">Dropdown 
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
+
+
+<span style="font-size:25px;cursor:pointer; padding-left: 3%;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
 
 </div>
 

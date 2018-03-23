@@ -158,6 +158,10 @@ to{
   background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
 }
 
+span {
+  display: none;
+}
+
 .logo {
 	width: 30%;
 	margin-top: -1%;
