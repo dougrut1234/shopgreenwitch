@@ -149,7 +149,7 @@ body {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #67bdb3;
 }
 
 .sidenav .closebtn {
@@ -179,7 +179,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #67bdb3;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -193,7 +193,7 @@ body {
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd}
+.dropdown a:hover {background-color: #67bdb3}
 
 .show {display:block;}
 
@@ -212,14 +212,23 @@ body {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
-    background-color: #262626;
+    background-color: #67bdb3;
     padding-left: 8px;
+    font-size: 12px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
     float: right;
     padding-right: 8px;
+}
+
+button:hover {
+  color: white;
+}
+
+.tab {
+  font-size: 12px;
 }
 
 }
@@ -229,17 +238,22 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a style="font-size: 20px;" <%= link_to "Coven", philosophy_url %></a>
-   <a style="font-size: 20px;" <%= link_to "Get Educated", faq_url %></a>
-  <a style="font-size: 20px;" <%= link_to "Shop", shop_url%></a>
-  <button style="font-size: 20px;" class="dropdown-btn">Dropdown 
+  <a style="font-size: 20px; font-family: 'avenir next', sans-serif; " <%= link_to "COVEN", philosophy_url %></a>
+     <button style="font-size: 20px; background-color: #67bdb3; cursor: pointer; border-style: none; margin-left: 24px; font-family: 'avenir next', sans-serif; " class="dropdown-btn">GET EDUCATED 
   </button>
   <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;"<%= link_to "Ingredients", ingredients_url, :class => "tab" %></a>
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Hemp Dictionary", hemp_dictionary_url, :class => "tab"%></a>
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Recipes", recipes_url, :class => "tab"%></a>
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "FAQ", faq_url, :class => "tab"%></a>
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Contact", contact_url, :class => "tab"%></a>
   </div>
-  <a href="#contact">Search</a>
+   <button style="font-size: 20px; background-color: #67bdb3; cursor: pointer; border-style: none; margin-left: 24px; margin-top: 7px; font-family: 'avenir next', sans-serif; " class="dropdown-btn">SHOP
+  </button>
+  <div class="dropdown-container">
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;"<%= link_to "Our Products", shop_url, :class => "tab" %></a>
+    <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Where To Us", locations_url, :class => "tab"%></a>
+  </div>
 </div>
 
 
