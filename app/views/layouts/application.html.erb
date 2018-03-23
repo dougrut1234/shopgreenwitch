@@ -11,76 +11,68 @@
   <body>
 
 
+
+<style>
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
 <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
-(function() {
-  
-  function Slideshow( element ) {
-    this.el = document.querySelector( element );
-    this.init();
-  }
-  
-  Slideshow.prototype = {
-    init: function() {
-      this.wrapper = this.el.querySelector( ".slider-wrapper" );
-      this.slides = this.el.querySelectorAll( ".slide" );
-      this.previous = this.el.querySelector( ".slider-previous" );
-      this.next = this.el.querySelector( ".slider-next" );
-      this.index = 0;
-      this.total = this.slides.length;
-      this.timer = null;
-      
-      this.action();
-      this.stopStart(); 
-    },
-    _slideTo: function( slide ) {
-      var currentSlide = this.slides[slide];
-      currentSlide.style.opacity = 1;
-      
-      for( var i = 0; i < this.slides.length; i++ ) {
-        var slide = this.slides[i];
-        if( slide !== currentSlide ) {
-          slide.style.opacity = 0;
-        }
-      }
-    },
-    action: function() {
-      var self = this;
-      self.timer = setInterval(function() {
-        self.index++;
-        if( self.index == self.slides.length ) {
-          self.index = 0;
-        }
-        self._slideTo( self.index );
-        
-      }, 9000);
-    },
-    stopStart: function() {
-      var self = this;
-      self.el.addEventListener( "mouseover", function() {
-        clearInterval( self.timer );
-        self.timer = null;
-        
-      }, false);
-      self.el.addEventListener( "mouseout", function() {
-        self.action();
-        
-      }, false);
-    }
-    
-    
-  };
-  
-  document.addEventListener( "DOMContentLoaded", function() {
-    
-    var slider = new Slideshow( "#main-slider" );
-    
-  });
-  
-  
-})();
-
-
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 </script>
 
 
@@ -98,10 +90,7 @@
 </div>  
 <%=  link_to (image_tag("title_again", :class => "logo")), home_url %>
 <%= image_tag("label.jpg", :id => "label") %>
-<label style="cursor: pointer; margin-left: 0%; height: 40px; margin-top: 25px; background-height: 5px; padding-left: 10px;" for="show-menu" class="show-menu"><div style="margin-top: -120px;" class="contain_line"><div class="line"></div>
-<div class="line"></div>
-<div class="line"></div></div></label></label>
-    <input type="checkbox" id="show-menu" role="button">
+
       <ul style="margin-left: 0px; margin-top: -94px;" id="menu">
       <li><a <%= link_to "Coven", philosophy_url %></a></li>
       <li>
