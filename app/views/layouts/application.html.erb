@@ -133,7 +133,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #67bdb3;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.2s;
     
@@ -149,7 +149,7 @@ body {
 }
 
 .sidenav a:hover {
-    color: #67bdb3;
+    color: white;
 }
 
 .sidenav .closebtn {
@@ -160,7 +160,7 @@ body {
     margin-left: 180px;
 }
 .dropbtn {
-    background-color: #67bdb3;
+    background-color: white;
     color: black;
     font-size: 20px;
     border: none;
@@ -168,7 +168,7 @@ body {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #67bdb3;
+    background-color: white;
 }
 
 .dropdown {
@@ -179,7 +179,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #67bdb3;
+    background-color: white;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -193,7 +193,7 @@ body {
     display: block;
 }
 
-.dropdown a:hover {background-color: #67bdb3}
+.dropdown a:hover {background-color: white;}
 
 .show {display:block;}
 
@@ -212,7 +212,7 @@ body {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
-    background-color: #67bdb3;
+    background-color: white;
     padding-left: 8px;
     font-size: 12px;
 }
@@ -224,7 +224,7 @@ body {
 }
 
 button:hover {
-  color: white;
+  color: #67bdb3;
 }
 
 .tab {
@@ -232,7 +232,16 @@ button:hover {
 }
 
 #coven_link:hover {
-  color: white;
+  color: #67bdb3;
+}
+
+hr {
+  display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid #67bdb3;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 }
@@ -241,23 +250,23 @@ button:hover {
 <body>
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a style="font-size: 20px; font-family: 'avenir next', sans-serif; " <%= link_to "COVEN", philosophy_url, :id => "coven_link" %></a>
-     <button style="font-size: 20px; background-color: #67bdb3; cursor: pointer; border-style: none; margin-left: 12px; font-family: 'avenir next', sans-serif; " class="dropdown-btn">GET EDUCATED 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
+  <a style="font-size: 20px; font-family: 'avenir next', sans-serif; " <%= link_to "COVEN", philosophy_url, :id => "coven_link" %></a><hr>
+     <button style="font-size: 20px; background-color: white; cursor: pointer; border-style: none; margin-left: 12px; font-family: 'avenir next', sans-serif; " class="dropdown-btn">GET EDUCATED 
   </button>
-  <div class="dropdown-container">
+  <div class="dropdown-container"><hr>
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;"<%= link_to "Ingredients", ingredients_url, :class => "tab" %></a>
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Hemp Dictionary", hemp_dictionary_url, :class => "tab"%></a>
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Recipes", recipes_url, :class => "tab"%></a>
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "FAQ", faq_url, :class => "tab"%></a>
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Contact", contact_url, :class => "tab"%></a>
-  </div>
-   <button style="font-size: 20px; background-color: #67bdb3; cursor: pointer; border-style: none; margin-top: 7px; font-family: 'avenir next', sans-serif; margin-left: 12px; " class="dropdown-btn">SHOP
+  </div><hr>
+   <button style="font-size: 20px; background-color: white; cursor: pointer; border-style: none; margin-top: 7px; font-family: 'avenir next', sans-serif; margin-left: 12px; " class="dropdown-btn">SHOP
   </button>
   <div class="dropdown-container">
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;"<%= link_to "Our Products", shop_url, :class => "tab" %></a>
     <a style="font-size: 16px; font-family: 'Montserrat', sans-serif;" <%= link_to "Where To Us", locations_url, :class => "tab"%></a>
-  </div>
+  </div><hr>
 </div>
 
 
