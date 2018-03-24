@@ -33,6 +33,12 @@
 	margin-bottom: 25%;
 }
 
+.testimonial_banner {
+  width: 100%;
+  height: auto;
+  margin-top: -10%;
+}
+
 @media screen and (max-width : 414px){
 
 body {
@@ -56,7 +62,7 @@ body {
   padding-top: 25%;
 }
 
-.banner {
+.testimonial_banner {
   width: 100%;
   height: auto;
 }
@@ -144,7 +150,33 @@ body {
 	margin-bottom: 15%;
 }
 
+.slider-wrapper {
+  width: 100%;
+  height: 20px;
+  margin-top: -18px;
+  position: relative;
 }
+
+.contain_line {
+  display: none;
+}
+
+#logo_background {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  z-index: -100000;
+  background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
+  margin-bottom: -90px;
+}
+
+span {
+  display: block;
+}
+
+}
+
+
 
 
 </style>
@@ -152,7 +184,7 @@ body {
 
 
 <p id="philosophy_title">TESTIMONIALS</p>
-
+<%= image_tag("new_faq_banner.jpg", :class => "testimonial_banner") %>
 
 <p id="endorsement">"I used CBD oil for the first time from Green Witch. Haven't played active sports in a year and played basketball for the first time, I took my CBD oil at night and avoided being sore the following day. Highly recommended fo anyone at any athletic level."</p>
 <p id="endorser">- Keith H.</p>
