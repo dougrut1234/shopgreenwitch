@@ -248,9 +248,22 @@ hr {
 
 }
 
-span {
-  width: 50px;
+#span {
+   width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+    cursor: pointer;
 }
+
+#hamburger {
+  margin-left: 20px;
+  margin-top: -40px;
+  float: left;
+  position: absolute;
+}
+
 </style>
 </head>
 <body>
@@ -276,8 +289,15 @@ span {
   </div><hr>
 </div>
 
+<div id="hamburger">
+  <span id="span" onclick="openNav()">
+  </span>
+  <span id="span" onclick="openNav()">
+  </span>
+  <span id="span" onclick="openNav()">
+  </span>
+</div>
 
-<span id="span" style="font-size:36px;cursor:pointer; padding-left: 3%; width: 48px;" onclick="openNav()">&#9776;</span>
 
 <script>
 function openNav() {
