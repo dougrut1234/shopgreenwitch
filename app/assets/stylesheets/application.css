@@ -126,7 +126,7 @@ to{
 
 .slider-wrapper {
   width: 100%;
-  height: 20px;
+  height: 40px;
   position: relative;
 }
 
@@ -152,7 +152,7 @@ to{
 
 #logo_background {
   width: 100%;
-  height: 150px;
+  height: 250px;
   position: relative;
   z-index: 100000;
   background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);

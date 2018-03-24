@@ -122,6 +122,8 @@
 </div>
 
 <style>
+
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -245,12 +247,17 @@ hr {
 }
 
 }
+
+span {
+  width: 50px;
+}
 </style>
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
+  <a style="font-size: 20px; font-family: 'avenir next', sans-serif; " <%= link_to "HOME", home_url, :id => "coven_link" %></a><hr>
   <a style="font-size: 20px; font-family: 'avenir next', sans-serif; " <%= link_to "COVEN", philosophy_url, :id => "coven_link" %></a><hr>
      <button style="font-size: 20px; background-color: white; cursor: pointer; border-style: none; margin-left: 12px; font-family: 'avenir next', sans-serif; " class="dropdown-btn">GET EDUCATED 
   </button>
@@ -270,7 +277,7 @@ hr {
 </div>
 
 
-<span style="font-size:36px;cursor:pointer; padding-left: 3%;" onclick="openNav()">&#9776;</span>
+<span id="span" style="font-size:36px;cursor:pointer; padding-left: 3%; width: 48px;" onclick="openNav()">&#9776;</span>
 
 <script>
 function openNav() {
