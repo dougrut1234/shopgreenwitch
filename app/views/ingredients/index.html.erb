@@ -9,7 +9,12 @@
 .mySlides {display:none;}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
-
+#ingredients_center {
+   text-align:center;
+}
+#logo_background {
+  height: 200px;
+}
 
 @media screen and (max-width : 414px){
 
@@ -191,7 +196,7 @@ body {
 <p id="ingredients_title">INGREDIENTS</p>
 
 
-
+<div id="ingredients_center">
 <div id="ingredients_picture">
 	<%= image_tag("oil_3.png", :id => "ingredients") %>
 	<p id="ingredients_description">Hemp Oil</p>
@@ -208,4 +213,5 @@ body {
 	<%= image_tag("grape_2.jpg", :id => "ingredients") %>
 	<p id="ingredients_description">Grape Seed Oil</p>
 	<p id="ingredients_sentence"><i>Don't toss these out! Grape seeds are considered the healthiest part of the grape. It's oil has been proven to be anti-inflammatory, anti-carcinogenic, antiviral, and antibacterial.</i></p>
+</div>
 </div>

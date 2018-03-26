@@ -9,6 +9,10 @@
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
+#logo_background {
+  height: 200px;
+}
+
 @media screen and (max-width : 414px){
 
 body {
@@ -187,7 +191,7 @@ body {
 
 
 
-<p id="contact_title">CONTACT</p>
+<!-- <p id="contact_title">CONTACT</p> -->
 
 
 <%= image_tag("contact_background.jpg", :id => "background") %>
@@ -195,7 +199,7 @@ body {
 
 <div  class="container2">
   <form style="padding-top: -10%;" id="contact" action="" method="post" style="clear: left;">
-    <h3>Talk To Us</h3>
+    <h3 style="margin-top: -35%; z-index: 10000;">Talk To Us</h3>
     <h4>Our coven is commited to making your Green Witch experiences as magical as possible!</h4>
     <fieldset>
       <input placeholder="Your name" type="text" tabindex="1" required autofocus>
