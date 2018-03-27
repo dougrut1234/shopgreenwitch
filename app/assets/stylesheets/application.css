@@ -1126,6 +1126,8 @@ li ul li a {
     min-width: 100px;
     margin-left: -10px;
     padding: 0 20px;
+    border-top: 2px solid #67bdb3;
+    margin-top: 0px;
 }
 /*Display the dropdown on hover*/
 ul li a:hover + .hidden, .hidden:hover {
