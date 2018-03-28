@@ -589,16 +589,12 @@ span {
 
 .icon {
 	width: 30px;
-  margin-right: 2%;
-	float: right;
   margin-left: auto;
   margin-right: auto;
 }
 
 .icon:hover {
 	width: 30px;
-	float: right;
-  margin-right: 2%;
 	opacity: .75;
 	cursor: pointer;
   margin-left: auto;
@@ -606,12 +602,16 @@ span {
 }
 
 .move_icons {
-  margin-right: 40%;
-  margin-left: 40%;
   padding-bottom: 2%;
 }
 
 #bottom {
+  clear: right;
+  margin-top: 5%;
+  text-align: center;
+}
+
+#bottom2 {
   clear: right;
   margin-top: 5%;
   text-align: center;
@@ -1629,9 +1629,7 @@ fieldset {
 }
 
 .move_icons {
-  margin-right: 35%;
-  margin-left: -10%;
-  padding-bottom: 7%;
+  margin-left: 10%;
 }
 
 #bottom1 {
