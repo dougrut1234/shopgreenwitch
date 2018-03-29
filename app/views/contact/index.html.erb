@@ -13,6 +13,7 @@
   height: 200px;
 }
 
+
 @media screen and (max-width : 414px){
 
 body {
@@ -46,26 +47,6 @@ body {
   margin-right: 25%;
 }
 
-
-
-#enter_subscribe {
-  text-align: center;
-  margin-right: 0%;
-  margin-left: -20%;
-}
-
-#move_subscribe {
-  margin-right: 20%;
-}
-
-#move_form {
-  margin-left: -10%;
-}
-
-#subscribe_button {
-  margin-left: 20%;
-  margin-bottom: 40%;
-}
 
 #products {
   font-size: 48px;
@@ -149,39 +130,45 @@ body {
 }
 }
 
-@media screen and (max-width : 802px){
-  #span {
-  display: block;
-  width: 35px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-    cursor: pointer;
-}
 
-#hamburger {
-  margin-left: 20px;
-  margin-top: -147px;
-  float: left;
-  position: absolute;
-}
-#logo_background {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  z-index: -100000;
-  background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
-  margin-bottom: -10px;
-}
 
-}
 
-@media screen and (min-width : 802px){
+@media screen and (max-width : 806px){
 
 .sidenav {
   display: none;
 }
+
+.container2 {
+  margin-top: 0%;
 }
+
+
+.container2 {
+  margin-bottom: -30%;
+}
+}
+
+
+@media screen and (max-width : 1150px){
+
+.sidenav {
+  display: none;
+}
+
+#background {
+  display: none;
+}
+
+#background_2 {
+  display: none;
+}
+
+.container2 {
+  padding-bottom: -30%;
+}
+}
+
 
 
 
@@ -198,7 +185,7 @@ body {
 <%= image_tag("contact_background.jpg", :id => "background_2") %>
 
 <div  class="container2">
-  <form style="padding-top: -10%;" id="contact" action="" method="post" style="clear: left;">
+  <form style="padding-top: -10%;" id="contact" action="" method="post" style="float: left; position: absolute; margin-bottom: -100%;">
     <h3 style="margin-top: -35%; z-index: 10000;">Talk To Us</h3>
     <h4>Our coven is commited to making your Green Witch experiences as magical as possible!</h4>
     <fieldset>
@@ -218,6 +205,9 @@ body {
     </fieldset>
   </form>
 </div>
+<br>
+<br>
+<br>
 
 
 </body>

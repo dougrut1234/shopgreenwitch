@@ -10,14 +10,10 @@
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
-#logo_background {
-  height: 200px;
-}
 
 #move_this {
   width: 100%;
-margin-top: -15%;
-
+margin-top: -10%;
 margin-left: 4%;
 margin-right: 8%;
 padding-bottom: 1%;
@@ -27,9 +23,13 @@ padding-bottom: 1%;
   text-align: center;
 }
 
-span {
-  display: none;
+#banner {
+  width: 100%;
+  height: auto;
+  margin-top: -5%;
 }
+
+
 </style>
 <body>
 
@@ -59,45 +59,13 @@ body {
 #banner {
   width: 100%;
   height: auto;
-  display: none;
+  display: block;
 }
 
 #banner2 {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-#label {
-  width: 50%;
-  margin-right: 25%;
-}
-
-
-#enter_subscribe {
-  text-align: center;
-  margin-right: 0%;
-  margin-left: -20%;
-}
-
-#move_subscribe {
-  margin-right: 20%;
-}
-
-#move_form {
-  margin-left: -10%;
-}
-
-#subscribe_button {
-  margin-left: 20%;
-  margin-bottom: 40%;
-}
-
-#label {
   display: none;
-}
-
-#move_this {
 }
 
 
@@ -112,61 +80,69 @@ body {
   display: none;
 }
 
-#logo_background {
-  width: 100%;
-  height: 150px;
-  position: relative;
-  z-index: -100000;
-  background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
-  margin-bottom: -90px;
-}
-
-#hamburger {
-  margin-left: 20px;
-  margin-top: -68px;
-  float: left;
-  position: absolute;
-}
-
 #side_bar {
   display: block;
 }
 
+/*CUT THE WHITE SPACE ABOVE "WANT TO HEAR MORE"*/
+#center_title {
+  text-align: center;
+}
+
+#span {
+  display: block;
+  width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+
+li {
+  margin-left: -15%;
+}
+
+}
+
+@media screen and (max-width : 680px){
+
+
+#inspiration {
+  clear: left;
+}
+
+
 .something {
-  margin-left: 3%;
+  margin-left: -25%;
+  margin-top: 15%;
 }
 
 .something_2 {
-   margin-left: 3%;
+  margin-left: -25%;
+  margin-top: 15%;
 }
 
 .something_3 {
-   margin-left: 3%;
+  margin-left: -25%;
+  margin-top: 15%;
 }
 
 .something_else {
-   margin-left: 3%;
+  margin-left: -25%;
+  margin-top: 15%;
 }
 
 .something_else_2 {
-   margin-left: 3%;
+  margin-left: -25%;
+  margin-top: 15%;
 }
 
 .something_else_3 {
-   margin-left: 3%;
+  margin-left: -25%;
+  margin-top: 15%;
 }
-
-#enter_subscribe {
-  float: left;
-  font-size: 16px;
-  font-family: 'avenir next', sans-serif;
-  color: #67bdb3;
-  font-weight: 600;
 }
-
-}
-
-
 
 
 @media screen and (max-width : 802px){
@@ -180,28 +156,63 @@ body {
 }
 
 #hamburger {
-  margin-left: 20px;
-  margin-top: -147px;
+  margin-top: 0px;
   float: left;
-  position: absolute;
 }
-#logo_background {
+
+
+
+#banner {
   width: 100%;
-  height: 200px;
-  position: relative;
-  z-index: -100000;
-  background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
-  margin-bottom: -10px;
+  height: auto;
 }
 
+#center_title {
+  text-align: center;
 }
 
-@media screen and (min-width : 802px){
+#center_title2 {
+  text-align: center;
+}
 
-.sidenav {
-  display: none;
+
+#move_this {
+  margin-top: -15%;
+}
+
+.something {
+  margin-left: -10%;
+  margin-top: 15%;
+}
+
+.something_2 {
+  margin-left: -10%;
+  margin-top: 15%;
+}
+
+.something_3 {
+  margin-left: -10%;
+  margin-top: 15%;
+}
+
+.something_else {
+  margin-left: -10%;
+  margin-top: 15%;
+}
+
+.something_else_2 {
+  margin-left: -10%;
+  margin-top: 15%;
+}
+
+.something_else_3 {
+  margin-left: -10%;
+  margin-top: 15%;
 }
 }
+
+
+
 
 @media screen and (max-width : 1109px){
 
@@ -210,15 +221,21 @@ body {
   clear: left;
 }
 
+#move_this {
+  margin-left: 33.3%;
+}
+
 .something {
   margin-top: 15%;
 }
 
 .something_2 {
+  clear: left;
   margin-top: 15%;
 }
 
 .something_3 {
+  clear: left;
   margin-top: 15%;
 }
 
@@ -227,16 +244,50 @@ body {
 }
 
 .something_else_2 {
+  clear: left;
   margin-top: 15%;
 }
 
 .something_else_3 {
+  clear: left;
+  margin-top: 15%;
+}
+}
+
+@media screen and (min-width : 1110px){
+
+.something {
+  margin-left: 0%;
   margin-top: 15%;
 }
 
+.something_2 {
+  margin-left: 0%;
+  margin-top: 15%;
 }
 
-@media screen and (min-width : 1300px){
+.something_3 {
+  margin-left: 0%;
+  margin-top: 15%;
+}
+
+.something_else {
+  margin-left: 0%;
+  margin-top: 15%;
+}
+
+.something_else_2 {
+  margin-left: 0%;
+  margin-top: 15%;
+}
+
+.something_else_3 {
+  margin-left: 0%;
+  margin-top: 15%;
+}
+}
+
+@media screen and (min-width : 1310px){
 
 .something {
   margin-left: 4%;
@@ -261,7 +312,7 @@ body {
 .something_else_3 {
   margin-left: 4%;
 }
-}
+
 
 
 
@@ -451,6 +502,19 @@ body {
  <div class="something_3"><li><a id="square3" style="text-align: center;">TESTIMONIALS</a></li></a></li></div>
  <div class="something_else_3"><li><a <%= link_to "When you share your stories, it inspires others. And Well, that's the real magic!", testimonials_url, :id => "square3_else" %></a></li></div>
 
+</a>
+</li>
+</div>
+</a>
+</li>
+</div>
+</a>
+</li>
+</div>
+</div>
+</body>
+</html>
+</body>
 
 
 
@@ -458,7 +522,7 @@ body {
 
 
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
-<iframe id="move_instagram" src="https://snapwidget.com/embed/467519" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; margin-left: -4%;"></iframe>
+<iframe id="move_instagram" src="https://snapwidget.com/embed/467519" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; margin-left: 0%;"></iframe>
 
 
 

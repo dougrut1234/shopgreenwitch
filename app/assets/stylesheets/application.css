@@ -3,8 +3,29 @@ a {
   text-decoration: none;
 }
 
-#logo_background {
-  height: 200px;
+#top-banner {
+  width: 100%;
+  height: 30px;
+  background-color: #fff7ff;
+  position: absolute;
+  margin-top: -50px;
+}
+
+#center_label {
+  float: right;
+  margin-left: -25%;
+  width: 250px;
+}
+
+#menu {
+  margin-top: 10px;
+}
+
+#coven {
+  float: left;
+  margin-top: -38px;
+  margin-left: 3px;
+  margin-right: -60px;
 }
 
 .banner {
@@ -28,11 +49,7 @@ a {
 }
 
 
-#banner {
-  width: 100%;
-  height: auto;
-  margin-top: 0%;
-}
+
 
 #banner2 {
   display: none;
@@ -103,12 +120,19 @@ a {
 }
 
 #label {
+  width: 250px;
   float: right;
-  width: 240px;
-  margin-right: 1%;
-  margin-top: -10%;
 }
 
+#center_title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#center_title2 {
+  text-align: center;
+  margin-top: -75px;
+}
 
 @-webkit-keyframes mymove {
     0% {background-color: #ddd9c5; }
@@ -153,28 +177,6 @@ to{
   opacity: 1;
 }
 
-
-#logo_background {
-  width: 100%;
-  height: 250px;
-  position: relative;
-  z-index: 100000;
-  background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
-}
-
-span {
-  display: none;
-}
-
-.logo {
-	width: 30%;
-	margin-top: -1%;
-	margin-left: 35%;
-  margin-right: 35%;
-  z-index: 1000;
-  margin-bottom: 45px;
-  background-color: green;
-}
 
 #test {
 	font-size: 72px;
@@ -569,6 +571,20 @@ span {
   margin-bottom: -15%;
 }
 
+.logo {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10%;
+  text-align: center;
+  z-index: 1000;
+
+}
+
+
+
+
+
 #bio {
   margin-top: 10%;
   font-family: 'avenir next', sans-serif;
@@ -602,26 +618,16 @@ span {
 }
 
 .move_icons {
-  padding-bottom: 2%;
+  padding-bottom: -10%;
 }
 
 #bottom {
   clear: right;
   margin-top: 5%;
+  margin-bottom: 1%;
   text-align: center;
 }
 
-#bottom2 {
-  clear: right;
-  margin-top: 5%;
-  text-align: center;
-}
-
-#bottom_for_contact {
-  clear: right;
-  margin-top: 70%;
-  text-align: center;
-}
 
 #bottom_for_faq {
   clear: right;
@@ -818,9 +824,9 @@ fieldset {
 
 .container2 {
   padding-top: 5%;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom: -10%;
+  margin-left:  5%;
+  margin-right: 5%;
+  padding-bottom: 10%;
   margin-bottom: 20%;
 }
 
@@ -921,7 +927,7 @@ h1 span {
 
 #contact_title {
   text-align: center;
-  margin-top: -5%;
+  margin-top: -6.5%;
   padding-top: 5%;
   margin-bottom: -6%;
   font-weight: 200;
@@ -932,7 +938,7 @@ h1 span {
 
 #promotions_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: -6.5%;
   padding-top: 5%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
@@ -942,7 +948,7 @@ h1 span {
 
 #philosophy_title {
   text-align: center;
-  margin-top: 0%;
+  margin-top: -6.5%;
   padding-top: 0%;
   margin-bottom: 10%;
   font-weight: 200;
@@ -953,7 +959,7 @@ h1 span {
 
 #philosophy_title1 {
   text-align: center;
-  margin-top: 0%;
+  margin-top: -5%;
   padding-top: 0%;
   margin-bottom: 5%;
   font-weight: 200;
@@ -969,7 +975,7 @@ h1 span {
 
 #ingredients_title {
   text-align: center;
-  margin-top: 0%;
+  margin-top: -6.5%;
   margin-bottom: 5%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
@@ -990,7 +996,7 @@ h1 span {
 
 #locate_us_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: -6.5%;
   padding-top: 0%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
@@ -1000,7 +1006,7 @@ h1 span {
 
 #hemp_dictionary_title {
   text-align: center;
-  margin-top: 0%;
+  margin-top: -6.5%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
@@ -1010,7 +1016,7 @@ h1 span {
 
 #recipes_title {
   text-align: center;
-  margin-top: -1%;
+  margin-top: -6.5%;
   font-weight: 200;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
@@ -1022,13 +1028,6 @@ h1 span {
   margin-left: -50%;
   padding-top: 35%;
   margin-bottom: -25%;
-}
-
-#move_form {
-
-  padding-top: 10%;
-  margin-bottom: 25%;
-  margin-left: 11%;
 }
 
 #move_both {
@@ -1058,7 +1057,9 @@ h1 span {
   margin-top: -35%;
 }
 
-
+#move_everything {
+  padding-bottom: 20%;
+}
 /*HAMBURGER*/
 
 .shift {
@@ -1180,7 +1181,7 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 #locations_title {
-  margin-top: 0%;
+  margin-top: -6.5%;
   font-size: 36px;
   font-family: 'avenir next', sans-serif;
   text-align: center;
@@ -1208,13 +1209,7 @@ input[type=checkbox]:checked ~ #menu{
   text-decoration: underline;
 }
 
-#submit{
-  margin-left: 10px;
-  background-color: #67bdb3;
-  margin-bottom: 40px;
-  border-radius: 25px;
-  padding: 15px;
-}
+
 
 .store_name {
   text-align: center;
@@ -1354,13 +1349,6 @@ input {
     overflow: scroll;
 }
 
-#enter_subscribe {
-  float: left;
-  font-size: 20px;
-  font-family: 'avenir next', sans-serif;
-  color: #67bdb3;
-  font-weight: 600;
-}
 
 #input {
   width: 300px;
@@ -1378,13 +1366,6 @@ input {
   opacity: .75;
 }
 
-#move_subscribe {
-  clear: all;
-  margin-bottom: -10%;
-  margin-top: 10%;
-  margin-left: 30%;
-  margin-right: 15%;
-}
 
 .notice {
   font-family: 'alpaca scarlett demo', sans-serif;
@@ -1630,6 +1611,11 @@ fieldset {
 
 .move_icons {
   margin-left: 10%;
+  padding-bottom: -10%;
+}
+
+#move_everything {
+  width: -50%;
 }
 
 #bottom1 {
@@ -1644,15 +1630,6 @@ fieldset {
   margin-left: 15%;
 }
 
-.logo {
-  width: 50%;
-  margin-top: 2%;
-  margin-left: 25%;
-  margin-right: 25%;
-  z-index: 1000;
-  margin-bottom: 45px;
-  background-color: green;
-}
 
 #subscribe_button {
   background-color: #67bdb3;
@@ -1695,7 +1672,7 @@ fieldset {
 
 }
 /*Responsive Styles*/
-@media screen and (max-width : 804px){
+@media screen and (max-width : 1150px){
 
   #contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
 
@@ -1703,7 +1680,8 @@ fieldset {
   padding-left: 100px;
   padding-right: 100px;
   margin:30px 0;
-  margin-top: 20%;
+  margin-top: 15%;
+  margin-bottom: 40%;
 }
 
 #contact h3 {
