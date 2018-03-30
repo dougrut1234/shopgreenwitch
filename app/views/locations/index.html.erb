@@ -9,9 +9,6 @@
 .mySlides {display:none;}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
-#logo_background {
-  height: 200px;
-}
 
 #submit{
   text-align: center;
@@ -27,77 +24,12 @@
 
 @media screen and (max-width : 414px){
 
-body {
-  width: 100%;
-  margin-right: 13%;
-}
-
 #submit{
   text-align: center;
   background-color: #67bdb3;
   margin-bottom: 40px;
   border-radius: 25px;
   padding: 15px;
-}
-
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin-left: -7px;
-  margin-top: -20%;
-}
-
-#first_pic {
-  width: 100%;
-  margin-bottom: 20%;
-}
-
-#inspiration {
-  padding-top: 25%;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-}
-
-#label {
-  width: 50%;
-  margin-right: 25%;
-}
-
-#products {
-  font-size: 48px;
-
-}
-
-#our_products {
-  font: 'avenir next', sans-serif; 
-  margin-top: -.5%; 
-  font-size: 32px; 
-  font-style: italic; 
-  text-align: center; 
-  margin-bottom: 1%;
-
-}
-
-#our_products_description {
-  font: 'Montserrat', sans-serif; 
-  font-size: 16px; 
-  text-align: justify; 
-  margin-top: 0%; 
-  margin-right: 3%; 
-  margin-left: 3%; 
-  padding-bottom: 20%;
-  font-stretch: condensed;
-}
-
-#move_the_products {
-  margin-left: 14%;
-}
-
-#label {
-  display: none;
 }
 
 #locations_title {
@@ -113,18 +45,163 @@ body {
   margin-left: 2%;
 }
 
-
-.slider-wrapper {
-  width: 100%;
-  height: 20px;
-  margin-top: -18px;
-  position: relative;
+.controls {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  height: 29px;
+  margin-left: 17px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
 }
 
-.contain_line {
+.controls:focus {
+  border-color: #4d90fe;
+}
+.title {
+  font-weight: bold;
+}
+#infowindow-content {
   display: none;
 }
+#map #infowindow-content {
+  display: inline;
 }
+
+
+#map {
+  float: right;
+  height: 100%;
+  width: 100%;
+  margin-right: 0%;
+}
+}
+
+
+@media screen and (max-width : 802px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: -2px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    .line { width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.controls {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  height: 29px;
+  margin-left: 17px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+.controls:focus {
+  border-color: #4d90fe;
+}
+.title {
+  font-weight: bold;
+}
+#infowindow-content {
+  display: none;
+}
+#map #infowindow-content {
+  display: inline;
+}
+
+
+@media screen and (max-width : 999px){
+    /*Make dropdown links appear inline*/
+
+/* Optional: Makes the sample page fill the window. */
+
+.controls {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  height: 29px;
+  margin-left: 17px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+.controls:focus {
+  border-color: #4d90fe;
+}
+.title {
+  font-weight: bold;
+}
+#infowindow-content {
+  display: none;
+}
+#map #infowindow-content {
+  display: inline;
+}
+
+#map {
+        clear: right;
+        height: 500px;
+        width: 300px;
+        margin-right: 5%;
+      }
+}
+
+#scroll {
+  padding-top: 100px;
+  text-align: center;
+}
+
+}
+
 
 
 
@@ -159,30 +236,11 @@ body {
       }
   
 
-    @media screen and (max-width : 414px){
 
-      #map {
-        float: right;
-        height: 100%;
-        width: 100%;
-        margin-right: 0%;
-      }
-
-    }
-
-    @media screen and (min-width : 802px){
-
-.sidenav {
-  display: none;
-}
-}
 
     </style>
   </head>
   <body>
-    <div id="floating-panel">
-
-    </div>
     <div id="map"></div>
     <script>
       function initMap() {
@@ -364,6 +422,8 @@ $(document).ready(function(){
  
   </body>
 
+
+<div id="center_scroll">
 <div id="scroll">
 <!-- 	<p id="state_locations">New York</p>
 	<p class="store">J&A VAPES</p>
@@ -387,11 +447,8 @@ $(document).ready(function(){
   <p id="locate_store2">Locate This Place!</p>
 <br>
 </div>
+</div>
 
 
-
-<br>
-<br>
-<br>
 
   
