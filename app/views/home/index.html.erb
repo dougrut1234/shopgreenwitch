@@ -17,6 +17,7 @@ margin-top: -10%;
 margin-left: 4%;
 margin-right: 8%;
 padding-bottom: 1%;
+clear: right;
 }
 
 #center_text {
@@ -27,6 +28,30 @@ padding-bottom: 1%;
   width: 100%;
   height: auto;
   margin-top: -5%;
+}
+
+#home_text_heading {
+  font-size: 20px;
+  font-family: cursive;
+  color: #67bdb3;
+  text-align: center;
+  font-weight: 100;
+  margin-top: -8%;
+}
+
+#home_text {
+  font-size: 28px;
+  font-family: "avenir next", sans-serif;
+  color: #67bdb3;
+  font-weight: 100;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 15%;
+  text-align: left;
+}
+
+#center_image {
+  text-align: center;
 }
 
 
@@ -384,9 +409,12 @@ li {
 
 </style>
 
+<p id="home_text_heading">Pure. Natural. Organic.</p>
+<p id="home_text"><i>"Essential oils for anxiety. Essential oils for pain. Our herbal supplements will improve your life in more ways than one. Come see what Green Witch has to offer from its cauldron!"</i></p>
 
-<%= image_tag("blue-back.jpg", :id => "banner") %>
-<%= image_tag("blue-back2.jpg", :id => "banner2") %>
+<div id="center_image">
+<%= image_tag("faq_banner.jpg", :id =>"new_pic") %>
+</div>
 
 
     <script>
