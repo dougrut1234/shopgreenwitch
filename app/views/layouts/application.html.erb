@@ -16,7 +16,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+<body>
 
 <div id="top-banner">
 
@@ -434,7 +434,6 @@ button:hover {
 
 </style>
 </head>
-<body>
 
 <div id="side_erase">
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;" id="mySidebar">
@@ -656,8 +655,8 @@ for (i = 0; i < dropdown.length; i++) {
   <% end %>
 
   <%= yield %>
-</body>
-<body id="remove_padding">
+
+<div id="remove_padding">
 <div id="move_everything">
 <div id="move_subscribe">
 <p style="font-family: 'Montserrat', sans-serif; font-size: 20px; color: #67bdb3;"" id="enter_subscribe">Want To Hear More?</p>
@@ -678,6 +677,7 @@ for (i = 0; i < dropdown.length; i++) {
 <%= link_to(image_tag("twitter.png"), "http://twitter.com/shopgreenwitch", :class => "icon") %>
 <%= link_to(image_tag("spotify.png"), "https://open.spotify.com/user/o1yiv0jal852jm8vxvd9jkdw0/playlist/4WQAOU8AZQv3XVgbGGf4jZ", :class => "icon") %>
 
+</div>
 </div>
 </div>
 </body>
