@@ -1,11 +1,11 @@
 a {
-	color: black;
+  color: black;
   text-decoration: none;
 }
 
 #top-banner {
   width: 100%;
-  height: 40px;
+  height: 30px;
   background-color: #fff7ff;
   position: absolute;
   margin-top: -50px;
@@ -179,7 +179,7 @@ to{
 
 
 #test {
-	font-size: 72px;
+  font-size: 72px;
 }
 
 .item-1, 
@@ -245,14 +245,6 @@ to{
     line-height: 25px;
 }
 
-#move_square2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 98%;
-  margin-left: 2%;
-  margin-right: 2%;
-  display: none;
-}
 
 #square2 {
   
@@ -323,21 +315,7 @@ to{
     line-height: 25px;
 }
 
-#square_hover1 {
-  float: left;
-  background-color: #2b2929;
-    width: 285px;
-    height: 170px;
-    text-align: center;
-    padding-top: 5%;
-    margin: 20px;
-    color: white;
-    font-size: 30px;
-    font-weight: 50;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    display: none;
-}
+
 
 
 @keyframes anim-1 {
@@ -350,9 +328,9 @@ to{
 }
 
 #move_nav_bar {
-	float: left;
-	width: 100%;
-	margin-top: 0%;
+  float: left;
+  width: 100%;
+  margin-top: 0%;
   margin-left: 4%;
   margin-right: 4%;
 
@@ -469,12 +447,12 @@ to{
 }
 
 #mc_embed_signup {
-	position: relative;
-	z-index: -10000;
+  position: relative;
+  z-index: -10000;
 }
 
 .butt {
-	float: right;
+  float: right;
    border: 1px solid black;
    background-color: #67bdb3;
    margin-right: 4.5%;
@@ -604,15 +582,15 @@ to{
   }
 
 .icon {
-	width: 30px;
+  width: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .icon:hover {
-	width: 30px;
-	opacity: .75;
-	cursor: pointer;
+  width: 30px;
+  opacity: .75;
+  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
 }
@@ -657,7 +635,7 @@ to{
 }
 
 #size {
-	font-size: 36px;
+  font-size: 36px;
 }
 
 #meet_the_coven {
@@ -856,7 +834,7 @@ h1 {
 }
 
 h1 span {
-	background:#fff; 
+  background:#fff; 
     padding:10px 10px; 
 }
 
@@ -1690,5 +1668,3 @@ ul li a:hover + .hidden2, .hidden2:hover {
     display: block;
     width: 100%;
 }
-}
-
