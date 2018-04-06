@@ -94,6 +94,15 @@
 
 </script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116938875-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-116938875-1');
+</script>
+
 <div id="center_label">
 <%= image_tag("label.jpg", :id => "label") %>
 </div>
@@ -216,11 +225,12 @@
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 170px;
   z-index: 1;
   position: absolute; 
   font-size: 10px;
   font-family: 'avenir next', sans-serif;
+  margin-top: 50px;
 }
 
 /* Links inside the dropdown */

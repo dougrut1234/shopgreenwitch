@@ -201,6 +201,15 @@ to{
   z-index: 10000;
 }
 
+#our_products {
+  font-family: 'avenir next', sans-serif;
+  margin-top: 2%;
+  text-align: left; 
+  font-size: 32px; 
+  font-style: italic; 
+  margin-bottom: 1%;
+}
+
 .item-1{
   animation-name: anim-1;
 }

@@ -1,5 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=avenir next" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
@@ -11,24 +13,15 @@
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
-#our_products {
-  font: 'avenir next', sans-serif; 
-  margin-top: -5.5%; 
-  font-size: 32px; 
-  font-style: italic; 
-  text-align: left; 
-  margin-bottom: 1%;
-}
-
 
 #our_products_description {
-  font: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   font-size: 16px; 
   text-align: justify; 
-  margin-top: 3%; 
   margin-right: 5%; 
   margin-left: 20%; 
   font-stretch: condensed;
+  line-height: 250%;
 }
 
 
@@ -52,7 +45,7 @@
 }
 
 #our_products_description {
-  font: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   font-size: 16px; 
   text-align: justify; 
   margin-top: 5%; 
@@ -71,20 +64,28 @@
 }
 }
 
-@media screen and (max-width : 780px){
+@media screen and (max-width : 850px){
+
+.banner {
+  clear: left;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3%;
+}
 
 #our_products {
-  clear: all;
   font: 'avenir next', sans-serif;  
   font-size: 32px; 
   margin-left: 5%;
   font-style: italic; 
   text-align: center; 
   margin-bottom: 1%;
+  margin-top: -5%;
 }
 
 #our_products_description {
-  clear: all;
+  clear: right;
   font: 'Montserrat', sans-serif; 
   font-size: 16px; 
   text-align: justify; 
@@ -109,15 +110,6 @@
   display: none;
 }
 
-#our_products {
-  float: left;
-  font: 'avenir next', sans-serif;  
-  font-size: 32px; 
-  font-style: italic; 
-  text-align: center; 
-  margin-bottom: 1%;
-}
-}
 
 
 </style>
@@ -231,9 +223,9 @@ $(document).ready(function(){
 
 </style>
 
-<%= image_tag("new_faq_banner2.JPG", :class => "banner") %>
+<%= image_tag("test_banner.jpg", :class => "banner") %>
 <p id="our_products">FAQ</p>
-<p id="our_products_description">Where wellness is concerned, no question should be left unanswered. Find our answers to the most common questions below. Something still unclear? Feel free to contact us <%= link_to "here", contact_url, :id => "underline" %>. Don't be shy.</p>
+<p id="our_products_description">Where wellness is concerned, no question should be left unanswered. Find our answers to the most common questions below. Something still unclear? Feel free to contact us <%= link_to "contact us here", contact_url, :id => "underline" %>. Don't be shy.</p>
 
 <div id="move_faq">
 <!-- <h1 id="faq_title"><span>F.A.Q</span></h1><br><br> -->
