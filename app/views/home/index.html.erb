@@ -28,6 +28,38 @@ padding-bottom: 1%;
 #inspiration {
   clear: left;
 }
+
+#shop_now_button {
+  border-radius: 4px;
+  background-color: #67bdb3;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 15px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#shop_now_button:hover {
+  border-radius: 4px;
+  background-color: #67bdb3;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 15px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: .5;
+}
+
+#center_shop_now_button {
+  margin-top: -12%;
+  margin-bottom: 25%;
+  text-align: center;
+}
+
 </style>
 <body>
 
@@ -90,6 +122,37 @@ body {
 
 #square3_else {
   margin-left: -15%;
+}
+
+#shop_now_button {
+  border-radius: 2px;
+  background-color: #67bdb3;
+  border: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 9px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#shop_now_button:hover {
+  border-radius: 2px;
+  background-color: #67bdb3;
+  border: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 9px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: .5;
+}
+
+#center_shop_now_button {
+  margin-top: -12%;
+  margin-bottom: 25%;
+  text-align: center;
 }
 
 
@@ -325,8 +388,13 @@ body {
 }
 }
 </style>
-<%= image_tag("blue-back.jpg", :id => "banner") %>
+<%= image_tag("landing_photo.png", :id => "banner") %>
 <%= image_tag("blue-back2.jpg", :id => "banner2") %>
+
+<div id="center_shop_now_button">
+<%= link_to "SHOP NOW", shop_url, :id => "shop_now_button" %>
+</div>
+
     <script>
      $(document).ready(function() {
   $(".something").mouseenter(function() {
