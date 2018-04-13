@@ -14,24 +14,14 @@
 .w3-badge {height:13px;width:13px;padding:0}
 
 
-#our_products_description {
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 16px; 
-  text-align: justify; 
-  margin-right: 5%; 
-  margin-left: 20%; 
-  font-stretch: condensed;
-  line-height: 250%;
-}
-
-
 
 @media screen and (max-width : 700px){
 
 .banner {
   width: 100%;
   margin-bottom: 2%;
-  margin-top: -5%;
+  margin-top: -10%;
+  float: left;
 }
 
 #center_title {
@@ -45,7 +35,7 @@
 #our_products {
   font: 'avenir next', sans-serif; 
   margin-top: 1%; 
-  font-size: 28px; 
+  font-size: 24px; 
   font-style: italic; 
   text-align: center; 
   margin-bottom: 1%;
@@ -54,6 +44,7 @@
 #our_products_description {
   font-family: 'Montserrat', sans-serif; 
   font-size: 16px; 
+  float: left;
   text-align: justify; 
   margin-top: 5%; 
   margin-right: 3%; 
@@ -74,11 +65,12 @@
 @media screen and (min-width : 701px){
 
 .banner {
-  float: left;
   width: 33%;
   margin-bottom: 2%;
   margin-right: 2%;
   margin-left: 2%;
+  margin-top: -5%;
+  float: left;
 }
 
 #center_title {
@@ -93,19 +85,20 @@
   font: 'avenir next', sans-serif;  
   font-size: 28px; 
   font-style: italic; 
-  text-align: center;
-  margin-top: -3%; 
+  text-align: left;
+  margin-top: -5%; 
+  float: left;
 }
 
 #our_products_description {
   font-family: 'Montserrat', sans-serif; 
   font-size: 16px; 
-  text-align: justify; 
-  margin-top: 1%; 
-  margin-right: 3%; 
-  margin-left: 3%; 
-  padding-bottom: 15%;
+  text-align: left; 
   font-stretch: condensed;
+  float: left;
+  margin-left: 37%;
+  margin-right: 5%;
+  margin-top: -18%;
 }
 
 #move_the_products {
@@ -118,7 +111,7 @@
 }
 
 
-@media screen and (min-width : 950px){
+/*@media screen and (min-width : 950px){
 
 .banner {
   float: left;
@@ -140,7 +133,7 @@
   font: 'avenir next', sans-serif;  
   font-size: 28px; 
   font-style: italic; 
-  text-align: center;
+  text-align: left;
   margin-top: 0%; 
 }
 
@@ -162,7 +155,7 @@
 #label {
   display: none;
 }
-}
+}*/
 
 
 @media screen and (min-width : 802px){
@@ -292,7 +285,7 @@ $(document).ready(function(){
 </style>
 
 <%= image_tag("test_banner.jpg", :class => "banner") %>
-<p id="our_products">FAQ</p>
+<p id="our_products">FREQUENTLY ASKED QUESTIONS</p>
 <p id="our_products_description">Where wellness is concerned, no question should be left unanswered. Find our answers to the most common questions below. Something still unclear? Feel free to contact us <%= link_to "contact us here", contact_url, :id => "underline" %>. Don't be shy.</p>
 
 <div id="move_faq">
