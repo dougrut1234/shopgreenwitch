@@ -194,14 +194,6 @@ to{
   z-index: 10000;
 }
 
-#our_products {
-  font-family: 'avenir next', sans-serif;
-  margin-top: 2%;
-  text-align: left; 
-  font-size: 32px; 
-  font-style: italic; 
-  margin-bottom: 1%;
-}
 
 .item-1{
   animation-name: anim-1;
@@ -931,8 +923,8 @@ h1 span {
   text-align: center;
   margin-top: -6.5%;
   padding-top: 0%;
-  margin-bottom: 10%;
-  font-weight: 200;
+  margin-bottom: 0%;
+  font-weight: bold;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
   color: #67bdb3;
