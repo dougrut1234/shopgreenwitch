@@ -262,53 +262,8 @@ html, body {
         });
 
 
-var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 class="store_name">J&A VAPES</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>2110 Richmond Rd. SI NY 10306</b></p>'+
-      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
-      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/place/2110+Richmond+Rd,+Staten+Island,+NY+10306/@40.5813073,-74.1136338,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24eb1e892054d:0x9012640ea1dc66e7!8m2!3d40.5813032!4d-74.1114451", :id => "close_enough"  %><b>'
-      '</div>'+
-      '</div>';
 
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-   var contentString2 = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 class="store_name">J&A VAPES</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>2110 Richmond Ave. SI NY 10314</b></p>'+
-      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' +
-      '<b><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/dir/J%26A+Vapes,+Richmond+Road,+Staten+Island,+NY//@40.5811801,-74.1468293,13z/data=!4m8!4m7!1m5!1m1!1s0x89c24eb1e892054d:0x221b5ba78c3f82fc!2m2!1d-74.111724!2d40.5811202!1m0", :id => "close_enough" %><b>'
-      '</div>'+
-      '</div>';
-
-  var infowindow2 = new google.maps.InfoWindow({
-    content: contentString2
-  });
-
-   var contentString3 = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 class="store_name">J&A VAPES</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>1880 Hylan Blvd SI NY 10305</b></p>'+
-      '<p><%= link_to "www.javapesinc.com", "http://javapesinc.com/", :id => "website" %><p>' + 
-      '<b style="margin-left: 18;"><%= link_to "Close Enough? Get Directions!", "https://www.google.com/maps/dir/60+East+Crescent+Avenue,+Ramsey,+NJ//@41.0493124,-74.1583953,13z/data=!4m8!4m7!1m5!1m1!1s0x89c2e40071d3e9af:0x7d52bef3ea0d34f6!2m2!1d-74.12329!2d41.049253!1m0", :id => "close_enough" %><b>' +
-      '</div>'+
-      '</div>';
-
-  var infowindow3 = new google.maps.InfoWindow({
-    content: contentString3
-  });
-
-
-   var contentString4 = '<div id="content">'+
+   var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
       '<h1 class="store_name">TASTEBUDS NATURAL FOODS</h1>'+
@@ -319,8 +274,8 @@ var contentString = '<div id="content">'+
       '</div>'+
       '</div>';
 
-  var infowindow4 = new google.maps.InfoWindow({
-    content: contentString4
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
   });
 
 
@@ -328,70 +283,70 @@ var contentString = '<div id="content">'+
     position: javapes1,
     icon: "/assets/logo_icon.png",
     map: map,
-    title: 'J&A Vapes'
-
-  });
-
-
-var marker2 = new google.maps.Marker({
-    position: javapes2,
-    icon: "/assets/logo_icon.png",
-    map: map,
-    title: 'J&A Vapes'
-  });
-
-var marker3 = new google.maps.Marker({
-    position: javapes3,
-    icon: "/assets/logo_icon.png",
-    map: map,
-    title: 'J&A Vapes'
-  });
-
-var marker4 = new google.maps.Marker({
-    position: javapes4,
-    icon: "/assets/logo_icon.png",
-    map: map,
     title: 'Tastebuds Natural Foods'
+
   });
+
+
+// var marker2 = new google.maps.Marker({
+//     position: javapes2,
+//     icon: "/assets/logo_icon.png",
+//     map: map,
+//     title: 'J&A Vapes'
+//   });
+
+// var marker3 = new google.maps.Marker({
+//     position: javapes3,
+//     icon: "/assets/logo_icon.png",
+//     map: map,
+//     title: 'J&A Vapes'
+//   });
+
+// var marker4 = new google.maps.Marker({
+//     position: javapes4,
+//     icon: "/assets/logo_icon.png",
+//     map: map,
+//     title: 'Tastebuds Natural Foods'
+//   });
 
 marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
 
-marker2.addListener('click', function() {
-    infowindow2.open(map, marker2);
-  });
+// marker2.addListener('click', function() {
+//     infowindow2.open(map, marker2);
+//   });
 
-marker3.addListener('click', function() {
-    infowindow3.open(map, marker3);
-  });
+// marker3.addListener('click', function() {
+//     infowindow3.open(map, marker3);
+//   });
 
-marker4.addListener('click', function() {
-    infowindow4.open(map, marker4);
-  });
+// marker4.addListener('click', function() {
+//     infowindow4.open(map, marker4);
+//   });
 
+
+// $(document).ready(function(){
+//     $("#locate_store").click(function(){
+//         infowindow.open(map, marker);
+//     });
+// });
+
+// $(document).ready(function(){
+//     $("#locate_store2").click(function(){
+//         infowindow2.open(map, marker2);
+//     });
+// });
+
+// $(document).ready(function(){
+//     $("#locate_store3").click(function(){
+//         infowindow3.open(map, marker3);
+//     });
+// });
 
 $(document).ready(function(){
     $("#locate_store").click(function(){
         infowindow.open(map, marker);
-    });
-});
-
-$(document).ready(function(){
-    $("#locate_store2").click(function(){
-        infowindow2.open(map, marker2);
-    });
-});
-
-$(document).ready(function(){
-    $("#locate_store3").click(function(){
-        infowindow3.open(map, marker3);
-    });
-});
-
-$(document).ready(function(){
-    $("#locate_store4").click(function(){
-        infowindow4.open(map, marker4);
     });
 });
 
@@ -442,7 +397,7 @@ $(document).ready(function(){
   <p class="store">TASTEBUD'S NATURAL FOODS</p>
   <p class="store">1807 Hylan Blvd, SI, NY 10305</p>
   <p class="store">718-351-8693</p>
-  <p id="locate_store4">Locate This Place!</p>
+  <p id="locate_store">Locate This Place!</p>
 <br>
 <!-- 	<p class="store">J&A VAPES</p>
 	<p class="store">1880 Hylan Blvd, SI, NY 10305</p>
