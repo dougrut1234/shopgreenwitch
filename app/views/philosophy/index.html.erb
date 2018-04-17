@@ -36,25 +36,48 @@
 
 #origins_title {
   text-align: center;
+  padding-top: 3%;
   margin-top: -5%;
-  padding-top: 0%;
   margin-bottom: 0%;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
-  color: #67bdb3;
+  color: #C19620;
   font-weight: bold;
 }
 
 #philosophy_title_again {
   text-align: center;
   margin-top: 10%;
-  padding-top: 0%;
+  padding-top: 3%;
   margin-bottom: 0%;
   font-family: "avenir next", sans-serif;
   font-size: 36px;
-  color: #67bdb3;
+  color: #C19620;
   font-weight: bold;
 }
+
+#center_this_banner {
+  text-align: center;
+}
+
+.origin_banner {
+  width: 50%;
+  height: auto;
+  margin-bottom: -5%;
+}
+
+#background_for_philosophy {
+  padding-bottom: 2%;
+  background: rgb(25,247,255,0.15);
+  z-index: -100000;
+}
+
+#background_for_origins {
+  padding-bottom: 2%;
+  background: rgb(25,247,255,0.15);
+  z-index: -100000;
+}
+
 
 
 @media screen and (max-width : 414px){
@@ -125,15 +148,22 @@ body {
 
 <body>
 
-
+<div id="background_for_origins">
 <p id="origins_title">ORIGINS</p>
+
 
 <p id="origins_text">Our coven was formed through a shared belief in the power of herbs, spices, and minerals, to promote all types of wellness. 
 While we craft out of Dumbo (Down Under the Manhattan Bridge Overpass) We are boundless when sourcing products that are organically grown, non-GMO, and pure.</p>
+</div>
 
+<div id="center_this_banner">
+<%= image_tag("origin.jpg", :class => "origin_banner") %>
+</div>
 
+<div id="background_for_philosophy">
 <p id="philosophy_title_again">PHILOSOPHY</p>
 
-<p id="philosophy_text"><b>Green Witches</b> know that nature is the highest form of luxury - we opt for the holistic route as a first resort - not a last one. We draw from ancient wisdoms across different eras and combine it with modern research to truly balance and heal. </p>
+<p id="philosophy_text" style="z-index: 10000;"><b>Green Witches</b> know that nature is the highest form of luxury - we opt for the holistic route as a first resort - not a last one. We draw from ancient wisdoms across different eras and combine it with modern research to truly balance and heal. </p>
+</div>
 
 </body>

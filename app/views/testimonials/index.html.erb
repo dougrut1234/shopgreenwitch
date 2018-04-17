@@ -10,8 +10,42 @@
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
+@media screen and (min-width : 751px){
+
+.banner {
+  width: 45%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: -5%;
+  float: left;
+}
+
+#our_products {
+  font: 'avenir next', sans-serif;  
+  font-size: 28px; 
+  text-align: left;
+  margin-top: -5%; 
+  float: left;
+  color: #67bdb3;
+  font-weight: 700;
+}
+
+#our_products_description {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 16px; 
+  text-align: left; 
+  font-stretch: condensed;
+  float: left;
+  margin-left: 49%;
+  margin-right: 5%;
+  margin-top: -18%;
+}
+
 #endorsement {
+  clear: left;
 	margin-left: 10%;
+  margin-top: 10%;
 	font-size: 20px; 
 	font-family: 'Montserrat', sans-serif;
 	font-style: italic;
@@ -54,13 +88,42 @@
   text-align: center;
   font-stretch: condensed;
 }
+}
 
-
-@media screen and (max-width : 414px){
+@media screen and (max-width : 750px){
 
 body {
   width: 100%;
   margin-right: 13%;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  margin-top: -5%;
+  float: left;
+}
+
+#our_products {
+  font: 'avenir next', sans-serif;  
+  font-size: 28px; 
+  margin-top: -5%; 
+  color: #67bdb3;
+  text-align: center;
+  font-weight: 700;
+}
+
+#endorsement {
+  clear: left;
+  margin-left: 10%;
+  margin-top: 0%;
+  font-size: 20px; 
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .slideshow-container {
@@ -95,15 +158,6 @@ body {
 
 }
 
-#our_products {
-  font: 'avenir next', sans-serif; 
-  margin-top: -.5%; 
-  font-size: 32px; 
-  font-style: italic; 
-  text-align: center; 
-  margin-bottom: 1%;
-
-}
 
 #our_products_description {
   font: 'Montserrat', sans-serif; 
@@ -112,7 +166,7 @@ body {
   margin-top: 0%; 
   margin-right: 3%; 
   margin-left: 3%; 
-  padding-bottom: 20%;
+  padding-bottom: 0%;
   font-stretch: condensed;
 }
 
@@ -171,14 +225,15 @@ body {
 </style>
 <body>
 
+<%= image_tag("new_faq_banner.jpg", :class => "banner") %>
+<p id="our_products">Testimonials</p>
+<p id="our_products_description">Do you have a story? We have a coven full of ears. We would love to hear about how Green Witch has made a difference in your life.</p>
 
-<%= image_tag("new_faq_banner.jpg", :class => "testimonial_banner") %>
 <br>
 <br>
 <br>
 <br>
 <br>
-<p id="philosophy_title">TESTIMONIALS</p>
 
 <p id="endorsement">"My wife told me about CBD oil, and Green Witch gave me the opportunity to try it. I train several hours a day in all aspects off MMA, and teach at my school at night.  CBD oil helps keep my body refreshed after long days of training, as I come closer to becoming the UFC Bantamweight Champion.  I have recommended it to my teammates and coaches throughout my experience."</p>
 <p id="endorser"><b>-Jimmie Rivera - <i>UFC Champion (21-1 Record)</b></i></p>
