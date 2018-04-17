@@ -44,7 +44,8 @@ Rails.application.routes.draw do
   get "/privacy_policy" => "privacy_policy#index", as: "privacy_policy"
   
 
-
+match '/contacts',     to: 'contacts#new',             via: 'get'
+resources "contacts", only: [:new, :create]
  
 end
 

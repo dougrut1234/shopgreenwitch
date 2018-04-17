@@ -24,6 +24,10 @@ gem 'figaro'
 
 gem 'bluecloth', '~> 2.2'
 
+gem 'mail_form'
+
+gem 'simple_form'
+
 
 gem 'gibbon', github: "amro/gibbon"
 
