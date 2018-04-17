@@ -13,163 +13,16 @@
   height: 200px;
 }
 
-
-@media screen and (max-width : 414px){
-
-body {
-  width: 100%;
-  margin-right: 13%;
-}
-
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin-left: -7px;
-  margin-top: -20%;
-}
-
-#first_pic {
-  width: 100%;
-  margin-bottom: 20%;
-}
-
-#inspiration {
-  padding-top: 25%;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-}
-
-#label {
-  width: 50%;
-  margin-right: 25%;
-}
-
-
-#products {
-  font-size: 48px;
-
-}
-
-#our_products {
-  font: 'avenir next', sans-serif; 
-  margin-top: -.5%; 
-  font-size: 32px; 
-  font-style: italic; 
-  text-align: center; 
-  margin-bottom: 1%;
-
-}
-
-#our_products_description {
-  font: 'Montserrat', sans-serif; 
-  font-size: 16px; 
-  text-align: justify; 
-  margin-top: 0%; 
-  margin-right: 3%; 
-  margin-left: 3%; 
-  padding-bottom: 20%;
-  font-stretch: condensed;
-}
-
-#move_the_products {
-  margin-left: 14%;
-}
-
-#label {
-  display: none;
-}
-
-#background {
-  display: none;
-}
-
-#background_2 {
-  display: none;
-}
-
-.container2 {
-  margin-bottom: 20%;
-}
-
-  .slider-wrapper {
-  width: 100%;
-  height: 20px;
-  margin-top: -18px;
-  position: relative;
-}
-
-.contain_line {
-  display: none;
-}
-
-#logo_background {
-  width: 100%;
-  height: 150px;
-  position: relative;
+#contact_banner {
+  width: 1200px;
+  margin-top: -75px;
+  margin-bottom: -100px;
   z-index: -100000;
-  background: linear-gradient(180deg, #fff7ff 20%, #FFFFFF 20%);
-  margin-bottom: -90px;
 }
 
- #span {
-  display: block;
-  width: 35px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-    cursor: pointer;
+#center_banner {
+  text-align: center;
 }
-
-#hamburger {
-  margin-left: 20px;
-  margin-top: -120px;
-  position: absolute;
-}
-}
-
-
-
-
-@media screen and (max-width : 806px){
-
-.sidenav {
-  display: none;
-}
-
-.container2 {
-  margin-top: 0%;
-}
-
-
-.container2 {
-  margin-bottom: -30%;
-}
-}
-
-
-@media screen and (max-width : 1150px){
-
-.sidenav {
-  display: none;
-}
-
-#background {
-  display: none;
-}
-
-#background_2 {
-  display: none;
-}
-
-.container2 {
-  padding-bottom: -30%;
-}
-}
-
-
 
 
 </style>
@@ -180,13 +33,14 @@ body {
 
 <!-- <p id="contact_title">CONTACT</p> -->
 
+<p id="center_banner">
+<%= image_tag("contact-background-contact", :id => "contact_banner") %>
+</p>
 
-<%= image_tag("contact_background.jpg", :id => "background") %>
-<%= image_tag("contact_background.jpg", :id => "background_2") %>
 
-<div  class="container2">
-  <form style="padding-top: -10%;" id="contact" action="" method="post" style="float: left; position: absolute; margin-bottom: -100%;">
-    <h3 style="margin-top: -35%; z-index: 10000;">Talk To Us</h3>
+<div  class="container2" style="z-index: 10000; position: relative; margin-top: -600px; margin-bottom: -150px;"">
+  <form style="margin-top: 60px; z-index: 10000;" id="contact" action="" method="post" style="float: left; position: absolute;"">
+    <h3 style="margin-top: 20px; z-index: 10000;">Talk To Us</h3>
     <h4>Our coven is commited to making your Green Witch experiences as magical as possible!</h4>
     <fieldset>
       <input placeholder="Your name" type="text" tabindex="1" required autofocus>
@@ -200,14 +54,15 @@ body {
     <fieldset>
       <textarea placeholder="Type your Message Here." tabindex="5" required></textarea>
     </fieldset>
-    <fieldset id="submit-div">
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    <fieldset style="z-index: 1000;" id="submit-div">
+      <button style="z-index: 10000;" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
 </div>
 <br>
 <br>
 <br>
+
 
 </body>
 
