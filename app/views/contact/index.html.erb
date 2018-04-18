@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
@@ -29,15 +30,7 @@
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
 
-#contact {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin:30px 0;
-  margin-top: 0%;
-  margin-bottom: 3%;
-  z-index: 10000;
-  text-align: center;
-}
+
 
 #contact h3 {
   font-family: 'avenir next', sans-serif;
@@ -131,10 +124,37 @@ fieldset {
  color:#888;
 }
 
+@media screen and (max-width : 750px){
+
+  #contact {
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin:30px 0;
+  margin-top: 0%;
+  margin-bottom: 3%;
+  z-index: 10000;
+  text-align: center;
+}
+}
+
+@media screen and (min-width : 751px){
+
+  #contact {
+  background-image: url(/assets/contact-background-contact.jpg);
+  padding-left: 100px;
+  padding-right: 100px;
+  margin:30px 0;
+  margin-top: 0%;
+  margin-bottom: 3%;
+  z-index: 10000;
+  text-align: center;
+}
+}
 
 </style>
 
-<body>
+
 
 
 
@@ -142,8 +162,10 @@ fieldset {
 
 <p id="center_banner">
 
-
+<body>
   <form id="contact" action="" method="post">
+  <br>
+  <br>
     <h3 style="margin-top: 0px; z-index: -10000;">Talk To Us</h3>
     <h4 style="z-index: -10000;">Our coven is commited to making your Green Witch experiences as magical as possible!</h4>
     <fieldset>
@@ -162,6 +184,8 @@ fieldset {
       <button style="z-index: 10000;" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
+  <br>
+  <br>
 </div>
 
 </p>
