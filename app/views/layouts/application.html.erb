@@ -109,16 +109,16 @@
 
 
 <div id="main">
-  <button style="cursor: pointer; background-color: white; border: none; width: 20px; margin-top: 50px; position: absolute;" id="openNav"  onclick="w3_open()">&#9776;</button>
+  <button style="z-index: 10000; cursor: pointer; background-color: white; border: none; width: 20px; margin-top: 50px; position: absolute;" id="openNav"  onclick="w3_open()">&#9776;</button>
 </div>
 <div id="float_all">
 
-<div class="new_navbar">
+<div class="new_navbar" style="z-index: 10000;"">
   <a><%= link_to "Coven", philosophy_url, :id => "link" %></a>
-  <div class="new_dropdown">
+  <div class="new_dropdown" style="z-index: 10000;">
     <%= link_to "Get Educated", :class => "new_dropbtn" %>
       <i class="new_fa fa-caret-down"></i>
-    <div class="new_dropdown-content">
+    <div class="new_dropdown-content" style="z-index: 10000;">
       <%= link_to "INGREDIENTS", ingredients_url, :class => "tab" %>
       <%= link_to "HEMP DICTIONARY", hemp_dictionary_url, :class => "tab"%>
       <%= link_to "RECIPES", recipes_url, :class => "tab"%>
@@ -126,10 +126,10 @@
       <%= link_to "CONTACT", contact_url, :class => "tab"%>
     </div>
   </div> 
-    <div class="new_dropdown">
+    <div class="new_dropdown" style="z-index: 10000;">
     <%= link_to "Shop", :class => "new_dropbtn" %>
       <i class="new_fa fa-caret-down"></i>
-    <div class="new_dropdown-content">
+    <div class="new_dropdown-content" style="z-index: 10000;">
       <%= link_to "OUR PRODUCTS", shop_url, :class => "tab" %>
       <%= link_to "WHERE TO FIND US", locations_url, :class => "tab"%>
     </div>
@@ -376,6 +376,7 @@ button:hover {
 .tab {
   font-size: 5px;
   font-family: 'avenir next', sans-serif;
+  z-index: 10000;
 }
 
 #coven_link:hover {
