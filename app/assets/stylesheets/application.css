@@ -204,7 +204,7 @@ to{
 
 
 
-#square1 {
+/*#square1 {
 
   background-color: #2b2929;
   position: relative;
@@ -310,7 +310,7 @@ to{
 }
 
 
-
+*/
 
 @keyframes anim-1 {
   0%, 50% {opacity: 1; }
