@@ -127,29 +127,32 @@ fieldset {
 @media screen and (max-width : 750px){
 
   #contact {
-  background-color: white;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin:30px 0;
-  margin-top: -5%;
-  margin-bottom: -11%;
-  z-index: 10000;
-  text-align: center;
-}
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin:30px 0;
+    margin-top: -5%;
+    margin-bottom: -11%;
+    z-index: 10000;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width : 751px){
-
   #contact {
-  background-image: url(/assets/contact-background-contact.jpg);
-  padding-left: 100px;
-  padding-right: 100px;
-  margin:30px 0;
-  margin-top: 0%;
-  margin-bottom: -11%;
-  z-index: 10000;
-  text-align: center;
+    background-image: url(/assets/contact-background-contact.jpg);
+    padding-left: 100px;
+    padding-right: 100px;
+    margin:30px 0;
+    margin-top: 0%;
+    margin-bottom: -11%;
+    z-index: 10000;
+    text-align: center;
+  }
 }
+
+.hidden {
+  display: none;
 }
 
 </style>
@@ -181,6 +184,9 @@ fieldset {
     <fieldset>
       <textarea placeholder="Type your Message Here." tabindex="5" name="contact[message]" required></textarea>
     </fieldset>
+    <div class= "hidden">
+      <input name="contact[nickname]">
+    </div>
     <fieldset style="z-index: 1000;" id="submit-div">
       <button style="z-index: 10000;" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
