@@ -666,8 +666,27 @@ for (i = 0; i < dropdown.length; i++) {
 
 </div>
 
+<style>
+
+.origin_banner {
+  width: 50%;
+  height: auto;
+  margin-bottom: -5%;
+}
+
+#center_this_banner {
+  text-align: center;
+}
+
+
+</style>
+
 <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
+    <div id="center_this_banner">
+<%= image_tag("origin.jpg", :class => "origin_banner") %>
+</div>
+
   <% end %>
 
   <%= yield %>

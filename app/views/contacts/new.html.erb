@@ -1,16 +1,206 @@
-<!-- <div align="center">
-  <h3>Send A message to Us</h3>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#logo_background {
+  height: 200px;
+}
+
+#contact_banner {
+  float: left;
+  width: 1200px;
+  z-index: -10000;
+}
+
+#center_banner {
+  text-align: center;
+}
+
+#main {
+  margin-bottom: -100px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "avenir next", sans-serif; }
+
+
+
+#contact h3 {
+  font-family: 'avenir next', sans-serif;
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  color:#67bdb3;
+  text-align:center;
+  margin-top: -25%;
+}
+
+#contact h4 {
+  font-family:'avenir next', sans-serif;
+  margin:5px 0 15px;
+  display:block;
+  font-size:13px;
+  text-align:center;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="zip"], #contact input[type="url"], #contact textarea {
+    width:100%;
+    border:1px solid #CCC;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="zip"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+#contact textarea {
+    height:100px;
+    max-width:100%;
+    resize:none;
+}
+
+#submit-div {
+    width:100%;
+}
+
+
+
+#contact button[type="submit"] {
+    cursor:pointer;
+    width:35%;
+    padding-left:25%;
+    padding-right:25%;
+    border:none;
+    background:#67bdb3;
+    color:#fff;
+    margin:auto;
+    padding:10px;
+    font-size:15px;
+    display:block;
+}
+
+#contact button[type="submit"]:hover {
+    background:#09C;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+@media screen and (max-width : 750px){
+
+  #contact {
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin:30px 0;
+    margin-top: -5%;
+    margin-bottom: -11%;
+    z-index: 10000;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width : 751px){
+  #contact {
+    background-image: url(/assets/contact-background-contact.jpg);
+    padding-left: 100px;
+    padding-right: 100px;
+    margin:30px 0;
+    margin-top: 0%;
+    margin-bottom: -11%;
+    z-index: 10000;
+    text-align: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+</style>
+
+
+
+
+
+<!-- <p id="contact_title">CONTACT</p> -->
+
+<p id="center_banner">
+
+<body>
+  <form id="contact" action="/contacts" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  <br>
+  <br>
+    <h3 style="margin-top: 0px; z-index: -10000;">Talk To Us</h3>
+    <h4 style="z-index: -10000;">Our coven is commited to making your Green Witch experiences as magical as possible!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" name="contact[name]" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" name="contact[email]" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Zip Code" type="zip" tabindex="3" name="contact[zip_code]" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here." tabindex="5" name="contact[message]" required></textarea>
+    </fieldset>
     <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      <input name="contact[nickname]">
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
-</div> -->
+    <fieldset style="z-index: 1000;" id="submit-div">
+      <button style="z-index: 10000;" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+  <br>
+  <br>
+</div>
+
+</p>
+
+
+<br>
+<br>
+<br>
+
+</body>
+
