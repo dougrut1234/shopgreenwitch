@@ -40,6 +40,7 @@ get 'terms_and_conditions/index'
 
   resources :contacts, only: [:new, :create]
   get "/contact", to: "contacts#new"
+  get "/contact/thankyou", to: "contacts#create"
  
 end
 
