@@ -82,7 +82,7 @@ Rails.application.configure do
     port:                 587,
     domain:               'shopgreenwitch.com',
     user_name:            'leila@shopgreenwitch.com',
-    password:             'goaway92',
+    password:             'Fuckoff?0',
     authentication:       'plain',
     enable_starttls_auto: true  }
 
