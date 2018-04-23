@@ -40,7 +40,7 @@ get 'terms_and_conditions/index'
 
   resources :contacts, only: [:new, :create]
   get "/contact", to: "contacts#new"
-   post "/contacts" => "contacts#create"
+   post "/contacts", to: "contacts#create"
  
 end
 
