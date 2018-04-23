@@ -46,7 +46,7 @@ Rails.application.configure do
   config.assets.quiet = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              'smtp.shopgreenwitch.com',
     port:                 587,
     domain:               'shopgreenwitch.com',
     user_name:            'leila@shopgreenwitch.com',
